@@ -12,19 +12,7 @@
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div> 
 
-      
-
- 
-
-
- 
-
-
-
-
-
-        <!--<< Hero Section Start >>--> 
-        <section class="hero-section hero-3">
+      <section class="hero-section hero-3">
             <div class="slider-button">
                 <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
                 <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>

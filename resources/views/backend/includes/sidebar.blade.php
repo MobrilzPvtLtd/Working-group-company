@@ -8,16 +8,20 @@ $notifications_latest = optional($notifications)->take(5);
     <div class="sidebar-header border-bottom">
         <style>
             .sidebar-brand {
-                margin: auto; 
-                display: flex; 
-                align-items: center; 
-                justify-content: center; 
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .sidebar-brand img {
+                height: 80px;
             }
         </style>
         
         <div class="sidebar-brand">
-            <img class="sidebar-brand-full" src="{{ asset('assets/img/logo111111 (1).png') }}" alt="WGC" height="80">
-         </div>
+            <img class="sidebar-brand-full" src="assets/img/logo1111 (1).png" alt="WGC">
+        </div>
         
         <button class="btn-close d-lg-none" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" type="button"
             aria-label="Close"

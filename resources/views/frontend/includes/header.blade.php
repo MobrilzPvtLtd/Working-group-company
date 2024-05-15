@@ -129,11 +129,11 @@
                                             <a href="contactus">Contact</a>
                                         </li>
                                         @guest
-                                        <div>
-                                            <h4><a href="{{route('login') }}">
-                                                <i class=""></i>Login -></h4>
+                                        <li>
+                                            <a href="{{route('login') }}">
+                                                <i class=""></i>Login 
                                             </a>
-                                        </div>
+                                        </li>
                                         @endguest
                                         
                                         @auth

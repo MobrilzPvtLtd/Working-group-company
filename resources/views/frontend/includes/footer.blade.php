@@ -161,10 +161,24 @@
                 </ul>
                 <div class="select-dropdown001">
                     <select class="list001">
-                        <option value="Option 1">English</option>
-                        <option value="Option 2">French</option>
-                        <option value="Option 3">Spanish</option>
-                        <option value="Option 3">German</option>
+                        <option value="Option 1">French</option>
+                        <option value="Opt">German</option>
+                        <option value="Option 3">English</option>
+                        <option value="Option 4">Spanish</option>
+                        <option value="Option 5">Portuguese</option>
+                        <option value="Option 6">Turkish</option>
+                        <option value="Option 7">Italian</option>
+                        <option value="Option 8">Spanish</option>
+                        <option value="Option 9">Erythree</option>
+                        <option value="Option 10">Somali</option>
+                        <option value="Option 11">Congolese</option>
+                        <option value="Option 12">Cameroon</option>
+                        <option value="Option 13">Nigeria</option>
+                        <option value="Option 14">Senegalese </option>
+
+
+                        
+
                     </select>
                 </div>
             </div>

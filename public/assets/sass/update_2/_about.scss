@@ -1,0 +1,155 @@
+/*----------------------- About Start ----------------------*/
+.img-box5 {
+    position: relative;
+    @include lg {
+        margin-bottom: 80px;  
+    }
+
+    .img7 {
+        .about-image {
+            position: relative;
+            max-width: 300px;
+            z-index: 2;
+            @include lg { 
+                display: block; 
+                margin: auto; 
+            }
+            @media(max-width: 1024px) { 
+                margin: 0;
+                max-width: 90%;
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                inset: 0;
+                background-color: $black-color;
+                opacity: 0.5;
+                z-index: 1;
+            }
+
+            .about-video {
+                position: absolute;
+                z-index: 9;
+                top: 50%;
+                left: 30%;
+
+                .white-play-btn {
+                    position: absolute;
+                    left: 34%;
+                    top: 34%;
+                    width: 100px;
+                    height: 100px;
+                    line-height: 102px;
+                    font-size: 18px;
+                    color: $title-color;
+                    z-index: 9;
+
+                    &:before {
+                        border: 1px solid $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .img8 {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 55px;
+        z-index: 2;
+        @include lg {
+            right: 40px;
+        }
+        @include xs {
+            display: none;  
+        }
+    }
+
+    .shape4 {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        width: 580px;
+        height: 350px;
+        background-color: $theme-color-2;
+        clip-path: path("M580 230L0 -0.000488281V350H580V230Z");
+        z-index: 1;
+        @include xl {
+            width: 90%;  
+        }
+        @include lg {
+            left: 30px;  
+        }
+
+    }
+
+    .about-counter-5 {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 80px;
+        max-width: 230px;
+        min-height: 206px;
+        background-color: $theme-color;
+        padding: 40px;
+        z-index: 2;
+        @include lg {
+            right: 70px; 
+        }
+        @include vxs {
+            display: none; 
+        }
+
+        &:before {
+            content: "";
+            position: absolute; 
+            top: 0; 
+            right: -25px;   
+            width: 6px;
+            height: 206px;
+            background-color: $theme-color;
+            z-index: 2;
+        }
+
+        .counter-card {
+            &_number { 
+                font-family: var(--title-font);
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 55px; 
+                margin-bottom: 15px; 
+                margin-top: 0; 
+            }
+
+            &_text {
+                font-family: $title-font;
+                color: var(--white-color);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                display: block;
+                margin-bottom: -6px;
+            }
+        }
+    }
+}
+
+.achive-about-list{
+    .checklist{
+        border-bottom: 1px solid   rgba(18, 18, 18, 0.1); 
+        padding-bottom: 37px;
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 0 50px;  
+            @include sm {
+                grid-template-columns: repeat(1, 1fr);  
+            }
+        }
+    } 
+}
+
+/*----------------------- About end ----------------------*/

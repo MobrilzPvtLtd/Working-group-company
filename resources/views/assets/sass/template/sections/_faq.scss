@@ -1,0 +1,360 @@
+/* Faq 1 ---------------------------------- */
+.accordion-area {
+    padding: 60px;
+    max-width: 650px;
+
+    &.style2 {
+        padding: 0;
+        max-width: 100%;
+
+        .accordion-card {
+            background-color: $smoke-color;
+            margin-top: 10px;
+
+            .accordion-button {
+                background-color: $smoke-color;
+                padding: 18px 30px;
+                font-size: 16px;
+                line-height: 26px;
+                min-height: 60px;
+                border-bottom: 1px solid transparent;
+                @include xs{
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
+
+                &:after {
+                    @include xs {
+                        right: 18px; 
+                    }
+                }
+
+                @include xs {
+                    padding: 18px 16px;
+                }
+            }
+
+            .accordion-body {
+                background-color: $smoke-color;
+                margin: 0 22px 30px 30px;
+                padding: 0;
+                border-top: 1px solid rgba(18, 18, 18, 0.1);
+                padding-top: 21px;
+            }
+        }
+    }
+
+    @include xl {
+        padding: 50px;
+    }
+
+    @include lg {
+        max-width: 100%;
+    }
+
+    @include sm {
+        padding: 25px 0;
+    }
+
+}
+
+.faq-sec {
+    margin-right: -42%;
+
+    @media(min-width: 1999px) {
+        margin-right: 0;
+    }
+
+    @media(max-width: 1999px) {
+        margin-right: -20%;
+    }
+
+    @media(max-width: 1699px) {
+        margin-right: -10%;
+    }
+
+    @include xxl {
+        margin-right: 0;
+    }
+
+    @include lg {
+        margin-top: 20px;
+    }
+}
+
+
+.accordion-card {
+    margin-bottom: 20px;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+
+    .accordion-button {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $title-font;
+        border: 0;
+        color: $title-color;
+        background-color: $white-color;
+        border-radius: 0;
+        padding: 12px 45px 12px 30px;
+        min-height: 70px;
+        gap: 10px;
+        margin-bottom: 0;
+        text-align: left;
+        transition: 0.3s;
+        position: relative;
+
+        @include vxs {
+            padding: 12px 45px 12px 14px;
+        }
+
+        &:after {
+            content: "\f06e";
+            height: 100%;
+            width: auto;
+            line-height: 1;
+            background-color: transparent;
+            font-family: $icon-font;
+            color: $title-color;
+            font-weight: 700;
+            font-size: 1em;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            clip-path: polygon(20px 0%, 100% 0, 100% 100%, 0% 100%);
+            padding-left: 10px;
+            transition: 0.3s ease-in-out;
+
+            @include vxs {
+                right: 24px;
+            }
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            border-bottom: 1px solid $border-color;
+            box-shadow: none;
+            border-radius: 0;
+            color: $theme-color;
+
+            &:after {
+                content: '\f070';
+                transform: rotate(0);
+                color: $theme-color;
+            }
+        }
+    }
+
+    .accordion-collapse {
+        border: none;
+    }
+
+    .accordion-body {
+        border-radius: 0;
+        background-color: $white-color;
+        border: none;
+        padding: 22px 30px;
+    }
+
+    .faq-text {
+        font-size: 16px;
+        margin-bottom: -0.48em;
+    }
+
+    .faq-img {
+        height: 100%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.style2 {
+        box-shadow: none;
+        border: 1px solid $border-color;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .accordion-button {
+            background-color: $smoke-color;
+            box-shadow: none;
+
+            &:after {
+                content: '\f063';
+                color: $body-color;
+            }
+
+            &:not(.collapsed) {
+                color: $title-color;
+                border-bottom: none;
+
+                &:after {
+                    transform: rotate(180deg) translateX(-11px);
+                }
+            }
+        }
+    }
+}
+
+.faq-img {
+    padding-left: 25px;
+    text-align: center;
+
+    img {
+        max-width: max-content;
+    }
+}
+
+@include xs {
+    .accordion-card .accordion-button {
+        font-size: 16px;
+    }
+}
+
+@include lg {
+    .faq-img {
+        padding-left: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.faq-widget {
+    background-color: $smoke-color;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    text-align: center;
+
+    .title {
+        margin-top: -0.23em;
+    }
+}
+
+.faq-form-wrap {
+    margin-top: 70px;
+
+    .form-text {
+        max-width: 500px;
+        margin-bottom: 25px;
+    }
+}
+
+@include md {
+    .faq-form-wrap {
+        margin-top: 45px;
+    }
+}
+
+@include vxs {
+    .faq-widget {
+        padding: 40px 20px;
+    }
+}
+
+/* Faq Tab --------------------------------*/
+.faq-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-tabs {
+    border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+    padding-bottom: 11px;
+    gap: 50px;
+    margin-bottom: 30px;
+
+    @include xl {
+        gap: 30px;
+    }
+
+    @include sm {
+        gap: 20px;
+    }
+
+    .nav-link {
+        background-color: transparent;
+        color: $title-color;
+        padding: 0;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        position: relative;
+
+        @include sm {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        &:hover,
+        &.active {
+            color: $theme-color;
+            border-color: transparent;
+
+            &:after {
+                width: 100%;
+            }
+        }
+
+        &:after {
+            content: "";
+            height: 2px;
+            background: var(--theme-color);
+            width: 0;
+            left: 0;
+            bottom: -12px;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
+
+        }
+    }
+}
+
+.faq-image {
+    text-align: right;
+
+    @include lg {
+        display: none;
+    }
+}
+
+.faq-image-two {
+    @include lg {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    @include md {
+        margin-bottom: 30px;
+    }
+}
+
+.faq-area {
+    @include md {
+        padding-top: 40px !important;
+    }
+
+    .title-area {
+        @include lg {
+            text-align: center;
+        }
+    }
+}

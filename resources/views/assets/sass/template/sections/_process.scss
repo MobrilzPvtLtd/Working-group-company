@@ -1,0 +1,111 @@
+.process-sec {
+    position: relative;
+}
+.process-line { 
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 500px), calc(-50% + 25px));
+    margin: 0 -500px; 
+    @include lg{
+        display: none;
+    }
+}
+.step-wrap{
+    .process-line {
+        align-items: center;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(calc(-50% + 500px), calc(-50% + 25px));
+        margin: 0 -500px;
+    }
+}
+.process-card {
+    position: relative;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        .process-card {
+            &_icon {
+               
+                &:before {
+                    background-color: $theme-color-2; 
+                }
+
+                img {
+                    filter: brightness(0) invert(1);
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+
+    &_icon {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        background-color: $white-color;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        margin: 0 auto 30px auto;
+        transition: 0.4s ease-in-out;
+        z-index: 3;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            inset: 15px;
+            border-radius: 50%;
+            background-color: $white-color;
+            border: 1px dashed $theme-color-2;  
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+        }
+
+        img {
+            transition: 0.4s ease-in-out;
+            filter: none;
+        }
+    }
+
+    &_number {
+        position: absolute;
+        top: 0;
+        right: -8px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $theme-color-2;
+        color: $white-color;
+        border-radius: 50%;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &_title {
+        font-size: 24px;
+
+        &:hover {
+            color: $theme-color-2; 
+        }
+    }
+
+    &_text {
+        max-width: 285px;
+        margin: 0 auto -0.5em auto;
+    }
+
+}

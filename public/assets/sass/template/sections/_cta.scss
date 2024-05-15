@@ -1,0 +1,140 @@
+.cta-area {
+    position: relative;
+    padding: 50px 60px;
+    z-index: 10;
+
+    @include sm {
+        padding: 30px;
+    }
+}
+
+.cta-content {
+    @include md {
+        text-align: center;
+    }
+}
+
+.cta-title {
+    margin: 0;
+    max-width: 509px;
+    color: $white-color;
+
+    @include lg {
+        max-width: 509px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.btn-group {
+    &.cta-btn {
+        justify-content: flex-end;
+
+        @include lg {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+@include md {
+    .sec-title.cta-title {
+
+
+        img {
+            max-width: 64px;
+        }
+    }
+
+    .cart_table {
+        .themeholy-cart-coupon { 
+            width: 100%;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+    }
+
+}
+
+@include sm {
+    .sec-title.cta-title {
+
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@include xs {
+    .sec-title.cta-title {}
+}
+
+.cta-sec {
+    position: relative;
+    min-height: 243px;
+    padding: 80px 0 80px 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 9;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+
+.cart_table {
+    .actions {
+        @include md {
+            text-align: center;
+        }
+    }
+}
+
+.cart_table {
+    .themeholy-cart-coupon { 
+        float: left;
+        margin: 0;
+        width: 455px;
+        max-width: 100%;
+        display: flex;
+
+
+        @include sm {
+            display: block;
+        }
+
+        input {
+            width: calc(100% - 200px); 
+            margin-right: 10px;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+
+        .themeholy-btn {
+            font-size: 16px;
+            padding: 14px 25px;
+        }
+    }
+}
+
+.cart_table .actions>.themeholy-btn {
+    font-size: 16px;
+    padding: 14px 28px;
+    margin-right: 15px;
+    line-height: 22px;
+}
+
+.cart_table .actions>.themeholy-btn:last-child {
+    margin-right: 0;
+}

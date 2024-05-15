@@ -1,0 +1,407 @@
+.ripple-animation {
+  animation-duration: var(--ripple-ani-duration);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: ripple;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@keyframes headerSticky {
+  0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+
+.sectionShape{ 
+  animation: sectionShape 8s linear infinite;
+  }
+  @keyframes sectionShape {
+    0%{
+      left: -50%;
+    }
+    100% {  
+      left: 100%; 
+    }
+  }
+
+  @keyframes left-right-img {
+    0% {
+      right: 0px;
+    }
+    50% {
+      right: -50px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  @keyframes top {
+    0% {
+      padding-top: 30px;
+    }
+    50% {
+      padding-top: 10px;
+    }
+    100% {
+      padding-top: 0px;
+    }
+  }
+  @keyframes top-bottom {
+    0% {
+      padding-bottom: 0;
+    }
+    50% {
+      padding-bottom: 30px;
+    }
+    100% {
+      padding-bottom: 30px;
+    }
+  }
+.movingX {
+  animation: movingX 8s linear infinite;
+}
+
+@keyframes movingX {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+.moving_X {
+  animation: moving_X 8s linear infinite;
+}
+
+@keyframes moving_X {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(8px);  
+  
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving {
+  animation: moving 8s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.jump {
+  animation: jumpAni 7s linear infinite;
+}
+
+@keyframes jumpAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jump-reverse {
+  animation: jumpReverseAni 7s linear infinite;
+}
+
+@keyframes jumpReverseAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rotate-x {
+  animation: rotate-x 15s linear infinite;
+}
+
+@keyframes rotate-x {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.zoom  {
+  animation: zoom  15s linear infinite;
+}
+@keyframes left-right-video-img {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes bounceSlide {
+  0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+  }
+
+  60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+  }
+}
+.bounce-slide {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: bounceSlide;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+}
+
+.spin {
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg); 
+  }
+}
+
+/* Bottom to Top key frame*/
+
+@keyframes BottomToTop {
+  49% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes headerSlideDown {
+  0% {
+      margin-top: -100px
+  }
+
+  to {
+      margin-top: 0
+  }
+}
+
+// This is for Progress bar animation also has a js code
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}
+
+
+.scalein.themeholy-animated {
+  --animation-name: scalein;
+}
+
+.slidetopleft.themeholy-animated {
+  --animation-name: slidetopleft;
+}
+
+.slidebottomright.themeholy-animated {
+  --animation-name: slidebottomright;
+}
+
+.slideinleft.themeholy-animated {
+  --animation-name: slideinleft;
+}
+
+.slideinright.themeholy-animated {
+  --animation-name: slideinright;
+}
+
+.slideinup.themeholy-animated {
+  --animation-name: slideinup;
+}
+
+.slideindown.themeholy-animated {
+  --animation-name: slideindown;
+}
+
+.rollinleft.themeholy-animated {
+  --animation-name: rollinleft;
+}
+
+.rollinright.themeholy-animated {
+  --animation-name: rollinright;
+}
+
+
+.scalein,
+.slidetopleft,
+.slidebottomright,
+.slideinleft,
+.slideinright,
+.slideindown,
+.slideinup,
+.rollinleft,
+.rollinright {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-name: var(--animation-name);
+}
+
+.themeholy-animated {
+  opacity: 1;
+}
+
+@keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinright {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideindown {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slidebottomright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes slidetopleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}

@@ -1,0 +1,159 @@
+/* Counter 1 ---------------------------------- */
+.counter-sec-space {
+    padding: 50px 0;
+
+    &.style2 {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @include lg {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            padding: 30px;
+
+        }
+        @media(max-width: 460px) {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 20px;
+        }
+    }
+}
+
+.counter-card {
+    position: relative;
+    text-align: center;
+
+    &.style2 {
+        text-align: left;
+        border-right: 1px dashed rgba(255, 255, 255, 0.15);
+        margin-right: 50px;
+        padding-right: 50px;
+
+        @media(max-width: 1399px) {
+            margin-right: 0;
+            padding-right: 50px;
+        }
+
+        @include xl {
+            border-right: 0;
+            padding-right: 0;
+        }
+
+        @include lg {
+            border-right: 1px dashed rgba(255, 255, 255, 0.15);
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+            padding: 50px;
+            margin-right: 0;
+            text-align: center;
+            &:nth-child(2) {
+                border-right: 1px dashed transparent;
+                margin-right: 0;
+            }
+            &:nth-child(3) {
+                border-bottom: 1px dashed transparent;
+            }
+            &:last-child {
+                border-right: 1px dashed transparent; 
+                margin-right: 0;
+                padding-right: 0;
+            }
+
+        }
+        
+        @include xs{
+            padding: 20px; 
+        }
+        @media(max-width: 460px) {
+            border: none;
+            padding: 20px 0;
+        }
+        &:last-child {
+            border-right: 1px dashed transparent;
+            border-bottom: 1px dashed transparent;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .counter-card {
+            &_wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 30px;
+                @include lg {
+                    display: block;
+                }
+            }
+
+            &_icon {
+                margin: 0;
+            }
+        }
+
+        .border-line {
+            right: 30px;
+        }
+    }
+
+    .border-line {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 100%;
+
+
+    }
+
+
+    &_icon {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    &_number {
+        font-family: $title-font;
+        font-size: 45px;
+        line-height: 55px;
+        color: $white-color;
+        margin-bottom: 2px;
+        margin-top: -0.24em;
+    }
+
+    &_text {
+        font-family: $style-font;
+        color: $white-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        display: block;
+        margin-bottom: -6px;
+    }
+}
+
+@include md {
+    .counter-card_number {
+        font-size: 40px;
+    }
+}
+
+.customer-title {
+    font-family: $title-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 765px;
+    display: block;
+    margin: 0 auto;
+    color: $white-color;
+
+    @include xs {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}

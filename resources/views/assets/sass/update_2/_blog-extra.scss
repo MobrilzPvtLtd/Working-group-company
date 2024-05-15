@@ -1,0 +1,34 @@
+/*----------------------- Blog ----------------------*/
+.blog-grid {
+    &.style2{
+        padding-bottom: 90px; 
+        .blog-img {
+            overflow: hidden;
+            margin-top: -90px;
+        }
+        .blog-grid{
+            &_content {
+                padding: 30px 40px 18px;
+            }
+           
+        }
+        .line-btn {
+           color: $title-color;
+           text-transform: capitalize; 
+           &:before {
+            background-color: $title-color; 
+           }
+           &:hover {
+            color: $theme-color-2;
+
+           }
+        }
+        .blog-meta {  
+            a{
+                &:hover {
+                    color: $theme-color-2; 
+                }
+            }
+        }  
+    }
+}

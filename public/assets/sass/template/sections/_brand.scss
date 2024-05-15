@@ -1,0 +1,44 @@
+/* Brand 1 ---------------------------------- */
+.brand-box {
+    &-bg {
+        background-size: 100% 100%;
+        padding: 63px 30px;
+    }
+    text-align: center;
+    height: 125px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#brandSlide1 {
+    .slick-arrow {
+        --pos-x: -46px !important;
+        --icon-size: 40px;
+        font-size: 15px;
+        margin-top: -21.5px;
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+        border: 1px solid $theme-color;
+        box-shadow: none;
+        border-radius: 99px;
+        &:hover {
+            background-color: $theme-color;
+        }
+    }
+}
+
+@include md {
+    .brand-box-bg {
+        padding: 30px 25px;
+    }
+}
+
+@include xs {
+    #brandSlide1 .slick-arrow {
+        display: none !important;
+    }
+    .brand-box-bg {
+        background-size: cover;
+    }
+}

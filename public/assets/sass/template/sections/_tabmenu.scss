@@ -1,0 +1,245 @@
+/* Tab Menu 1 ---------------------------------- */
+.request-quote-wrapper {
+    margin-right: -200px;
+    position: relative;
+    z-index: 9;
+
+    &.th-bg {
+        .request-quote-tabs {  
+            .nav-link {
+                @media(max-width: 1399px) { 
+                    width: 429px;
+                }
+
+                @media(max-width: 1310px) { 
+                    width: 33%;  
+                }
+            }
+        }
+    }
+
+    @include lg {
+        margin-right: 0;
+    }
+
+
+    &.style2 {
+        margin-right: 0;
+        background-color: var(--smoke-color);
+
+        .request-wrapper {
+            background-color: transparent;
+        }
+
+        .tab-content {
+            @include md {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+// .tab-content {
+//     @include md {
+//         margin-right: 7px;
+//     }
+// }
+
+.request-quote-tabs {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 440px) {
+        display: block;
+    }
+
+    &.style2 {
+        justify-content: flex-start;
+
+
+
+        &.nav-tabs {
+            border: 1px solid #F4F4F4;
+            // &:last-child{
+            //     border-right: 1px solid transparent !important;
+            // }
+        }
+
+        .nav-link {
+            border-right: 1px solid #F4F4F4;
+            background-color: $white-color;
+            color: $title-color;
+            width: 429px;
+
+            @media(max-width: 1399px) {
+                width: 416px;
+                // width: 416px;
+            }
+
+            @include xl {
+                width: 371px;
+            }
+
+            @include lg {
+                width: 311px;
+            }
+
+            @include md {
+                width: 231px;
+                // width: 171px; 
+            }
+
+            @include sm {
+                width: 171px;
+            }
+
+            @include xs {
+                width: 100%;
+            }
+
+            @media(max-width: 460px) {
+                width: 100%;
+            }
+
+            &:hover,
+            &.active {
+                background-color: $smoke-color;
+                color: $title-color;
+            }
+        }
+    }
+
+    &.style3 {
+        justify-content: flex-start;
+        border: 1px solid #F4F4F4;
+        margin-right: 0;
+
+        @include xs {
+            margin-right: -4px;
+        }
+
+        @media(max-width: 460px) {
+            margin-right: 0px;
+        }
+
+        .tab-content {
+            margin-right: 0;
+
+            @include md {
+                margin-right: 0;
+            }
+        }
+
+
+        .nav-link {
+            width: 280px;
+
+            @media(max-width: 1399px) {
+                width: 271px;
+            }
+
+            @include xl {
+                width: 241px;
+            }
+
+            @include lg {
+                width: 201px;
+            }
+
+            @include md {
+                width: 228px;
+            }
+
+            @include sm {
+                width: 168px;
+            }
+
+            @include xs {
+                width: 33%;
+            }
+
+            @media(max-width: 460px) {
+                width: 100%;
+                border-right: none !important;
+            }
+
+            &:last-child {
+                border-right: 1px solid transparent !important;
+            }
+
+            &:hover,
+            &.active {
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &.nav-tabs {
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-link {
+        background-color: $white-color;
+        padding: 20px 40px;
+        width: 277.6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        border: none;
+        border-right: 1px solid #1212121a !important;
+        text-align: center;
+        border-radius: 0;
+        color: $title-color;
+        transition: all 0.4s ease-in-out;
+
+        @media(max-width: 1399px) {
+            width: 271px;
+        }
+
+        @include xl {
+            width: 248.6px;
+        }
+
+        @include lg {
+            padding: 20px;
+            width: 33%;
+        }
+
+        @include md {
+            width: 33%;
+        }
+
+        @include xs {
+            width: 100%;
+        }
+
+        @include sm {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        @include vxs {
+            padding: 5px;
+        }
+
+        &:hover,
+        &.active {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+    }
+}
+
+@include lg {
+    .filter-menu.tab-menu1 {
+        gap: 10px 30px;
+    }
+}
+
+@include sm {
+    .filter-menu.tab-menu1 {
+        gap: 10px 20px;
+    }
+}

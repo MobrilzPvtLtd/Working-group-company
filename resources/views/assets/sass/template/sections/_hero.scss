@@ -1,0 +1,812 @@
+/* Hero Global ---------------------------------- */
+.themeholy-hero-wrapper {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    .slick-arrow {
+        --pos-x: 100px;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        color: $white-color;
+
+        &:hover {
+            background-color: $theme-color;
+        }
+
+        &.arrowLeft,
+        &.arrowRight {
+            position: absolute;
+            background: transparent;
+            border: none;
+            top: 54%;
+            left: auto;
+            right: 140px;
+            background-color: $theme-color;
+            width: var(--icon-size, 60px);
+            height: var(--icon-size, 60px);
+            line-height: var(--icon-size, 60px);
+            font-size: var(--icon-font-size, 16px);
+            border-radius: 50%;
+            transform: translate(-2%, -50%);
+            z-index: 1;
+
+            @include xl {
+                top: 56%;
+            }
+
+            @include lg {
+                display: none !important;
+            }
+
+            &:hover {
+                background-color: $theme-color-2;
+            }
+
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        &.arrowRight {
+            top: 45%;
+            left: auto;
+            right: 140px;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translateY(-50%);
+    }
+}
+
+@include xxl {
+    .themeholy-hero-wrapper .slick-arrow {
+        --pos-x: 40px;
+    }
+}
+
+.themeholy-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Hero 1 ---------------------------------- */
+.number-dots {
+    .slick-dots {
+        margin: 0;
+
+        button {
+            font-family: $title-font;
+            font-size: 30px;
+            font-weight: bold;
+            color: $white-color;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            border-radius: 0;
+            background-color: transparent;
+            padding-bottom: 18px;
+            margin-bottom: 8px;
+            position: relative;
+
+            &:before {
+                height: 7px;
+                width: 7px;
+                border: none;
+                background-color: $white-color;
+                position: absolute;
+                top: unset;
+                bottom: 0;
+                left: 13px;
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
+
+        .slick-active {
+            button {
+                color: $theme-color;
+            }
+        }
+
+        li {
+            display: block;
+            margin: 0;
+
+            &:last-child {
+                button {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-subtitle {
+    font-family: $title-font;
+    color: $white-color;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    img {
+        margin: 0 10px;
+    }
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 0;
+    display: block;
+
+    @include md {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    @include sm {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @include vxs {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 14px;
+    }
+
+    .hero-big-title {
+        font-size: 90px;
+        font-weight: 900;
+        line-height: 100px;
+        display: block;
+
+        @include md {
+            font-size: 60px;
+            line-height: 80px;
+        }
+
+        @include sm {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        @include vxs {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
+
+.hero-text {
+    color: $white-color;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 38px;
+    max-width: 719px;
+}
+
+.hero-style1 {
+    position: relative;
+    z-index: 6;
+    padding: 205px 0 205px 0;
+    max-width: 806px;
+}
+
+.hero-1 {
+    position: relative;
+    background-color: $smoke-color;
+    background-size: auto;
+    background-position: top center;
+    overflow: hidden;
+
+    .themeholy-hero-slide {
+        position: relative;
+        z-index: 9;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.4) 117.71%);
+            opacity: 0.9;
+            z-index: -1;
+        }
+    }
+
+    .indicator-number {
+        background-color: $white-color;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 140px;
+        width: 426px;
+        height: 88px;
+        padding: 40px;
+
+        @include lg {
+            right: 50px;
+        }
+
+        @include sm {
+            right: 20px;
+        }
+
+        @include xs {
+            right: 0;
+            left: 0px;
+        }
+
+        // @include xs {
+        //     height: 60px;
+        //     right: 20px;
+        //     padding: 30px;
+        //     width: 100%; 
+        // }
+    }
+
+    .indicator-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-shape {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+    ul.slick-dots {
+        display: none;
+    
+        li {
+            display: none;
+    
+            &.slick-active {
+                display: none; 
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero-1 {
+        .hero-shape {
+            display: none;
+        }
+    }
+
+    .hero-style1 {
+        padding: 170px 0;
+    }
+}
+
+@include xl {
+
+    .hero-style1 {
+        padding: 140px 0;
+    }
+}
+
+
+@include md {
+
+
+    .hero-subtitle {
+        margin-bottom: 10px;
+
+        img {
+            max-width: 170px;
+        }
+    }
+
+    .hero-style1 {
+        padding: 150px 0;
+    }
+}
+
+@include sm {
+
+    .hero-style1 {
+        padding: 100px 0 190px 0;
+    }
+
+    .hero-style1,
+    .hero-style3 {
+        .hero-text {
+            max-width: 420px;
+        }
+    }
+}
+
+@include xs {
+    .hero-title {
+        font-size: 44px;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+}
+
+/* Hero 2 ---------------------------------- */
+.hero-2 {
+    .themeholy-hero-bg {
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.4) 117.71%);
+            opacity: 0.85;
+            z-index: 2;
+        }
+    }
+
+    .slick-arrow {
+        background-color: $theme-color;
+        top: 54%;
+
+        &:hover {
+            background-color: $theme-color-2;
+        }
+    }
+
+    .hero-shape {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        z-index: 7;
+    }
+}
+
+.hero-style2 {
+    position: relative;
+    z-index: 6;
+    padding: 217px 0 217px 0;
+
+    .hero-text {
+        font-family: $title-font;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .hero-subtitle {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 110px;
+        text-transform: capitalize;
+
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
+    }
+
+    .shape-top {
+        margin-bottom: 25px;
+    }
+
+
+}
+
+.hero-indicator-wrapp {
+    position: absolute;
+    top: auto;
+    bottom: 50px;
+    left: calc(100% - 60%);
+
+    @include sm {
+        display: none;
+    }
+}
+
+.hero-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .indicatior-btn {
+        display: block;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        min-width: 80px;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+        }
+
+        &.active {
+            border-color: rgba(255, 255, 255, 0.2);
+
+            img {
+                border-radius: 50%;
+                transform: scale(0.7);
+            }
+        }
+    }
+}
+
+.hero-slider-2 {
+    .hero-bg-color {
+        background: $theme-color;
+        mix-blend-mode: hue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .hero-thumb {
+        position: relative;
+        margin: -32px -420px 0 -59px;
+
+        .car-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $theme-color;
+            mix-blend-mode: hue;
+            height: 100%;
+            width: 100%;
+            mask-size: cover;
+        }
+    }
+}
+
+@include lg {
+    .hero-style2 {
+        padding: 200px 0 200px 0;
+
+        .shape-top,
+        .shape-bottom {
+            img {
+                max-width: 550px;
+            }
+        }
+
+        .hero-text {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@include md {
+    .hero-style2 {
+        padding: 110px 0 110px 0;
+
+        .hero-title {
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 90px;
+        }
+
+        .hero-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@include sm {
+    .hero-style2 {
+        .hero-title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        .shape-top,
+        .shape-bottom {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include xs {
+    .hero-2 {
+        .themeholy-hero-bg {
+            &:before {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .hero-style2 {
+        padding: 100px 0 100px 0;
+
+        .hero-title:last-of-type {
+            margin-bottom: 12px;
+        }
+
+
+    }
+}
+
+@media (max-width: 422px) {
+
+    .hero-style2,
+    .hero-style3 {
+        .hero-title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+/* Hero 3 ---------------------------------- */
+.hero-3 {
+    .shape-mockup {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .themeholy-hero-bg {
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 1);
+            opacity: 0.8;
+            z-index: 2;
+        }
+    }
+
+    // .themeholy-hero-bg {
+    //     &:before {
+    //         content: '';
+    //         height: 100%;
+    //         width: 100%;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         background-color: rgba(0, 0, 0, 0.8);
+    //     }
+    // }
+
+    .slick-arrow {
+        background-color: $theme-color;
+        --pos-x: 40px;
+        top: 50%;
+
+        @include xl {
+            display: none !important;
+        }
+
+        &:hover {
+            background-color: $theme-color-2;
+        }
+    }
+
+    .themeholy-hero-bg {}
+}
+
+.hero-style3 {
+    position: relative;
+    padding: 340px 0 198px 0;
+    max-width: 1018px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 9;
+
+    @include xl {
+        padding: 266px 0 120px 0;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 110px;
+        text-align: center;
+        margin-bottom: 38px;
+
+        @include xl {
+            font-size: 70px;
+            line-height: 90px;
+        }
+
+        @include lg {
+            font-size: 50px;
+            line-height: 70px;
+        }
+
+        @include sm {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        @include vxs {
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+}
+
+
+@include xxl {
+    .hero-style3 {}
+}
+
+@include lg {
+    .hero-3 .themeholy-hero-bg {
+        background-size: 130% 100%;
+    }
+
+    .hero-style3 {
+        padding: 260px 0 120px 0;
+        max-width: 650px;
+    }
+}
+
+@include md {
+    .hero-3 .themeholy-hero-bg {
+        background-size: 160% 100%;
+    }
+
+    .hero-style3 {
+        padding: 180px 0 100px 0;
+
+        .hero-subtitle {
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include sm {
+    .hero-3 .themeholy-hero-bg {
+        background-size: 180% 100%;
+    }
+}
+
+@include xs {
+    .hero-3 .themeholy-hero-bg {
+        background-size: 200% 100%;
+    }
+
+    .hero-style3 {
+        padding: 170px 0 90px 0;
+    }
+}
+
+
+
+
+
+.pagingInfo {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pagingInfo1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title-color;
+}
+
+.pagingInfo2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title-color;
+} 
+
+.number-pagination {
+    width: 5%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title-color;
+}
+
+.total-pagination {
+    width: 5%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title-color;
+}
+
+.progress-wrapper {
+    min-width: 150px;
+    --space: 38%;
+}
+
+.progress {
+    position: absolute;
+    top: 60%;
+    // left: 37%;
+    left: var(--space);
+    width: calc(100% - var(--space)*2);
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 190px;
+    height: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: $title-color;
+    background-image: linear-gradient(to right, $theme-color, $theme-color);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease-in-out;
+
+}

@@ -1,0 +1,61 @@
+.themeholy-pagination {
+  margin-bottom: 30px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 3px;
+    list-style-type: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  span,
+  a {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(243, 243, 243, 1);
+    color: $title-color;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%; 
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 500;
+
+    &.active,
+    &:hover {
+      color: $white-color;
+      border-color: $theme-color;
+      background-color: $theme-color;
+      box-shadow: none;
+    }
+  }
+
+}
+
+
+@include sm {
+  .themeholy-pagination {
+    span, 
+    a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+    }
+  }
+}

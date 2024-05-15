@@ -1,0 +1,357 @@
+/* Gallery 1 ---------------------------------- */
+.portfolio-slider-1 {
+    height: 450px;
+    max-width: 1860px;
+    display: block;
+    margin: 0 auto; 
+    @media(max-width: 1799px) {
+        max-width: 100%; 
+    }
+
+    .slick-slide {
+        transition: 0.4s;
+
+        .portfolio-img {
+            height: 450px;
+            width: 100%; 
+            overflow: hidden;
+        }
+    }
+
+    .slick-current {
+        width: 916px !important; 
+        height: 450px;
+        @media(max-width: 1799px) { 
+            width: 516px !important;  
+        }
+
+        .portfolio-card .hover-wrap {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .portfolio-img {
+            background-blend-mode: luminosity;
+            background: #D9D9D9;
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.gallery-row {
+    --bs-gutter-y: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+
+    .gallery-row .col-md-6,
+    .gallery-row .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .gallery-row .col-xl-auto {
+        width: auto;
+    }
+}
+
+.gallery-card {
+    position: relative;
+
+    .gallery-img {
+        position: relative;
+    }
+
+    .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+        transition: 0.4s ease-in-out;
+        transform: scaleX(0);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .icon-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 20px 0 0 -28px;
+        background-color: $white-color;
+        color: $theme-color;
+        border: none;
+        border-radius: 99px;
+        line-height: 60px;
+        font-size: 20px;
+        transition: 0.4s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        &:hover {
+            background-color: $theme-color;
+            color: $white-color;
+        }
+    }
+}
+
+.filter-item {
+    .gallery-card {
+        &:hover {
+            .icon-btn {
+                margin: -28px 0 0 -28px;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .gallery-overlay {
+                transform: scaleX(1);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 40px;
+    margin-top: 22px;
+    position: relative;
+
+    button {
+        border: none;
+        padding: 0;
+        margin-bottom: 5px;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $body-color;
+        position: relative;
+
+        &.active,
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    .indicator {
+        position: absolute;
+        height: 12px;
+        background-image: url("../img/theme-img/button_shape.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: calc(var(--width-set) + 24px);
+        left: calc(var(--pos-x) - 12px);
+        top: calc(var(--pos-y) + 20px);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+@include xl {
+    .gallery-card {
+        .gallery-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include lg {
+    .filter-menu {
+        gap: 8px 17px;
+    }
+}
+
+@include sm {
+    .filter-menu {
+        gap: 8px 22px;
+    }
+}
+
+
+/* Flip Slider --------------------------------------*/
+.flipster__item--current {
+    .gallery-card {
+        .icon-btn {
+            margin: -28px 0 0 -28px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .gallery-overlay {
+            transform: scaleX(1);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.flip-gallery {
+    &-area {
+        position: relative;
+        margin-top: -24px;
+    }
+
+    .flipster__nav {
+        margin: 0 auto 50px auto;
+    }
+
+    overflow: hidden;
+
+    .flipster__nav__item--current {
+        .flipster__nav__child {
+            display: none;
+        }
+    }
+
+    .flipster__button {
+        top: 56.8%;
+    }
+}
+
+.flipster__button {
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+    border: 1px solid $theme-color;
+    font-size: 16px;
+    background-color: $white-color;
+    text-align: center;
+    opacity: 1;
+
+    svg {
+        max-width: 13px;
+    }
+
+    &--prev {
+        left: 21%;
+    }
+
+    &--next {
+        right: 21%;
+    }
+}
+
+.flipster__nav__item {
+    margin: 0 18px;
+}
+
+.flipster__nav__link {
+    padding: 0;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: $body-color;
+
+    &:after {
+        bottom: 0;
+        top: unset;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        background-color: $theme-color;
+        transition: 0.4s ease-in-out;
+    }
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.flipster__nav__link:hover:after {
+    transform: scaleX(0);
+}
+
+.flipster__nav__item--current {
+    .flipster__nav__link {
+        color: $theme-color;
+
+        &:after {
+            transform: scaleX(1) !important;
+        }
+    }
+
+}
+
+.flipster__nav__link:focus:after {
+    transform: scaleX(1) !important;
+}
+
+@include lg {
+    .flipster__button--prev {
+        left: 12%;
+    }
+
+    .flipster__button--next {
+        right: 12%;
+    }
+}
+
+@include md {
+    .flip-gallery {
+        &-area {
+            margin-top: -18px;
+        }
+
+        .flipster__nav {
+            margin: 0 auto 40px auto;
+        }
+    }
+
+    .flipster__button--prev {
+        left: 0;
+    }
+
+    .flipster__button--next {
+        right: 0;
+    }
+}
+
+@include sm {
+    .flip-gallery {
+        .flip-items {
+            margin-top: -70px;
+        }
+
+        .flipster__button {
+            top: 52%;
+        }
+    }
+
+    .gallery-card.gallery-flip {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 460px) {
+    .flip-gallery {
+        .flip-items {
+            margin-top: -90px;
+        }
+
+        .flipster__button {
+            display: none;
+        }
+    }
+
+    .gallery-card.gallery-flip {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 360px) {
+    .gallery-card.gallery-flip {
+        transform: scale(0.5);
+    }
+}

@@ -1,0 +1,49 @@
+.counter-area2{
+    .container {
+        max-width: 1520px; 
+        @include xxl{
+            max-width: 100%; 
+        }
+    }
+}
+.faq-sec2 {
+    margin-right: -42%;
+
+    @media(min-width: 1922px) { 
+        margin-right: 0;
+    }
+
+    @media(max-width: 1899px) {
+        margin-right: -20%;
+    }
+
+    @media(max-width: 1699px) {
+        margin-right: -10%;
+    }
+
+    @include xxl {
+        margin-right: 0;
+    }
+
+    @include lg {
+        margin-top: 20px;
+    }
+}
+
+.portfolio-indicator-wrapper{
+    max-width: 1290px;
+    height: 4px;
+    background-color: rgba(18, 18, 18, 0.15); 
+    display: block;
+    margin: auto; 
+    margin-top: 40px; 
+    .indicator {
+        position: absolute;
+        top: -2px;
+        left: var(--pos-x);
+        height: 2px;
+        width: var(--width-set);
+        background-color: var(--theme-color);
+        transition: 0.6s ease;
+    }
+}

@@ -1,0 +1,137 @@
+.breadcumb-menu-wrapper {
+    position: relative;
+
+}
+
+.breadcumb-menu {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    background-color: $white-color;
+    min-width: 360px;
+    display: inline-block;
+    min-height: 30px;
+    line-height: 30px; 
+    padding: 15px 120px;  
+    margin-bottom: -1px;
+    clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+    @include xs{
+        min-width: 100%;  
+        padding: 15px 70px;  
+    }
+
+
+    &:before {
+        // content: "";
+        // position: absolute;
+        // background-color: $white-color;
+        // min-width: 300px;
+        // min-height: 100px; 
+        // line-height: 60px;
+        // padding: 0;
+        // clip-path: polygon(14% 0, 88% 0, 100% 50%, 0 51%);
+        // clip-path: polygon(20% 0, 80% 0, 100% 26%, 0 26%); 
+        // top: auto;
+        // bottom: -205%;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 3px;
+        padding-right: 5px;
+        font-family: $title-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        list-style: none;
+        position: relative;
+        color: $title-color;
+
+        &:after {
+            content: "\f101";
+            position: relative;
+            margin-left: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            color: $theme-color;
+            font-family: $icon-font;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+
+    a,
+    span {
+        white-space: normal;
+        color: inherit;
+        word-break: break-word;
+        font-weight: 400;
+        font-size: 18px;
+        color: $theme-color;
+    }
+}
+
+.breadcumb-title {
+    color: $white-color;
+    margin: -0.18em 0 -0.14em 0;
+    line-height: 1.1;
+    padding-bottom: 110px;
+
+    @include lg {
+        padding-bottom: 80px;
+    }
+
+    @include md {
+        padding-bottom: 80px;
+    }
+}
+
+.breadcumb-wrapper {
+    background-color: $title-color;
+    padding: 110px 0 0 0;
+    text-align: center;
+}
+
+@include lg {
+    .breadcumb-wrapper {
+        padding: 90px 0 0 0;
+    }
+
+    .breadcumb-menu {
+        margin: 20px 0 -0.5em 0;
+
+        li,
+        a,
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+@include md {
+    .breadcumb-wrapper {
+        padding: 80px 0 0 0;
+    }
+}
+
+@include sm {
+    .breadcumb-wrapper {
+        padding: 80px 0 0 0;
+    }
+}
+
+@include xs {
+    .breadcumb-title {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,56 @@
+/*----------------------- Service Start ----------------------*/
+
+.service-area {
+    margin-bottom: -125px;
+}
+
+.service-item {
+    position: relative;
+    background-color: $white-color;
+    text-align: center;
+
+    &_img {
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-size: 100% 100%;
+
+        img {
+            transition: 0.4s ease-in-out;
+            width: 100%;
+        }
+
+    }
+
+    &_content { 
+        position: relative;
+        padding: 50px 30px 24px 30px;     
+    }
+    &_icon {
+        position: absolute;
+        left: 35%;  
+        right: auto;
+        top: -30%;    
+        color: $theme-color; 
+        width: 90px;
+        height: 90px;
+        line-height: 70px;
+        border-radius: 50%;
+        background-color: $theme-color;
+        padding: 10px;
+        margin: 0 auto 15px auto;
+        @include sm {
+            left: 40%;
+            top: -45%; 
+        }
+    }
+    .box-title{
+
+    }
+}
+
+/*----------------------- Service End ----------------------*/

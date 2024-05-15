@@ -1,0 +1,1005 @@
+/* Contact 1 ---------------------------------- */
+.contact-img {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    img {
+        max-width: fit-content;
+        height: 100%;
+    }
+}
+
+.rsvp-form {
+    .form-group {
+        margin-bottom: 30px;
+    }
+}
+
+.contact-area {
+    --space: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        height: calc(100% - var(--space)*2);
+        width: calc(100% + var(--space)*2);
+        position: absolute;
+        top: var(--space);
+        left: calc(0px - var(--space));
+        border: 2px solid $theme-color;
+    }
+
+    .shape {
+        position: absolute;
+        top: 0;
+        left: -182px;
+    }
+}
+
+@include lg {
+    .contact-area {
+        &::before {
+            display: none;
+        }
+    }
+
+    .contact-img {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+/* Request Page ----------------------- */
+.request-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    // display: flex;
+    // justify-content: space-between;
+    background-color: $smoke-color;
+
+    @include md {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+}
+
+.themeholy-request-form {
+    background-color: $theme-color-2;
+    padding: 60px;
+
+    @include lg {
+        padding: 40px;
+        margin-right: 10px;
+
+        .btn-group {
+            margin-bottom: 0px;
+        }
+    }
+
+    @include md {
+        margin-right: 7px;
+    }
+
+    @include sm {
+        margin-right: 5px;
+    }
+
+    @include xs {
+        padding: 30px;
+        margin-right: 0px;
+    }
+
+    &.style2 {
+        background-color: transparent;
+        min-width: 880px;
+        width: 100%;
+        padding: 60px;
+
+        @include xl {
+            min-width: 700px;
+        }
+
+        @include lg {
+            min-width: 550px;
+            padding: 40px;
+        }
+
+        @include md {
+            min-width: 100%;
+            padding: 30px;
+        }
+
+        @include xs {
+            padding: 30px;
+        }
+
+        .request-wrapper {
+            background-color: transparent;
+        }
+
+        .form-group {
+
+            select,
+            .form-control,
+            .form-select,
+            textarea,
+            input {
+                background-color: $white-color;
+                color: $black-color-2;
+
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                    border-color: $theme-color;
+                    background-color: $white-color;
+                }
+
+                @include inputPlaceholder {
+                    color: $black-color-2;
+                }
+            }
+
+            i {
+                display: inline-block;
+                position: absolute;
+                right: 35px;
+                top: 19px;
+                font-size: 16px;
+                color: $theme-color;
+            }
+
+            .nice-select {
+                &:after {
+                    border-bottom: 1px solid $theme-color;
+                    border-right: 1px solid $theme-color;
+                }
+            }
+        }
+
+
+    }
+
+    &.style3 {
+        background-color: $smoke-color;
+        max-width: 100%;
+        padding: 60px;
+
+        @include lg {
+            padding: 40px;
+        }
+
+        @include xs {
+            padding: 20px;
+        }
+
+        .form-group {
+
+            select,
+            .form-control,
+            .form-select,
+            textarea,
+            input {
+                background-color: $white-color;
+                color: $body-color;
+
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                    border-color: $theme-color;
+                    background-color: $white-color;
+                }
+
+                @include inputPlaceholder {
+                    color: $black-color-2;
+                }
+            }
+
+            i {
+                display: inline-block;
+                position: absolute;
+                right: 35px;
+                top: 19px;
+                font-size: 16px;
+                color: $theme-color;
+            }
+
+            .nice-select {
+                &:after {
+                    border-bottom: 1px solid $theme-color;
+                    border-right: 1px solid $theme-color;
+                }
+            }
+        }
+
+    }
+
+    .form-group {
+
+        select,
+        .form-control,
+        .form-select,
+        textarea,
+        input {
+            background-color: rgba(255, 255, 255, 0.1);
+            height: 60px;
+            color: $white-color;
+
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border-color: $white-color;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            @include inputPlaceholder {
+                color: $white-color;
+            }
+        }
+
+        i {
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 19px;
+            font-size: 16px;
+            color: $white-color;
+        }
+
+        .nice-select {
+            &:after {
+                border-bottom: 1px solid $white-color;
+                border-right: 1px solid $white-color;
+            }
+
+            .option {
+                color: $title-color;
+
+                &.selected {
+                    color: $theme-color-2 !important;
+                    background: $theme-color-2 !important;
+
+                    &.focus {
+                        color: #fff !important;
+                        background: $theme-color-2 !important;
+                    }
+                }
+
+                &:hover,
+                &.focus {
+                    background: $theme-color-2 !important;
+                    color: #fff !important;
+                }
+            }
+
+            &.open {
+                .list {
+                    border-radius: 0;
+                    border: 1px solid $white-color;
+                    border-bottom: 3px solid $theme-color-2;
+                }
+            }
+        }
+
+    }
+
+    textarea.form-control {
+        min-height: 140px;
+        padding: 25px 25px 0 25px;
+        border: none;
+    }
+
+
+}
+
+/* Inquiry ---------------------------------- */
+.inquiry-form {
+    background-color: $white-color;
+    padding: 50px;
+    box-shadow: 0px 10px 30px rgba(1, 15, 28, 0.06);
+}
+
+@include xs {
+    .inquiry-form {
+        padding: 40px 20px;
+    }
+}
+
+/* RSVP Page ----------------------- */
+.map-sec {
+    line-height: 0;
+
+    iframe {
+        width: 100%;
+        height: 550px;
+
+        @include xl {
+            height: 400px;
+        }
+
+        @include sm {
+            height: 300px;
+        }
+    }
+}
+
+/* Contact Page ---------------------------------- */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    max-width: 320px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &_title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+    }
+
+    &_icon {
+        display: inline-block;
+        color: $theme-color;
+        text-align: center;
+        font-size: 28px;
+        position: relative;
+    }
+
+    &_text {
+        min-width: 180px;
+        display: block;
+        margin-bottom: -0.5em;
+
+        span,
+        a {
+            display: block;
+            max-width: fit-content;
+        }
+
+        a {
+            color: $body-color;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    &:hover {
+        .contact-info {
+            &_icon {
+                &:before {
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.contact-form-wrapper {
+    position: relative;
+    background-color: $smoke-color;
+    overflow: hidden;
+    padding: 40px 60px 60px 60px;
+
+    @include sm {
+        padding: 30px;
+    }
+
+    .form-title {
+        position: relative;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: $title-color;
+        margin-bottom: 40px;
+
+        @include xs {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .shape {
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 1px;
+
+            &:after,
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                height: auto;
+                margin-top: -1px;
+            }
+
+            &:before {
+                animation: sectionShape 8s linear infinite;
+                animation-delay: 0s;
+                background-color: $theme-color;
+                z-index: 9;
+                width: 160px;
+                height: 1px;
+            }
+
+            &:after {
+                width: 100%;
+                height: 1px;
+                margin: 0;
+                margin-top: -1px;
+                background-color: #121212;
+                opacity: 0.1;
+                left: 0;
+            }
+        }
+    }
+}
+
+.form-title {
+    position: relative;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: $title-color;
+
+    .shape {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 1px;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: auto;
+            margin-top: -1px;
+        }
+
+        &:before {
+            animation: sectionShape 8s linear infinite;
+            animation-delay: 0s;
+            background-color: $theme-color;
+            z-index: 9;
+            width: 160px;
+            height: 1px;
+        }
+
+        &:after {
+            width: 100%;
+            height: 1px;
+            margin: 0;
+            margin-top: -1px;
+            background-color: #121212;
+            opacity: 0.1;
+            left: 0;
+        }
+    }
+}
+
+.contact-form {
+    position: relative;
+    overflow: hidden;
+
+    // .form-title {
+    //     text-align: center;
+    //     max-width: 520px;
+    //     margin: -0.26em auto 35px auto;
+    //     padding-bottom: 10px;
+    //     border-bottom: 2px solid $border-color;
+    //     position: relative;
+
+
+    //     &:after {
+    //         content: '';
+    //         width: 140px;
+    //         height: 2px;
+    //         background-color: $theme-color;
+    //         position: absolute;
+    //         bottom: -2px;
+    //         left: calc(50% - 70px);
+    //     }
+    // }
+
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        height: 56px;
+        padding: 0 25px 0 25px;
+        padding-right: 45px;
+        border: 1px solid transparent;
+        color: $body-color;
+        background-color: $white-color;
+        border-radius: 0;
+        font-size: 16px;
+        width: 100%;
+        font-family: $body-font;
+        transition: 0.4s ease-in-out;
+
+        &:hover,
+        &.focus {
+            color: #fff !important;
+            border-color: $theme-color !important;
+        }
+    }
+
+    .form-group {
+        i {
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 19px;
+            font-size: 16px;
+            color: $theme-color;
+        }
+    }
+
+    textarea.form-control {
+        min-height: 150px;
+        padding: 25px 25px 0 25px;
+    }
+}
+
+/* service form -----------------------------------*/
+.service-form {
+    background: $theme-color;
+    padding: 60px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+
+    &.style2 {
+        padding: 40px;
+        box-shadow: none;
+
+        .themeholy-btn:hover .icon i,
+        .themeholy-btn:focus .icon i {
+            position: relative;
+            top: -22px;
+            right: -36%;
+
+            @include lg {
+                right: -28%;
+            }
+
+            @include md {
+                right: -43%;
+            }
+
+            @include sm {
+                right: -40%;
+            }
+
+            @include xs {
+                right: -37%;
+            }
+
+            @include vxs {
+                right: -34%;
+            }
+        }
+
+        @include md {
+            margin-bottom: 40px;
+        }
+
+        @include sm {
+            padding: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            position: relative;
+
+            select,
+            .form-control,
+            .form-select,
+            textarea,
+            input {
+                height: 60px;
+                padding: 25px;
+                padding-right: 45px;
+                border: 1px solid transparent;
+                color: var(--body-color);
+                background-color: $white-color;
+                border-radius: 0;
+                font-size: 16px;
+                width: 100%;
+            }
+
+            .nice-select {
+                padding: 0 25px 0 25px;
+            }
+        }
+    }
+
+    .themeholy-btn:hover .icon i,
+    .themeholy-btn:focus .icon i {
+        position: relative;
+        top: -22px;
+        right: -40%;
+
+        @include xl {
+            right: -38%;
+        }
+
+        @include lg {
+            right: -45%;
+        }
+
+        @include md {
+            right: -43%;
+        }
+
+        @include sm {
+            right: -39%;
+        }
+
+        @include xs {
+            right: -37%;
+        }
+
+        @include vxs {
+            right: -33%; 
+        }
+    }
+
+    @include xl {
+        padding: 50px;
+    }
+
+    @include xs {
+        padding: 30px;
+    }
+
+    .nice-select {
+        .option {
+            color: $title-color;
+
+            &.selected {
+                color: $theme-color !important;
+                background: $theme-color !important;
+
+                &.focus {
+                    color: #fff !important;
+                    background: $theme-color !important;
+                }
+            }
+
+            &:hover,
+            &.focus {
+                background: $theme-color !important;
+                color: #fff !important;
+            }
+        }
+
+        &.open {
+            .list {
+                border-bottom: 3px solid $theme-color;
+            }
+        }
+    }
+
+    .form-group {
+        i {
+            color: $theme-color;
+        }
+    }
+}
+
+.nice-select {
+    .option {
+        color: $title-color;
+
+        &.selected {
+            color: $theme-color !important;
+            background: $theme-color !important;
+
+            &.focus {
+                color: #fff !important;
+                background: $theme-color !important;
+            }
+        }
+
+        &:hover,
+        &.focus {
+            background: $theme-color !important;
+            color: #fff !important;
+        }
+    }
+
+    &.open {
+        .list {
+            border-bottom: 3px solid $theme-color;
+        }
+    }
+}
+
+.contact-info-wrap {
+    .title-area {
+        margin-bottom: 40px;
+
+        @include xs {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@include lg {
+    .contact-info {
+        &-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        margin-bottom: 0;
+    }
+}
+
+@include md {
+    .contact-info {
+        &-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include sm {
+    .contact-info {
+        &-wrap {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@include xs {
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+
+        &_icon {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .media-body {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .themeholy-social {
+        &.author-social {
+            text-align: center;
+        }
+    }
+}
+
+@include vxs {
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.contact-sec {
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.contact-form-wrapp {
+    margin-top: -50px;
+
+    .themeholy-btn:hover .icon i,
+    .themeholy-btn:focus .icon i {
+        position: relative;
+        top: -22px;
+        right: -42%;
+
+        @include xl {
+            right: -38%;
+        }
+
+        @include lg {
+            right: -35%;
+        }
+
+        @include md {
+            right: -43%;
+        }
+
+        @include sm {
+            right: -40%;
+        }
+
+        @include xs {
+            right: -38%;
+        }
+
+        @include vxs {
+            right: -30%;
+        }
+    }
+}
+
+.contact-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-top: -50px;
+
+    .shape {
+        position: absolute;
+        bottom: 70px;
+        left: 50px;
+
+        @include md {
+            left: 20px;
+        }
+    }
+}
+
+.contact-form-image {
+    position: relative;
+    animation: left-right-img 4s ease-out infinite;
+
+    @include md {
+        margin-top: 80px;
+    }
+}
+
+/* team-form ------------------------*/
+.team-contact {
+    background-color: $smoke-color;
+    padding: 60px;
+
+    @include xl {
+        padding: 35px;
+    }
+
+    .themeholy-btn:hover .icon i,
+    .themeholy-btn:focus .icon i {
+        top: -22px;
+        right: -44.1%;
+
+        @include xl {
+            right: -43%;
+        }
+
+        @include lg {
+            right: -45%;
+        }
+
+        @include md {
+            right: -43%;
+        }
+
+        @include sm {
+            right: -40%;
+        }
+
+        @include xs {
+            right: -36%;
+        }
+
+        @include vxs {
+            right: -30%;
+        }
+    }
+}
+
+.team-form {
+    .form-group {
+        margin-bottom: 10px;
+
+        i {
+            right: 35px;
+            color: $theme-color;
+        }
+    }
+
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        height: 60px;
+        padding-right: 45px;
+        border: 1px solid transparent;
+        color: var(--body-color);
+        background-color: $white-color;
+        border-radius: 0;
+        font-size: 16px;
+        width: 100%;
+        font-family: var(--body-font);
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* map form ---------------------------------- */
+.map-area {
+    position: relative;
+    margin-top: 120px;
+
+    @include sm {
+        margin-top: 0px;
+    }
+}
+
+.map-form-wrapper {
+    position: absolute;
+    top: -120px;
+    max-width: 500px;
+    background: $theme-color;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+
+    @include sm {
+        position: relative;
+        top: 0;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+}
+
+.map-form {
+    padding: 60px;
+
+    .themeholy-btn:hover .icon i,
+    .themeholy-btn:focus .icon i {
+        position: relative;
+        top: -22px;
+        right: -40%;
+
+        @media(max-width: 440px) {
+            right: -38%;
+        }
+
+        @media(max-width: 400px) {
+            right: -36%;
+        }
+
+        @include vxs {
+            right: -30%;
+        }
+    }
+
+    @include xl {
+        padding: 28px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+}

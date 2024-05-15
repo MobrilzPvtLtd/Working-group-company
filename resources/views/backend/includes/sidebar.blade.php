@@ -23,6 +23,7 @@ $notifications_latest = optional($notifications)->take(5);
             <img class="sidebar-brand-full" src="assets/img/logo1111 (1).png" alt="WGC">
         </div>
         
+        
         <button class="btn-close d-lg-none" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" type="button"
             aria-label="Close"
             onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>

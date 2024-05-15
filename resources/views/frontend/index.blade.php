@@ -5,7 +5,13 @@
 @endsection
 
 @section('content')
+  
+
    
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div> 
+
         <!--<< Hero Section Start >>--> 
         <section class="hero-section hero-3">
             <div class="slider-button">
@@ -21,7 +27,7 @@
                                 <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
                                     The best requests for <br>Cleaning
                                 </h1>
-      <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas praesentium magnam itaque voluptatem aliquam? </p>
+<p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas praesentium magnam itaque voluptatem aliquam? </p>
 
 
                                 <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
@@ -60,7 +66,7 @@
                 </div>
 
 
-               <div class="single-slide">
+                <!-- <div class="single-slide">
                     <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
                         <div class="container">
                             <div class="hero-content">
@@ -83,7 +89,7 @@
                     </div>
                 </div> -->
 
-
+<!-- 
                 <div class="single-slide">
                     <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
                         <div class="container">
@@ -171,7 +177,7 @@
                     <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".8s">
                         <div class="icon">                              
                             <i class="fa fa-file-certificate"></i>
-                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </div>
                         <div class="content">
                             <h6>
                                 <a href="#">
@@ -301,7 +307,11 @@
                                     </p>
                                 </div>
                             </div>
-          <div class="about-author">
+
+
+                           
+                           
+                            <div class="about-author">
                                 <div class="about-button wow fadeInUp" data-wow-delay=".8s">
                                     <a href="#" class="theme-btn">
                                        <span>
@@ -310,7 +320,8 @@
                                        </span>
                                     </a>
                                 </div>
-                               </div>
+                               
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -318,6 +329,11 @@
         </div>
     </section>
 
+
+
+
+
+ <!--<< Service Section Start >>--> 
  <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
     <div class="line-shape">
         <img src="assets/img/line.png" alt="shape-img">
@@ -655,6 +671,7 @@
 
    
 
+        <!--<< Cta Chat Section Start >>-->
         <section class="cta-chat-section-2" style="margin-top: -40px;">
             <div class="container">
 
@@ -681,6 +698,7 @@
         </section>
         
 
+        <!--<< Case Studies Section Start >>-->
         <section class="case-study section-padding pt-0">
             <div class="container">
                 <div class="about-wrapper section-padding pb-0">
@@ -813,6 +831,8 @@
         </section>
 
 
-         
+              <!--<< Footer Section Start >>-->
+  
     </body>
+</html>
 @endsection

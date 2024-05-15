@@ -162,14 +162,7 @@
 </div>
 </div>
  </div>
-    </div>
-
 </div>
-<div class="offcanvas__overlay"></div>
-
-
-
-
 <header class="header-section-3">
     <div id="header-sticky" class="header-3">
         <div class="container-fluid">
@@ -206,4 +199,11 @@
             </div>
         </div>
     </div>
-</header> 
+</header>
+
+
+
+
+
+
+

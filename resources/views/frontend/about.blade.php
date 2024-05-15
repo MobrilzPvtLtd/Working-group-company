@@ -5,7 +5,24 @@
 @endsection
 
 @section('content')
+  
+
    
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div> 
+
+      
+
+ 
+
+
+ 
+
+
+
+
+
         <!--<< Hero Section Start >>--> 
         <section class="hero-section hero-3">
             <div class="slider-button">
@@ -60,7 +77,7 @@
                 </div>
 
 
-               <div class="single-slide">
+                <!-- <div class="single-slide">
                     <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
                         <div class="container">
                             <div class="hero-content">
@@ -83,7 +100,7 @@
                     </div>
                 </div> -->
 
-
+<!-- 
                 <div class="single-slide">
                     <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
                         <div class="container">
@@ -665,6 +682,7 @@
 
    
 
+        <!--<< Cta Chat Section Start >>-->
         <section class="cta-chat-section-2" style="margin-top: -40px;">
             <div class="container">
 
@@ -691,6 +709,7 @@
         </section>
         
 
+        <!--<< Case Studies Section Start >>-->
         <section class="case-study section-padding pt-0">
             <div class="container">
                 <div class="about-wrapper section-padding pb-0">
@@ -823,6 +842,8 @@
         </section>
 
 
-         
+              <!--<< Footer Section Start >>-->
+  
     </body>
+</html>
 @endsection

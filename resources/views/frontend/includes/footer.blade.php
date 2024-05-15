@@ -1,3 +1,4 @@
+
 <footer class="footer-section section-bg-3">
     <div class="container">
         <div class="footer-widgets-wrapper">
@@ -158,23 +159,11 @@
                     </li>
                 </ul>
                 <div class="select-dropdown001">
-                    <select>
-                        <option value="Option 1">French</option>
-                        <option value="Option 2">English</option>
+                    <select class="list001">
+                        <option value="Option 1">English</option>
+                        <option value="Option 2">French</option>
+                        <option value="Option 3">Spanish</option>
                         <option value="Option 3">German</option>
-                        <option value="Option 3">Portuguese</option>
-                        <option value="Option 1">Turkish</option>
-                        <option value="Option 1">Italian</option>
-                        <option value="Option 1">Spanish</option>
-                        <option value="Option 1">Ukrainian</option>
-                        <option value="Option 1">Erythree</option>
-                        <option value="Option 1">Somali</option>
-                        <option value="Option 1">Congolese</option>
-                        <option value="Option 1">Cameroon</option>
-                        <option value="Option 1">Nigeria</option>
-                        <option value="Option 1">Senegalese </option>
-
-
                     </select>
                 </div>
             </div>
@@ -247,11 +236,6 @@ padding: 10px 0 !important;
 
 </style>
 
-
-
-
-
-
 <!--<< All JS Plugins >>-->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <!--<< Viewport Js >>-->
@@ -273,8 +257,10 @@ padding: 10px 0 !important;
 <!--<< Magnific Popup Js >>-->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <!--<< Wow Animation Js >>-->
-<!-- <script src="assets/js/wow.min.js"></script> -->
+<script src="assets/js/wow.min.js"></script>
 <!--<< Circle Progress Js >>-->
 <script src="assets/js/circle-progress.js"></script>
 <!--<< Main.js >>-->
 <script src="assets/js/main.js"></script>
+</body>
+</html>

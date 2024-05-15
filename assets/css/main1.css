@@ -12592,3 +12592,22 @@ a.header-logo img {
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
 }
+.nice-select.list001 span {
+  color: #fff;
+}
+.nice-select.list001.open {
+  transform: translateY(-150px) !important;
+}
+@media (min-width: 1200px) {
+  .service-box-items.style-2 {
+      width: 31%;
+  }
+}
+.nice-select:after {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+.nice-select:hover::after {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}

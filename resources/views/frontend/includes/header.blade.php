@@ -1,66 +1,4 @@
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="modinatheme">
-   <meta name="description" content="Homedeal">
-    <title>Working Group Corporation</title>
-    <link rel="shortcut icon" href="assets/img/preloader.svg">
-    <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--<< Font Awesome.css >>-->
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <!--<< Animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!--<< Magnific Popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--<< MeanMenu.css >>-->
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <!--<< Slick.css >>-->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <!--<< Nice Select.css >>-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <!--<< Main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!--<< Style.css >>-->
-    <link rel="stylesheet" href="style.css">
-</head>
- <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="modinatheme">
-       <meta name="description" content="Homedeal">
-        <title>Working Group Corporation</title>
-        <link rel="shortcut icon" href="assets/img/preloader.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Slick.css >>-->
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!--<< Style.css >>-->
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-   
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div> 
-
-      
- <div class="fix-area">
+<div class="fix-area">
     <div class="offcanvas__info">
         <div class="offcanvas__wrapper">
             <div class="offcanvas__content">
@@ -83,7 +21,6 @@
                 <div class="offcanvas__contact">
 
 
- <!-- Header Area Start -->
  <header class="header-section-3">
     <div id="header-sticky2" class="header-3">
         <div class="container-fluid" style="padding: 0px;">
@@ -98,8 +35,7 @@
                                             <a href="home">
                                             Home                                            
                                             </a>
-                                                      
-                                        </li>                                       
+                                          </li>                                       
                                         <li>
                                             <a href="about">About</a>
                                         </li>
@@ -116,7 +52,6 @@
                                                 Pages
                                                
                                             </a>
-                                        
                                         </li>
                                         <li>
                                             <a href="portfolio">

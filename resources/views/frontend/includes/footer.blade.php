@@ -1,6 +1,7 @@
 
 <footer class="footer-section section-bg-3">
     <div class="container">
+
         <div class="footer-widgets-wrapper">
             <div class="row">
                 <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
@@ -262,5 +263,4 @@ padding: 10px 0 !important;
 <script src="assets/js/circle-progress.js"></script>
 <!--<< Main.js >>-->
 <script src="assets/js/main.js"></script>
-</body>
-</html>
+

@@ -1,6 +1,4 @@
 <?php
-
-    
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\LanguageController;
 use PhpParser\Builder\Namespace_;
@@ -41,8 +39,15 @@ Route::get('contactus', [FrontendController::class, 'contactus'])->name('contact
 Route::get('lang', [FrontendController::class, 'lang']);
 
 
-// Route::get('lang/home', [LangController::class, 'index'])->name('lang/home');
-// Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
+Route::get('providers', [ServicesprovidersController::class, 'index'])->name('services');
+    Route::get('providers/create', [ServicesprovidersController::class, 'Form']);
+    Route::post('providers/create', [ServicesprovidersController::class, 'create']);
+    Route::get('providers/edit/{id}', [ServicesprovidersController::class, 'edit'])->name('services.edit');
+    Route::patch('providers/{service}', [ServicesprovidersController::class, 'update'])->name('services.update');
+    Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('destroy');
+
+
+
 Route::get('home', [BackendController::class, 'index'])->name('home');
 Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');
 
@@ -173,15 +178,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('services.edit');
     Route::patch('services/{service}', [ServicesController::class, 'update'])->name('services.update');
     Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('destroy');
-
-
-    
-
-    
-
-
-
-
 
 });
 

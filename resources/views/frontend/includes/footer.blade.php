@@ -163,17 +163,16 @@
                     <select class="list001">
                         <option value="fr">French</option>
                     <option value="en">English</option>
-                    <option value="ar">Spanish</option>
+                    <option value="en">German</option>
+                    <option value="sp">Spanish</option>
                     <option value="po">Portuguese</option>
-                    <option value="vi">Turkish</option>
-                    <option value="Option 7">Italian</option>
-                    <option value="Option 8">Spanish</option>
-                    <option value="Option 9">Erythree</option>
-                    <option value="Option 10">Somali</option>
-                    <option value="Option 11">Congolese</option>
-                    <option value="Option 12">Cameroon</option>
-                    <option value="Option 13">Nigeria</option>
-                    <option value="Option 14">Senegalese </option>
+                    <option value="tu">Turkish</option>
+                    <option value="it">Italian</option>
+                    <option value="ery">Erythree</option>
+                    <option value="so">Somali</option>
+                    <option value="ca">Congolese</option>
+             <      <option value="ni">Nigeria</option>
+                    <option value="se">Senegalese </option>
                     </select>
                 </div>
             </div>

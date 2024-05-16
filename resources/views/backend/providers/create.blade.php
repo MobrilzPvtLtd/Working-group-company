@@ -9,17 +9,21 @@
                     <form method="POST" action="" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group mb-1">
-                            <label for="serviceName">Service Name</label>
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter  name">
+                        </div>
+                        <div class="form-group mb-1">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group mb-1">
+                            <label for="password"> Password</label>
+                            <input type="text" class="form-control" id="password" name="password" placeholder="Enter password">
+                        </div>
+                        {{-- <div class="form-group mb-1">
+                            <label for="confirm_password">Name</label>
                             <input type="text" class="form-control" id="serviceName" name="name" placeholder="Enter service name">
-                        </div>
-                        <div class="form-group mb-1">
-                            <label for="serviceImage">Image</label>
-                            <input type="file" class="form-control" id="serviceImage" name="img[]" multiple>
-                        </div>
-                        <div class="form-group mb-1">
-                            <label for="serviceDescription">Description</label>
-                            <textarea class="form-control" id="serviceDescription" name="desc" rows="3" placeholder="Enter service description"></textarea>
-                        </div>
+                        </div> --}}
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

@@ -163,21 +163,20 @@
                         </a>
                     </li>
                 </ul>
-                <div class="z-50 my-4 hidden list-none divide-y divide-gray-100 rounded-lg bg-white text-base shadow dark:bg-gray-700"
-                id="language-dropdown-menu">
-                <ul class="py-2 font-medium" role="none">
-                    @foreach (config('app.available_locales') as $locale_code => $locale_name)
-                        <li>
-                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                                href="{{ route('language.switch', $locale_code) }}" role="menuitem">
-                                <div class="inline-flex items-center">
-                                    {{ $locale_name }}
-                                </div>
-                            </a>
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+                <div class="language-dropdown-menu" id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                        @foreach (config('app.available_locales') as $locale_code => $locale_name)
+                            <li>
+                                <a class="language"
+                                    href="{{ route('language.switch', $locale_code) }}" role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        {{ $locale_name }}
+                                    </div>
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
 
         </div>

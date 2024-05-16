@@ -67,34 +67,29 @@ return [
 
     'timezone' => env('APP_TIMEZONE', 'UTC'),
 
-    
 
-    'locale' => env('APP_LOCALE', 'en'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'fr'),
+
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'fr'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
     'available_locales' => [
-       'fr' => 'french ',
+        'de' => 'German',
         'en' => 'English',
-        'Gr' => 'German ',
-        'po' => 'portugueses ',
-        'tu' => 'turkish ',
-        'it' => 'italian ',
-        'sp' => 'spanish ',
-        'ery' => 'erythree ',
-        'so' => 'somali ',
-        'ca' => 'cameron ',
-        'ni' => 'nigeria ',
-        'se' => 'sengalease ',
-
-],
+        'es' => 'Spanish',
+        'fr' => 'French',
+        'it' => 'Italian',
+        'pt' => 'Portuguese',
+        'tr' => 'Turkish',
+        'uk' => 'Ukrainian'
+    ],
 
 
     'user_registration' => env('USER_REGISTRATION', true),
 
-   
+
     'initial_username' => env('INITIAL_USERNAME', 100000),
 
     /*

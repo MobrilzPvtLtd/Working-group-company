@@ -40,6 +40,10 @@ class FrontendController extends Controller
     {
         return view('frontend.contactus');
     }
+    public function lang()
+    {
+        return view('frontend.lang');
+    }
     /**
      * Privacy Policy Page.
      *
@@ -59,8 +63,5 @@ class FrontendController extends Controller
     {
         return view('frontend.terms');
     }
-    public function lang()
-    {
-        return view('frontend.lang');
-    }
+    
 }

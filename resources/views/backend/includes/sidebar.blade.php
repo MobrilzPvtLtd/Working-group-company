@@ -6,22 +6,13 @@ $notifications_latest = optional($notifications)->take(5);
 
 <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
     <div class="sidebar-header border-bottom">
-        <style>
-            .sidebar-brand {
-                margin: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        
-            .sidebar-brand img {
-                height: 80px;
-            }
-        </style>
-        
-        <div class="sidebar-brand">
-            <img class="sidebar-brand-full" src="assets/img/logo1111 (1).png" alt="WGC">
+      
+       
+        <div class="sidebar-brand" style="margin: auto; display: flex; align-items: center; justify-content: center; height: 80px;">
+            <img class="sidebar-brand-img" src="assets/img/logo1111 (1).png"  style="height: 100%; width: auto;">
         </div>
+        
+        
         
         
         <button class="btn-close d-lg-none" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" type="button"
@@ -154,3 +145,5 @@ $notifications_latest = optional($notifications)->take(5);
         <button class="sidebar-toggler" data-coreui-toggle="unfoldable" type="button"></button>
     </div>
 </div>
+
+

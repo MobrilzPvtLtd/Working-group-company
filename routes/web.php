@@ -1,5 +1,6 @@
 <?php
 
+    
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\LanguageController;
 use PhpParser\Builder\Namespace_;
@@ -10,6 +11,8 @@ use App\Http\Controllers\Backend\ServicesprovidersController;
 use App\Livewire\Privacy;
 use App\Livewire\Terms;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+
 
 /*
 *
@@ -35,7 +38,7 @@ Route::get('portfolio', [FrontendController::class, 'portfolio'])->name('portfol
 Route::get('pages', [FrontendController::class, 'pages'])->name('pages');
 Route::get('news', [FrontendController::class, 'news'])->name('news');
 Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
-Route::get('lang', [FrontendController::class, 'lang'])->name('lang');
+Route::get('lang', [FrontendController::class, 'lang']);
 
 
 // Route::get('lang/home', [LangController::class, 'index'])->name('lang/home');
@@ -44,6 +47,14 @@ Route::get('home', [BackendController::class, 'index'])->name('home');
 Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');
 
 
+Route::get('/{locale}', function ($locale) {
+    if (array_key_exists($locale, config('app.available_locales'))) {
+        App::setLocale($locale);
+        return view('welcome');
+    } else {
+        abort(404);
+    }
+});
 
 
 
@@ -161,19 +172,12 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     Route::post('services/create', [ServicesController::class, 'create']);
     Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('services.edit');
     Route::patch('services/{service}', [ServicesController::class, 'update'])->name('services.update');
-
     Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('destroy');
 
 
     
 
-    // Route::get('provider', [ServicesprovidersController::class, 'index'])->name('services');
-    // Route::get('provider/create', [ServicesprovidersController::class, 'Form']);
-    // Route::post('provider/create', [ServicesprovidersController::class, 'create']);
-    // Route::get('provider/edit/{id}', [ServicesprovidersController::class, 'edit']);
-    // Route::put('provider/update/{id}', [ServicesprovidersController::class, 'update'])->name('update');
-    // Route::delete('provider/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('destroy');
-
+    
 
 
 

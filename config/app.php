@@ -67,16 +67,7 @@ return [
 
     'timezone' => env('APP_TIMEZONE', 'UTC'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Application Locale Configuration
-    |--------------------------------------------------------------------------
-    |
-    | The application locale determines the default locale that will be used
-    | by Laravel's translation / localization methods. This option can be
-    | set to any locale for which you plan to have translation strings.
-    |
-    */
+    
 
     'locale' => env('APP_LOCALE', 'en'),
 
@@ -85,37 +76,25 @@ return [
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
     'available_locales' => [
-        'ar' => 'العربی (AR)',
-        'bn' => 'বাংলা (BN)',
-        'en' => 'English (EN)',
-        'vi' => 'Vietnamese (VI)',
-    ],
+       'fr' => 'french ',
+        'en' => 'English',
+        'Gr' => 'German ',
+        'po' => 'portugueses ',
+        'tu' => 'turkish ',
+        'it' => 'italian ',
+        'sp' => 'spanish ',
+        'ery' => 'erythree ',
+        'so' => 'somali ',
+        'ca' => 'cameron ',
+        'ni' => 'nigeria ',
+        'se' => 'sengalease ',
 
-    /*
-    |--------------------------------------------------------------------------
-    | User Registration
-    |--------------------------------------------------------------------------
-    |
-    | User registration routes can be disabled using this config.
-    | The default valu is true. But this can be cna be set to false
-    | if needed. USER_REGISTRATION is the key in env file.
-    |
-    */
+],
+
 
     'user_registration' => env('USER_REGISTRATION', true),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Initial Username
-    |--------------------------------------------------------------------------
-    |
-    | Usernames is an unique number, generated automatically,
-    | and assigned to the user.
-    | It is needed to have an initial number and will be increased as
-    | a new user registered.
-    |
-    */
-
+   
     'initial_username' => env('INITIAL_USERNAME', 100000),
 
     /*

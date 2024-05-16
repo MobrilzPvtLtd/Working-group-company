@@ -158,22 +158,17 @@
                         Faqs
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                        {{ strtoupper(app()->currentLocale()) }}
+                        </a>
+                    </li>
                 </ul>
                 <div class="select-dropdown001">
                     <select class="list001">
-                        <option value="fr">French</option>
-                    <option value="en">English</option>
-                    <option value="ar">Spanish</option>
-                    <option value="po">Portuguese</option>
-                    <option value="vi">Turkish</option>
-                    <option value="Option 7">Italian</option>
-                    <option value="Option 8">Spanish</option>
-                    <option value="Option 9">Erythree</option>
-                    <option value="Option 10">Somali</option>
-                    <option value="Option 11">Congolese</option>
-                    <option value="Option 12">Cameroon</option>
-                    <option value="Option 13">Nigeria</option>
-                    <option value="Option 14">Senegalese </option>
+                    @foreach (config('app.available_locales') as $locale_code => $locale_name)
+                    <option href="{{ route('language.switch', $locale_code) }}">{{ $locale_name }}</option>
+                    @endforeach
                     </select>
                 </div>
             </div>

@@ -40,9 +40,23 @@ Route::get('news', [FrontendController::class, 'news'])->name('news');
 Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
 Route::get('lang', [FrontendController::class, 'lang']);
 
+Route::prefix('admin')->group(function () {
+    Route::get('providers', [ServicesprovidersController::class, 'index'])->name('admin.providers.index');
+    Route::get('providers/create', [ServicesprovidersController::class, 'create'])->name('admin.providers.create');
+    Route::post('providers/store', [ServicesprovidersController::class, 'store'])->name('admin.providers.store');
+    Route::get('providers/edit/{id}', [ServicesprovidersController::class, 'edit'])->name('admin.providers.edit');
+    Route::patch('providers/update/{id}', [ServicesprovidersController::class, 'update'])->name('admin.providers.update');
+    Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('admin.providers.destroy');
+});
+Route::prefix('admin')->group(function () {
+    Route::get('services', [ServicesController::class, 'index'])->name('services');
+    Route::get('services/create', [ServicesController::class, 'create'])->name('services.create');
+    Route::post('services/store', [ServicesController::class, 'store'])->name('services.store');
+    Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('services.edit');
+    Route::patch('services/update/{service}', [ServicesController::class, 'update'])->name('services.update');
+    Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('services.destroy');
+});
 
-// Route::get('lang/home', [LangController::class, 'index'])->name('lang/home');
-// Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
 Route::get('home', [BackendController::class, 'index'])->name('home');
 Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');
 
@@ -165,26 +179,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     Route::patch("{$module_name}/{id}/block", ['as' => "{$module_name}.block", 'uses' => "{$controller_name}@block", 'middleware' => ['can:block_users']]);
     Route::patch("{$module_name}/{id}/unblock", ['as' => "{$module_name}.unblock", 'uses' => "{$controller_name}@unblock", 'middleware' => ['can:block_users']]);
 
-    
-    
-    Route::get('services', [ServicesController::class, 'index'])->name('services');
-    Route::get('services/create', [ServicesController::class, 'Form']);
-    Route::post('services/create', [ServicesController::class, 'create']);
-    Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('services.edit');
-    Route::patch('services/{service}', [ServicesController::class, 'update'])->name('services.update');
-    Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('destroy');
-
-
-    
-
-    
-
-
-
-
-
 });
-
+    
 
 
 

@@ -11,6 +11,8 @@
                             <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Image</th>
+
                                 <th scope="col">Description</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -20,7 +22,9 @@
                             <tr>
                                 <td>{{ $service->id }}</td>
                                 <td>{{ $service->name }}</td>
+                               
                                 <td>
+                                
                                     @php
                                         $images = json_decode($service->img);
                                     @endphp
@@ -33,8 +37,8 @@
                                 </td>
                                 <td>{{ $service->desc }}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="services/edit/{{ $service->id }}">Edit</a>
-                                    <form action="{{ route('backend.destroy', $service->id) }}" method="POST" style="display: inline;">
+                                    <a class="btn btn-primary" href="{{ route('services.edit', $service->id) }}">Edit</a>
+                                    <form action="{{ route('services.destroy', $service->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>
@@ -56,7 +60,6 @@
             </div>
             <div class="col-5">
                 <div class="float-end">
-                   
                 </div>
             </div>
         </div>

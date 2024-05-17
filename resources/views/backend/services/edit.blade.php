@@ -6,14 +6,13 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-5">
-                    <form method="post" action="{{ route('services.update', $services->id) }}" enctype="multipart/form-data">
+                    <form method="post" action="{{ route('services.update', $service->id) }}" enctype="multipart/form-data">
                     @csrf
-                        @csrf
                         @method('PUT')
 
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">Service Name</label>
-                            <input type="text" class="form-control" name="name" value="{{ $services->name }}">
+                            <input type="text" class="form-control" name="name" value="{{ $service->name }}">
                         </div>
                       
                         <div class="form-group mb-2 col-4">
@@ -22,9 +21,9 @@
                         </div>
                         <div class="form-group mb-2">
                             <label for="exampleInputPassword1">Service Description</label>
-                            <textarea class="form-control" name="desc" rows="3">{{ $services->desc }}</textarea>
+                            <textarea class="form-control" name="desc" rows="3">{{ $service->desc }}</textarea>
                         </div>
-                        <input type="hidden" name="id" value="{{ $services->id }}" />
+                        <input type="hidden" name="id" value="{{ $service->id }}" />
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

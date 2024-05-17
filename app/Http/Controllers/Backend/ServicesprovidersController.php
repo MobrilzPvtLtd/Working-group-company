@@ -1,16 +1,21 @@
 <?php
+
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Services; 
+use App\Models\User; 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 
 class ServicesprovidersController extends Controller
 {
     public function index(Request $request)
     {
-        $services = Services::all();
-        return view('backend.providers.index', compact('services'));
+        $users = User::all();
+        return view('backend.providers.index', compact('users'));
     }
 
     public function create()
@@ -21,25 +26,33 @@ class ServicesprovidersController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required',
+            // 'name' => 'required',
+            // 'email' => 'required|email|unique:users',
+            // 'password' => 'required|min:8',
         ]);
 
-        // Assuming you have a User model, create the user here
-        // User::create($request->all());
+        $userData = [
+            'name' => $request->input('name'),
+            'first_name' => $request->input('first_name'),
+            'last_name' => $request->input('last_name'),
+            'email' => $request->input('email'),
+            'password' => bcrypt($request->input('password')),
+        ];
 
-        return redirect()->route('backend.providers.index')->with('success', 'Provider created successfully.');
+        User::create($userData);
+
+        return redirect()->route('admin.providers.index')->with('success', 'User created successfully.');
     }
 
     public function show(string $id)
     {
-        $service = Services::findOrFail($id);
-        return view('backend.providers.show', compact('service'));
+        $user = User::findOrFail($id);
+        return view('backend.providers.show', compact('user'));
     }
 
     public function edit(string $id)
     {
-        $service = Services::findOrFail($id);
+        $service = User::findOrFail($id);
         return view('backend.providers.edit', compact('service'));
     }
 
@@ -47,22 +60,20 @@ class ServicesprovidersController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
         ]);
 
-        $service = Services::findOrFail($id);
-        // Update service provider details here
-        // $service->update($request->all());
+        $user = User::findOrFail($id);
+        $user->update($request->all());
 
-        return redirect()->route('backend.providers.index')->with('success', 'Provider updated successfully.');
+        return redirect()->route('admin.providers.index')->with('success', 'User updated successfully.');
     }
 
     public function destroy(string $id)
     {
-        $service = Services::findOrFail($id);
-        // Delete service provider here
-        // $service->delete();
+        $user = User::findOrFail($id);
+        $user->delete();
 
-        return redirect()->route('backend.providers.index')->with('success', 'Provider deleted successfully.');
+        return redirect()->route('admin.providers.index')->with('success', 'User deleted successfully.');
     }
 }

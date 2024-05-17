@@ -6,23 +6,32 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-5">
-                    <form method="POST" action="" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('admin.providers.update', $service->id) }}" enctype="multipart/form-data">
                         @csrf
-                        @method('PUT')
+                        @method('PATCH')
 
                         <div class="form-group mb-2">
-                            <label for="exampleInputEmail1">Services Name</label>
-                            <input type="text" class="form-control" name="name" value="{{ $services->name }}">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" value="{{ $service->name }}">
                         </div>
                         <div class="form-group mb-2">
-                            <label for="exampleInputPassword1">Services image</label>
-                            <input type="file" class="form-control" name="img[]" value="{{ $services->img }}">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" name="first_name" value="{{ $service->first_name }}">
                         </div>
                         <div class="form-group mb-2">
-                            <label for="exampleInputPassword1">Services Details</label>
-                            <input type="text" class="form-control" name="desc" value="{{ $services->desc }}">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" name="last_name" value="{{ $service->last_name }}">
                         </div>
-                        <input type="hidden" name="id" value="{{ $services->id }}" />
+                        <div class="form-group mb-2">
+                            <label for="email">email</label>
+                            <input type="text" class="form-control" name="email" value="{{ $service->email }}">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="password">Services Name</label>
+                            <input type="text" class="form-control" name="password" value="{{ $service->password }}">
+                        </div>
+                      
+                        <input type="hidden" name="id" value="{{ $service->id }}" />
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

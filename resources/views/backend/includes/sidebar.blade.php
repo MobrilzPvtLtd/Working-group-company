@@ -55,37 +55,39 @@ $notifications_latest = optional($notifications)->take(5);
             </a>
             <ul class="nav-group-items compact" style="height: auto;">
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/services/create">
+                    <a class="nav-link" href="admin/services/create">
                         <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/services">
+                    <a class="nav-link" href="admin/services">
                         <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Services
                     </a>
                 </li>
             </ul>
         </li>
     @endcan
-        @can('view_services')
+    
+    @can('view_services_providers')
         <li class="nav-group" aria-expanded="true">
             <a class="nav-link nav-group-toggle" href="#">
-                <i class="nav-icon fa-solid fa-list-ul"></i>&nbsp;@lang('Services providers')
+                <i class="nav-icon fa-solid fa-list-ul"></i>&nbsp;@lang('Service Providers')
             </a>
             <ul class="nav-group-items compact" style="height: auto;">
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/providers/create">
-                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add providers
+                    <a class="nav-link" href="admin/providers/create">
+                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Providers
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/providers">
-                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All providers
+                    <a class="nav-link" href="admin/providers">
+                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Providers
                     </a>
                 </li>
             </ul>
         </li>
     @endcan
+    
        
 
         @can('edit_settings')
@@ -139,8 +141,7 @@ $notifications_latest = optional($notifications)->take(5);
                 </ul>
             </li>
         @endcan
-
-    </ul>
+ </ul>
     <div class="sidebar-footer border-top d-none d-md-flex">
         <button class="sidebar-toggler" data-coreui-toggle="unfoldable" type="button"></button>
     </div>

@@ -6,7 +6,7 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-3">
-                    <form method="POST" action="" enctype="multipart/form-data">
+                    <form method="GET" action="{{ route('services.create') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group mb-1">
                             <label for="serviceName">Service Name</label>

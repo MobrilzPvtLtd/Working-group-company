@@ -157,24 +157,24 @@
                             Faqs
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            {{ strtoupper(app()->currentLocale()) }}
-                        </a>
-                    </li>
                 </ul>
+
+                
+
                 <div class="language-dropdown-menu" id="language-dropdown-menu">
-                    <ul class="py-2 font-medium" role="none">
+
+                    <select class="language-switcher" name="language-switcher" onchange="ChangeLang(this.value);">
                         @foreach (config('app.available_locales') as $locale_code => $locale_name)
-                            <li>
-                                <a class="language" href="{{ route('language.switch', $locale_code) }}" role="menuitem">
-                                    <div class="inline-flex items-center">
-                                        {{ $locale_name }}
-                                    </div>
-                                </a>
-                            </li>
+                            <option value="{{$locale_code}}"
+                            
+                            @if (strtolower(app()->currentLocale()) == $locale_code)
+
+                            selected
+                            
+                            @endif
+                            >{{ $locale_name }}</option>
                         @endforeach
-                    </ul>
+                    </select>
                 </div>
             </div>
 
@@ -184,6 +184,14 @@
         </a>
 
 </footer>
+
+<script>
+    function ChangeLang(lang) {
+
+        window.location.replace('{{ route('language.switch', '') }}'+'/'+lang);
+
+    }
+</script>
 
 <style>
     header.header-section-3 {

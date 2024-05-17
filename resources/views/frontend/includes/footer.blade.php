@@ -1,3 +1,4 @@
+
 <footer class="footer-section section-bg-3">
     <div class="container">
 
@@ -7,7 +8,7 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="index-3.html">
-                                <img src="assets/img/logo/logo1111 (1) (3).png" alt="logo-img">
+                            <img src="assets/img/logo/logo1111 (1) (3).png" alt="logo-img">
                             </a>
                         </div>
                         <div class="footer-content">
@@ -26,7 +27,7 @@
                         </div>
                         <ul class="list-items">
                             <li>
-                                <a href="#">
+                                <a href="#"> 
                                     Services
                                 </a>
                             </li>
@@ -115,7 +116,7 @@
                                 <h3><a href="tel:+1718-904-4450">+1718-904-4450</a></h3>
                             </div>
                             <div class="footer-content">
-
+                                
                                 <a href="mailto:info@example.com" class="link">info@example.com</a>
                                 <div class="social-icon d-flex align-items-center">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -154,15 +155,27 @@
                     </li>
                     <li>
                         <a href="#">
-                            Faqs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            {{ strtoupper(app()->currentLocale()) }}
+                        Faqs
                         </a>
                     </li>
                 </ul>
+<<<<<<< HEAD
+                <div class="select-dropdown001">
+                    <select class="list001">
+                        <option value="fr">French</option>
+                    <option value="en">English</option>
+                    <option value="en">German</option>
+                    <option value="sp">Spanish</option>
+                    <option value="po">Portuguese</option>
+                    <option value="tu">Turkish</option>
+                    <option value="it">Italian</option>
+                    <option value="ery">Erythree</option>
+                    <option value="so">Somali</option>
+                    <option value="ca">Congolese</option>
+             <      <option value="ni">Nigeria</option>
+                    <option value="se">Senegalese </option>
+                    </select>
+=======
                 <div class="language-dropdown-menu" id="language-dropdown-menu">
                     <ul class="py-2 font-medium" role="none">
                         @foreach (config('app.available_locales') as $locale_code => $locale_name)
@@ -176,78 +189,76 @@
                             </li>
                         @endforeach
                     </ul>
+>>>>>>> 01b68e135f376024fb270208060d3ebd9e476fc0
                 </div>
             </div>
-
+            
         </div>
         <a href="#" id="scrollUp" class="scroll-icon">
             <i class="far fa-arrow-up"></i>
         </a>
-
+    
 </footer>
 
 <style>
-    header.header-section-3 {
-        padding: 18px;
-    }
 
-    section.hero-section.hero-3 {
-        margin-top: -110px;
-    }
+header.header-section-3 {
+padding: 18px;
+}
 
-    .sticky {
-        padding: 18px;
-    }
+section.hero-section.hero-3 {
+margin-top: -110px;
+}
+.sticky {
+padding: 18px;
+}
 
-    .service-box-items-2 {
-        background-color: var(--white);
-        -webkit-box-shadow: var(---box-shadow);
-        box-shadow: var(---box-shadow);
-        border-radius: 10px;
-        padding: 25px 25px;
-        border: 2px solid transparent;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        position: relative;
-        z-index: 9;
-    }
+.service-box-items-2 {
+background-color: var(--white);
+-webkit-box-shadow: var(---box-shadow);
+box-shadow: var(---box-shadow);
+border-radius: 10px;
+padding: 25px 25px;
+border: 2px solid transparent;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+position: relative;
+z-index: 9;
+}
+.service-box-items-2 p {
+font-weight: 600;
+}
+.line-shape {
+position: absolute;
+}
 
-    .service-box-items-2 p {
-        font-weight: 600;
-    }
+@media (min-width: 1200px) {
+.d-xl-block {
+display: block !important;
+z-index: 999 !important;
+}
+}
+.header-3 .mega-menu-wrapper .header-main .header-right .header__hamburger .sidebar__toggle .header-bar span:first-child {
+background: #0d75bc !important;
+}
+.header-3 .mega-menu-wrapper .header-main .header-right .header__hamburger .sidebar__toggle .header-bar span {
+background: #0d75bc !important;
+}
 
-    .line-shape {
-        position: absolute;
-    }
+.header-main .main-menu ul li {
+position: relative;
+list-style: none;
+display: list-item !important;
+-webkit-margin-end: 0px !important;
+margin-inline-end: 0px !important;
+}
+.header-main .main-menu ul li a {
 
-    @media (min-width: 1200px) {
-        .d-xl-block {
-            display: block !important;
-            z-index: 999 !important;
-        }
-    }
+padding: 10px 0 !important;
 
-    .header-3 .mega-menu-wrapper .header-main .header-right .header__hamburger .sidebar__toggle .header-bar span:first-child {
-        background: #0d75bc !important;
-    }
+}
 
-    .header-3 .mega-menu-wrapper .header-main .header-right .header__hamburger .sidebar__toggle .header-bar span {
-        background: #0d75bc !important;
-    }
 
-    .header-main .main-menu ul li {
-        position: relative;
-        list-style: none;
-        display: list-item !important;
-        -webkit-margin-end: 0px !important;
-        margin-inline-end: 0px !important;
-    }
-
-    .header-main .main-menu ul li a {
-
-        padding: 10px 0 !important;
-
-    }
 </style>
 
 <!--<< All JS Plugins >>-->

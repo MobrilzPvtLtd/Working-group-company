@@ -89,7 +89,7 @@
       new WOW().init();
 
       //>> Nice Select Start <<//
-      $('select').niceSelect();
+      
 
       //>> Service Carousel Start <<//
       if($('.service-carousel-active').length > 0) {

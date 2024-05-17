@@ -163,23 +163,6 @@
                         </a>
                     </li>
                 </ul>
-<<<<<<< HEAD
-                <div class="select-dropdown001">
-                    <select class="list001">
-                        <option value="fr">French</option>
-                    <option value="en">English</option>
-                    <option value="en">German</option>
-                    <option value="sp">Spanish</option>
-                    <option value="po">Portuguese</option>
-                    <option value="tu">Turkish</option>
-                    <option value="it">Italian</option>
-                    <option value="ery">Erythree</option>
-                    <option value="so">Somali</option>
-                    <option value="ca">Congolese</option>
-             <      <option value="ni">Nigeria</option>
-                    <option value="se">Senegalese </option>
-                    </select>
-=======
                 <div class="language-dropdown-menu" id="language-dropdown-menu">
                     <ul class="py-2 font-medium" role="none">
                         @foreach (config('app.available_locales') as $locale_code => $locale_name)
@@ -193,7 +176,6 @@
                             </li>
                         @endforeach
                     </ul>
->>>>>>> 01b68e135f376024fb270208060d3ebd9e476fc0
                 </div>
             </div>
 

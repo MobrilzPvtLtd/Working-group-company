@@ -1,16 +1,16 @@
 <?php
 namespace App\Http\Controllers\Backend;
+
 use App\Http\Controllers\Controller;
-use App\Models\Services;
-use App\Models\User; 
+use App\Models\Services; 
 use Illuminate\Http\Request;
 
 class ServicesprovidersController extends Controller
 {
     public function index(Request $request)
     {
-        $Users = User::all();
-        return view('backend.providers.index', compact('Users'));
+        $services = Services::all();
+        return view('backend.providers.index', compact('services'));
     }
 
     public function create()
@@ -22,26 +22,25 @@ class ServicesprovidersController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email', 
-            'password' => 'required',
-            'confirm_password' => 'required|same:password',
+            'email' => 'required',
         ]);
-        
-        
+
+        // Assuming you have a User model, create the user here
+        // User::create($request->all());
 
         return redirect()->route('backend.providers.index')->with('success', 'Provider created successfully.');
     }
 
     public function show(string $id)
     {
-        $User = User::findOrFail($id);
-        return view('backend.providers.show', compact('User'));
+        $service = Services::findOrFail($id);
+        return view('backend.providers.show', compact('service'));
     }
 
     public function edit(string $id)
     {
-        $User = User::findOrFail($id);
-        return view('backend.providers.edit', compact('User'));
+        $service = Services::findOrFail($id);
+        return view('backend.providers.edit', compact('service'));
     }
 
     public function update(Request $request, string $id)
@@ -51,7 +50,7 @@ class ServicesprovidersController extends Controller
             'email' => 'required',
         ]);
 
-        $User = User::findOrFail($id);
+        $service = Services::findOrFail($id);
         // Update service provider details here
         // $service->update($request->all());
 
@@ -60,9 +59,9 @@ class ServicesprovidersController extends Controller
 
     public function destroy(string $id)
     {
-        $User = User::findOrFail($id);
+        $service = Services::findOrFail($id);
         // Delete service provider here
-        // $service->delete();s
+        // $service->delete();
 
         return redirect()->route('backend.providers.index')->with('success', 'Provider deleted successfully.');
     }

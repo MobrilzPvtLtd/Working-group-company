@@ -157,20 +157,22 @@
                             Faqs
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            {{ strtoupper(app()->currentLocale()) }}
-
-
-    
-                        </a>
-                    </li>
                 </ul>
+
+                
+
                 <div class="language-dropdown-menu" id="language-dropdown-menu">
 
                     <select class="language-switcher" name="language-switcher" onchange="ChangeLang(this.value);">
                         @foreach (config('app.available_locales') as $locale_code => $locale_name)
-                            <option value="{{$locale_code}}" <?php if(strtoupper(app()->currentLocale()) == $locale_code){ echo 'selected'; } ?>>{{ $locale_name }}</option>
+                            <option value="{{$locale_code}}"
+                            
+                            @if (strtolower(app()->currentLocale()) == $locale_code)
+
+                            selected
+                            
+                            @endif
+                            >{{ $locale_name }}</option>
                         @endforeach
                     </select>
                 </div>

@@ -65,7 +65,7 @@ public function index(Request $request)
     
     public function show(string $id)
     {
-        //
+      
     }
 
     

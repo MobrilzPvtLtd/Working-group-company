@@ -7,15 +7,11 @@ $notifications_latest = optional($notifications)->take(5);
 <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
     <div class="sidebar-header border-bottom">
       
-       
-        <div class="sidebar-brand" style="margin: auto; display: flex; align-items: center; justify-content: center; height: 80px;">
-            <img class="sidebar-brand-img" src="assets/img/logo1111 (1).png"  style="height: 100%; width: auto;">
-        </div>
+       <div class="sidebar-brand" style="margin: auto; display: flex; align-items: center; justify-content: center; height: 80px;">
+            <img class="sidebar-brand-img" src="assets/img/logo1111 (1).png" style="height: 100%; width: auto;">
+         </div>
         
-        
-        
-        
-        <button class="btn-close d-lg-none" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" type="button"
+         <button class="btn-close d-lg-none" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" type="button"
             aria-label="Close"
             onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
     </div>
@@ -67,7 +63,26 @@ $notifications_latest = optional($notifications)->take(5);
             </ul>
         </li>
     @endcan
-    
+    @can('view_product')
+    <li class="nav-group" aria-expanded="true">
+        <a class="nav-link nav-group-toggle" href="#">
+            <i class="nav-icon fa-solid fa-list-ul"></i>&nbsp;@lang('Product')
+        </a>
+        <ul class="nav-group-items compact" style="height: auto;">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.product.create') }}">
+                    <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Product
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.product.index') }}">
+                    <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Product
+                </a>
+            </li>
+        </ul>
+    </li>
+@endcan
+
     
     @can('view_services_providers')
     <li class="nav-group" aria-expanded="true">
@@ -89,10 +104,7 @@ $notifications_latest = optional($notifications)->take(5);
     </li>
 @endcan
 
-    
-       
-
-        @can('edit_settings')
+    @can('edit_settings')
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.settings') }}">
                     <i class="nav-icon fa-solid fa-gears"></i>&nbsp;@lang('Settings')

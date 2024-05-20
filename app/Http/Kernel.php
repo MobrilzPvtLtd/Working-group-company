@@ -29,6 +29,12 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
+
+    protected $routeMiddleware = [
+        // Other middleware entries...
+        'service_provider' => \App\Http\Middleware\ServiceProviderAccess::class,
+    ];
+    
   
  
 }

@@ -8,29 +8,19 @@ use App\Http\Controllers\LangController;
 use App\Http\Controllers\Backend\BackendController;
 use App\Http\Controllers\Backend\ServicesController;
 use App\Http\Controllers\Backend\ServicesprovidersController;
+use App\Http\Controllers\Backend\ProductController;
 use App\Livewire\Privacy;
 use App\Livewire\Terms;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
 
-/*
-*
-* Auth Routes
-*
-* --------------------------------------------------------------------
-*/
+
 
 require __DIR__.'/auth.php';
 
-/*
-*
-* Frontend Routes
-*
-* --------------------------------------------------------------------
-*/
 
-// home route
+
 Route::get('home', [FrontendController::class, 'index'])->name('home');
 Route::get('about', [FrontendController::class, 'about'])->name('about');
 Route::get('service', [FrontendController::class, 'service'])->name('service');
@@ -49,6 +39,7 @@ Route::prefix('admin')->group(function () {
     Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('admin.providers.destroy');
 });
 
+
 Route::prefix('admin')->group(function () {
     Route::get('services', [ServicesController::class, 'index'])->name('admin.services');
     Route::get('services/create', [ServicesController::class, 'create'])->name('admin.services.create');
@@ -57,6 +48,16 @@ Route::prefix('admin')->group(function () {
     Route::patch('services/update/{id}', [ServicesController::class, 'update'])->name('admin.services.update');
     Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('admin.services.destroy');
 });
+
+Route::prefix('admin')->group(function () {
+    Route::get('product', [ProductController::class, 'index'])->name('admin.product.index');
+    Route::get('product/create', [ProductController::class, 'create'])->name('admin.product.create');
+    Route::post('product/store', [ProductController::class, 'store'])->name('admin.product.store');
+    Route::get('product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
+    Route::patch('product/update/{id}', [ProductController::class, 'update'])->name('admin.product.update');
+    Route::delete('product/destroy/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');
+});
+
 
 
 

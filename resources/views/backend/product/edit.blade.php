@@ -6,31 +6,23 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-5">
-                    <form method="POST" action="{{ route('admin.providers.update', $service->id) }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('admin.services.update', $service->id) }}" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
 
                         <div class="form-group mb-2">
-                            <label for="name">Role</label>
+                            <label for="exampleInputEmail1">Service Name</label>
                             <input type="text" class="form-control" name="name" value="{{ $service->name }}">
                         </div>
-                        <div class="form-group mb-2">
-                            <label for="first_name">First Name</label>
-                            <input type="text" class="form-control" name="first_name" value="{{ $service->first_name }}">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" class="form-control" name="last_name" value="{{ $service->last_name }}">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="email">email</label>
-                            <input type="text" class="form-control" name="email" value="{{ $service->email }}">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="password">Password</label>
-                            <input type="text" class="form-control" name="password" value="{{ $service->password }}">
-                        </div>
                       
+                        <div class="form-group mb-2 col-4">
+                            <label for="city">Service Image</label>
+                            <input type="file" class="form-control" name="img[]" multiple>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputPassword1">Service Description</label>
+                            <textarea class="form-control" name="desc" rows="3">{{ $service->desc }}</textarea>
+                        </div>
                         <input type="hidden" name="id" value="{{ $service->id }}" />
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -42,12 +34,10 @@
         <div class="row">
             <div class="col-7">
                 <div class="float-left">
-
                 </div>
             </div>
             <div class="col-5">
                 <div class="float-end">
-
                 </div>
             </div>
         </div>

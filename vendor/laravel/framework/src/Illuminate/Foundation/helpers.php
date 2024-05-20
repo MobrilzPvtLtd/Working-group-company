@@ -48,6 +48,7 @@ if (! function_exists('abort')) {
     }
 }
 
+
 if (! function_exists('abort_if')) {
     /**
      * Throw an HttpException with the given data if the given condition is true.
@@ -979,6 +980,7 @@ if (! function_exists('__')) {
     }
 }
 
+
 if (! function_exists('url')) {
     /**
      * Generate a url for the application.
@@ -1039,4 +1041,8 @@ if (! function_exists('view')) {
 
         return $factory->make($view, $data, $mergeData);
     }
+    // In your middleware
+
+
 }
+

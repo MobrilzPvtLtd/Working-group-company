@@ -12,11 +12,14 @@ use Illuminate\Support\Facades\DB;
 
 class ServicesprovidersController extends Controller
 {
+
     public function index(Request $request)
     {
-        $users = User::all();
+        $users = User::where('name', 'service provider')->get();
+    
         return view('backend.providers.index', compact('users'));
     }
+    
 
     public function create()
     {
@@ -26,9 +29,7 @@ class ServicesprovidersController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            // 'name' => 'required',
-            // 'email' => 'required|email|unique:users',
-            // 'password' => 'required|min:8',
+            
         ]);
 
         $userData = [

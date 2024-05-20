@@ -11888,6 +11888,14 @@ p.sticky-label {
   margin-bottom: 10px;
 }
 
+select.language-switcher {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0d75bc;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 @media (max-width: 767px) {
   .contact-main-wrapper .contact-form-items .contact-title h3 {
     font-size: 32px;

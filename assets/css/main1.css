@@ -12611,3 +12611,11 @@ a.header-logo img {
   border-bottom: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
 }
+
+select.language-switcher {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0d75bc;
+    border: 1px solid #fff;
+    color: #fff;
+}

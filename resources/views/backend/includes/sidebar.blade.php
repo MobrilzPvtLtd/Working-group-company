@@ -55,12 +55,12 @@ $notifications_latest = optional($notifications)->take(5);
             </a>
             <ul class="nav-group-items compact" style="height: auto;">
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/services/create">
+                    <a class="nav-link" href="{{ route('admin.services.create') }}">
                         <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/services">
+                    <a class="nav-link" href="{{ route('admin.services') }}">
                         <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Services
                     </a>
                 </li>
@@ -68,25 +68,27 @@ $notifications_latest = optional($notifications)->take(5);
         </li>
     @endcan
     
+    
     @can('view_services_providers')
-        <li class="nav-group" aria-expanded="true">
-            <a class="nav-link nav-group-toggle" href="#">
-                <i class="nav-icon fa-solid fa-list-ul"></i>&nbsp;@lang('Service Providers')
-            </a>
-            <ul class="nav-group-items compact" style="height: auto;">
-                <li class="nav-item">
-                    <a class="nav-link" href="admin/providers/create">
-                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Providers
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="admin/providers">
-                        <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Providers
-                    </a>
-                </li>
-            </ul>
-        </li>
-    @endcan
+    <li class="nav-group" aria-expanded="true">
+        <a class="nav-link nav-group-toggle" href="#">
+            <i class="nav-icon fa-solid fa-list-ul"></i>&nbsp;@lang('Service Providers')
+        </a>
+        <ul class="nav-group-items compact" style="height: auto;">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.providers.create') }}">
+                    <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Add Providers
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.providers.index') }}">
+                    <span class="nav-icon"><span class="nav-icon-bullet"></span></span> All Providers
+                </a>
+            </li>
+        </ul>
+    </li>
+@endcan
+
     
        
 

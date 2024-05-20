@@ -5,27 +5,26 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Services;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class ServicesController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $services = Services::orderBy('id', 'desc')->paginate(10);
         return view('backend.services.index', compact('services'));
     }
-    public function form(Request $request)
+
+    public function create()
     {
         return view('backend.services.create');
     }
-    
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'name' => 'required',
-            // 'img.*' => 'image|mimes:jpeg,png,jpg,gif',
-            // 'desc' => 'required'
+            'img.*' => 'image|mimes:jpeg,png,jpg,gif',
+            'desc' => 'required'
         ]);
 
         $serviceData = [
@@ -46,7 +45,7 @@ class ServicesController extends Controller
             $service->save();
         }
 
-        return redirect()->route('services')->with('success', 'Service created successfully.');
+        return redirect()->route('admin.services')->with('success', 'Service created successfully.');
     }
 
     public function edit($id)
@@ -57,7 +56,7 @@ class ServicesController extends Controller
         }
         return view('backend.services.edit', compact('service'));
     }
-
+    
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -65,16 +64,15 @@ class ServicesController extends Controller
             'img.*' => 'image|mimes:jpeg,png,jpg,gif',
             'desc' => 'required'
         ]);
-
+    
         $service = Services::find($id);
         if (!$service) {
             return redirect()->back()->with('error', 'Service not found.');
         }
-
+    
         $service->name = $request->input('name');
         $service->desc = $request->input('desc');
-        $service->save();
-
+    
         if ($request->hasFile('img')) {
             $uploadedImagePaths = [];
             foreach ($request->file('img') as $image) {
@@ -83,15 +81,16 @@ class ServicesController extends Controller
                 $uploadedImagePaths[] = $filename;
             }
             $service->img = json_encode($uploadedImagePaths);
-            $service->save();
         }
-
-        return redirect()->route('services')->with('success', 'Service updated successfully.');
+    
+        $service->save();
+    
+        return redirect()->route('admin.services')->with('success', 'Service updated successfully.');
     }
-
+    
     public function destroy($id)
     {
         Services::findOrFail($id)->delete();
-        return redirect()->route('services')->with('success', 'Service deleted successfully.');
+        return redirect()->route('admin.services')->with('success', 'Service deleted successfully.');
     }
 }

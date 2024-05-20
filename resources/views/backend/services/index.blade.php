@@ -37,8 +37,8 @@
                                 </td>
                                 <td>{{ $service->desc }}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="{{ route('services.edit', $service->id) }}">Edit</a>
-                                    <form action="{{ route('services.destroy', $service->id) }}" method="POST" style="display: inline;">
+                                    <a class="btn btn-primary" href="{{ route('admin.services.edit', $service->id) }}">Edit</a>
+                                    <form action="{{ route('admin.services.destroy', $service->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>

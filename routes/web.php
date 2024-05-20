@@ -48,14 +48,17 @@ Route::prefix('admin')->group(function () {
     Route::patch('providers/update/{id}', [ServicesprovidersController::class, 'update'])->name('admin.providers.update');
     Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('admin.providers.destroy');
 });
+
 Route::prefix('admin')->group(function () {
-    Route::get('services', [ServicesController::class, 'index'])->name('services');
-    Route::get('services/create', [ServicesController::class, 'create'])->name('services.create');
-    Route::post('services/store', [ServicesController::class, 'store'])->name('services.store');
-    Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('services.edit');
-    Route::patch('services/update/{service}', [ServicesController::class, 'update'])->name('services.update');
-    Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('services.destroy');
+    Route::get('services', [ServicesController::class, 'index'])->name('admin.services');
+    Route::get('services/create', [ServicesController::class, 'create'])->name('admin.services.create');
+    Route::post('services/store', [ServicesController::class, 'store'])->name('admin.services.store');
+    Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('admin.services.edit');
+    Route::patch('services/update/{id}', [ServicesController::class, 'update'])->name('admin.services.update');
+    Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('admin.services.destroy');
 });
+
+
 
 Route::get('home', [BackendController::class, 'index'])->name('home');
 Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');

@@ -6,9 +6,9 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-5">
-                    <form method="post" action="{{ route('services.update', $service->id) }}" enctype="multipart/form-data">
-                    @csrf
-                        @method('PUT')
+                    <form method="POST" action="{{ route('admin.services.update', $service->id) }}" enctype="multipart/form-data">
+                        @csrf
+                        @method('PATCH')
 
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">Service Name</label>

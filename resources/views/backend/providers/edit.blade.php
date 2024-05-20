@@ -27,7 +27,7 @@
                             <input type="text" class="form-control" name="email" value="{{ $service->email }}">
                         </div>
                         <div class="form-group mb-2">
-                            <label for="password">Services Name</label>
+                            <label for="password">Password</label>
                             <input type="text" class="form-control" name="password" value="{{ $service->password }}">
                         </div>
                       

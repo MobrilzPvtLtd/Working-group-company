@@ -12,14 +12,13 @@
                             <label for="name">Name</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                         </div>
-                        <!-- Add this part if profession exists -->
                         <div class="form-group mb-1">
                             <label for="profession">Profession</label>
                             <input type="text" class="form-control" id="profession" name="profession" placeholder="Enter profession">
                         </div>
                         <div class="form-group mb-1">
-                            <label for="img">Image</label>
-                            <input type="file" class="form-control" id="img" name="img[]" multiple>
+                            <label for="image">Image</label>
+                            <input type="file" class="form-control" id="image" name="image[]" multiple>
                         </div>
                         <div class="form-group mb-1">
                             <label for="description">Description</label>

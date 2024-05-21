@@ -17,26 +17,41 @@ class ProductController extends Controller
     {
         return view('backend.product.create');
     }
-
+    
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required',
-           
-           
+            // Add more validation rules if needed
         ]);
-
+    
         $productData = [
             'name' => $request->input('name'),
-            'profession' => $request->input('profession'), // If profession exists
+            'profession' => $request->input('profession'), 
             'description' => $request->input('desc'),
         ];
+    
+        // Handle image upload and save image data to the database
+        // if ($request->hasFile('image')) {
+        //     $uploadedImagePaths = [];
+        //     foreach ($request->file('image') as $image) {
+        //         // Get binary content of the image file
+        //         $imageData = file_get_contents($image->getRealPath());
+        //         // Convert binary content to base64 encoded string
+        //         $base64Image = base64_encode($imageData);
+        //         $uploadedImagePaths[] = $base64Image;
+        //     }
+        //     $productData['image'] = json_encode($uploadedImagePaths);
+        // }
+    
+        // Create product with the provided data
+        // Product::create($productData);
 
         $products = Product::create($productData);
 
-        if ($request->hasFile('img')) {
+        if ($request->hasFile('image')) {
             $uploadedImagePaths = [];
-            foreach ($request->file('img') as $image) {
+            foreach ($request->file('image') as $image) {
                 $filename = time() . '_' . $image->getClientOriginalName();
                 $image->move(public_path('images'), $filename);
                 $uploadedImagePaths[] = $filename;
@@ -45,16 +60,19 @@ class ProductController extends Controller
             $products->save();
         }
 
+    
         return redirect()->route('admin.product.index')->with('success', 'Product created successfully.');
     }
-
+    
+    
+    
     public function edit($id)
     {
-        $product = Product::find($id);
-        if (!$product) {
+        $products = Product::find($id);
+        if (!$products) {
             return redirect()->route('admin.product.index')->with('error', 'Product not found.');
         }
-        return view('backend.product.edit', compact('product'));
+        return view('backend.product.edit', compact('products'));
     }
     
     public function update(Request $request, $id)
@@ -63,14 +81,14 @@ class ProductController extends Controller
             'name' => 'required',
         ]);
     
-        $product = Product::find($id);
-        if (!$product) {
+        $products = Product::find($id);
+        if (!$products) {
             return redirect()->route('admin.product.index')->with('error', 'Product not found.');
         }
     
-        $product->name = $request->input('name');
-        $product->profession = $request->input('profession'); // If profession exists
-        $product->description = $request->input('desc');
+        $products->name = $request->input('name');
+        $products->profession = $request->input('profession'); // If profession exists
+        $products->description = $request->input('description');
     
         if ($request->hasFile('image')) {
             $uploadedImagePaths = [];
@@ -79,10 +97,10 @@ class ProductController extends Controller
                 $image->move(public_path('images'), $filename);
                 $uploadedImagePaths[] = $filename;
             }
-            $product->image = json_encode($uploadedImagePaths);
+            $products->image = json_encode($uploadedImagePaths);
         }
     
-        $product->save();
+        $products->save();
     
         return redirect()->route('admin.product.index')->with('success', 'Product updated successfully.');
     }

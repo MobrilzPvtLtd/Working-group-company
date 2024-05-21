@@ -22,7 +22,6 @@ class Services extends Model
 
     protected $fillable = [
 
-        'name','email','password','confirm_password','desc'
-];
-
+        'name', 'email', 'password', 'confirm_password', 'desc'
+    ];
 }

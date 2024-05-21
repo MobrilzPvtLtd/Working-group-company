@@ -6,24 +6,29 @@
         <div class="row mt-4">
             <div class="col">
                 <div class="container mt-5">
-                    <form method="POST" action="{{ route('admin.services.update', $service->id) }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('admin.product.update', $products->id) }}" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
 
                         <div class="form-group mb-2">
-                            <label for="exampleInputEmail1">Service Name</label>
-                            <input type="text" class="form-control" name="name" value="{{ $service->name }}">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" value="{{ $products->name }}">
+                        </div>
+                        
+                        <div class="form-group mb-2">
+                            <label for="profession">Name</label>
+                            <input type="text" class="form-control" name="profession" value="{{ $products->profession }}">
                         </div>
                       
                         <div class="form-group mb-2 col-4">
-                            <label for="city">Service Image</label>
-                            <input type="file" class="form-control" name="img[]" multiple>
+                            <label for="image">Image</label>
+                            <input type="file" class="form-control" name="image[]" multiple>
                         </div>
                         <div class="form-group mb-2">
-                            <label for="exampleInputPassword1">Service Description</label>
-                            <textarea class="form-control" name="desc" rows="3">{{ $service->desc }}</textarea>
+                            <label for="description"> Description</label>
+                            <textarea class="form-control" name="description" rows="3">{{ $products->description }}</textarea>
                         </div>
-                        <input type="hidden" name="id" value="{{ $service->id }}" />
+                        <input type="hidden" name="id" value="{{ $products->id }}" />
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

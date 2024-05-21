@@ -52,11 +52,12 @@ Route::prefix('admin')->group(function () {
 Route::prefix('admin')->group(function () {
     Route::get('product', [ProductController::class, 'index'])->name('admin.product.index');
     Route::get('product/create', [ProductController::class, 'create'])->name('admin.product.create');
-    Route::post('product/store', [ProductController::class, 'store'])->name('admin.product.store');
+    Route::post('product/store', [ProductController::class, 'store'])->name('admin.product.store'); // Changed to POST
     Route::get('product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
     Route::patch('product/update/{id}', [ProductController::class, 'update'])->name('admin.product.update');
     Route::delete('product/destroy/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');
 });
+
 
 
 

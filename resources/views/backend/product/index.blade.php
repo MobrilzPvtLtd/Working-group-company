@@ -11,16 +11,19 @@
                             <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Profession</th>
+
                                 <th scope="col">Image</th>
                                 <th scope="col">Description</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($product as $product)
+                            @foreach ($products as $product)
                             <tr>
                                 <td>{{ $product->id }}</td>
                                 <td>{{ $product->name }}</td>
+                                <td>{{ $product->profession }}</td>
                                 <td>
                                     @php
                                         $images = json_decode($product->image);

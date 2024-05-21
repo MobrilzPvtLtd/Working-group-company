@@ -13,16 +13,12 @@ use Illuminate\Database\Eloquent\Model;
 
 
 class Product extends Model
-
 {
+    protected $fillable = ['name', 'profession', 'description'];
 
-    use HasFactory;
-
-
-
-    protected $fillable = [
-
-        'name', 'profession', 'image', 'description', 'star'
-
-    ];
+    // Define the relationship with ProductImage model
+    public function productImages()
+    {
+        return $this->hasMany(image::class);
+    }
 }

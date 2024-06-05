@@ -14,7 +14,7 @@
                             <p>
                                 {{__('We believe')}}
                             </p>
-                            <span>Interested in working with us?</span> <br>
+                            <span>{{__('Interested in working with us?')}}</span> <br>
                         </div>
                     </div>
                 </div>

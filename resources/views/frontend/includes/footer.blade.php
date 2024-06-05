@@ -12,8 +12,7 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                                We believe it has the power to do <br>
-                                amazing things.
+                                {{__('We believe')}}
                             </p>
                             <span>Interested in working with us?</span> <br>
                         </div>

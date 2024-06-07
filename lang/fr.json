@@ -1,6 +1,135 @@
 {
-    "We believe": "Nous pensons qu'il a le pouvoir de faire  des choses étonnantes.",
+    "We believe it has the power to do <br> amazing things.": "Nous pensons qu'il a le pouvoir de faire  des choses étonnantes.",
     "Interested in working with us?": "Intéressé de travailler avec nous?",
+    "Quick Links":"Liens rapides",
+    "Services":"Prestations de service",
+    "About Company":"À propos de la société",
+    "Latest News":"Dernières nouvelles",
+    "Team Member":"Membre de l'équipe",
+    "Testimonials":"Témoignages",
+    "My Account":"Mon compte",
+    "Forum Support":"Assistance sur les forums",
+    "Help & FAQ":"Aide et FAQ",
+    "Contact Us":"Contactez-nous",
+    "Pricing And Plans":"Tarifs et forfaits",
+    "Cookies Policy":"Politique de cookies",
+    "Address":"Adresse",
+    "570 8th Ave, New York,NY 10018 United States":"570 8th Ave, New York,NY 10018 États-Unis",
+   "Hours:":"Heures",
+   "9.30am – 6.30pm <br> Monday to Friday":"9h30 – 18h30 du lundi au vendredi",
+   "24/7 Support Center":"Centre d'assistance 24h/24 et 7j/7",
+   "+1718-904-4450":"+1718-904-4450",
+   "info@example.com":"info@example.com",
+   "Copyright © 2024":"Droits d'auteur © 2024",
+   "Mobrilz":"Mobrilz",
+   "All Rights Reserved.":"Tous droits réservés.",
+   "Company":"Entreprise",
+   "Support":"Soutien",
+   "Privacy":"Confidentialité",
+   "Faqs":"FAQ",
+   "The best requests":"Les meilleures demandes",
+   "for Cleaning":"pour le nettoyage",
+   "The best requests ":"Les meilleures demandes",
+   "for Dog walking":"pour promener son chien",
+   "Get in touch":"Entrer en contact",
+   "High Quality":"Haute qualité",
+   "Excellent Result":"Excellent résultat",
+   "Low Cost":"Faible coût",
+   "Explore more about":"En savoir plus sur",
+   "This Is How It Works":"Voilà comment cela fonctionne",
+   "Services We Can Offer You":"Services que nous pouvons vous offrir",
+   "Cleaning":"Nettoyage",
+   "Dog walking":"Promener le chien",
+   "shopping":"achats",
+   "Elderly Walks":"Promenades pour personnes âgées",
+   "Small repairs":"Petites réparations",
+   "Car services":"Services de voiture",
+   "Taking people to appointments":"Amener les gens à des rendez-vous",
+   "Caring for children":"Prendre soin des enfants",
+   "Support Help":"AIDE D'ASSISTANCE",
+   "What Customer say about us":"Ce que le client dit de nous",
+   "Do You Also Want To Get In Touch With Us?":"Voulez-vous également entrer en contact avec nous ?",
+   "Contact us":"Contactez-nous",
+   "freequently Ask Questions":"Questions fréquemment posées",
+   "have a question in your mind?":"vous avez une question en tête ?",
+   "Organizations":"Organisations",
+   "work support":"soutien au travail",
+   "Management &":"Gestion &",
+   "Support Services":"Services de soutien",
+   "Organizations ":"Organisations",
+   "work support ":"soutien au travail",
+   "Management & ":"Gestion &",
+   "Support Services ":"Services de soutien",
+   "Shopping":"Achats",
+   "Elderly walks":"Promenades pour personnes âgées",
+   "Small repairs ":"Petites réparations",
+   "Taking people to appointments ":"Taking people to appointments",
+   "Caring for children ":"Prendre soin des enfants",
+   "Outdoor maintenance":"Entretien extérieur",
+   "Cleaning ":"Nettoyage",
+   "contact us":"Contactez-nous",
+   "Join as a Professional":"Rejoignez-nous en tant que professionnel",
+   "Login":"Se connecter",
+   "Secure Jobs And Grow Your Business":"Garantissez des emplois et développez votre entreprise",
+   "1000’s of local and remote clients are already waiting for your services":"Des milliers de clients locaux et distants attendent déjà vos services",
+   "What service do you provide?":"Quel service fournissez-vous?",
+   "Get started":"Commencer",
+   "Popular services":"Services populaires",
+   "House Cleaning":"Nettoyage de la maison",
+   "Life Coaching":"Coaching de vie",
+   "Web Design":"Création de sites web",
+   "General Photography":"Photographie générale",
+   "Web Development":"Développement web",
+   "Social Media Marketing":"Marketing des médias sociaux",
+   "Graphic Design":"Conception graphique",
+   "Bookkeeping Services":"Services de tenue de livres",
+   "Building Contractors":"Entrepreneurs en construction",
+   "Personal Trainers":"Entraîneurs personnels",
+   "Gardening":"Jardinage",
+   "Commercial & Office Cleaning":"Nettoyage commercial et de bureau",
+   "House Cleaning Details":"Détails du nettoyage de la maison",
+   "Company name:":"Nom de l'entreprise:",
+   "Your name:":"Votre nom:",
+   "If you aren't a business or don't have this information, you can leave this blank":"Si vous n'êtes pas une entreprise ou si vous ne disposez pas de ces informations, vous pouvez laisser ce champ vide",
+   "Email address:":"Adresse e-mail:",
+   "Phone number:":"Numéro de téléphone:",
+   "Are you a freelancer":"Êtes-vous un indépendant",
+   "Do you own a agency":"Possédez-vous une agence",
+   "Does your company have a website?":"Votre entreprise possède-t-elle un site Internet ?",
+   "Yes":"Oui",
+   "No":"Non",
+   "Company size, employees":"Taille de l'entreprise, effectifs",
+   "Self-employed, Sole trader":"Indépendant, Entrepreneur individuel",
+   "Submit":"Soumettre",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,7 +197,6 @@
     ":count unread": ":count unread",
     "Account": "Tài khoản",
     "Settings": "Settings",
-    "Login": "Đăng nhập",
     "Register": "Đăng ký",
     "Create an account": "Create an account",
     "Logout": "Logout",

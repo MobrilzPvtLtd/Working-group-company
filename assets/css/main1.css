@@ -268,7 +268,7 @@ h6 {
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 64px;
   font-weight: 600;
   line-height: 106%;
 }
@@ -8422,7 +8422,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  
+
   z-index: -1;
   height: 50%;
 }
@@ -12617,4 +12617,7 @@ select.language-switcher {
     background-color: #0d75bc;
     border: 1px solid #fff;
     color: #fff;
+}
+.content h6 {
+    font-size: 16px !important;
 }

@@ -1,6 +1,6 @@
 <?php
 
-    
+
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\LanguageController;
 use PhpParser\Builder\Namespace_;
@@ -28,6 +28,8 @@ Route::get('portfolio', [FrontendController::class, 'portfolio'])->name('portfol
 Route::get('pages', [FrontendController::class, 'pages'])->name('pages');
 Route::get('news', [FrontendController::class, 'news'])->name('news');
 Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
+Route::get('form1', [FrontendController::class, 'form1'])->name('form1');
+Route::get('form2', [FrontendController::class, 'form2'])->name('form2');
 Route::get('lang', [FrontendController::class, 'lang']);
 
 Route::prefix('admin')->group(function () {
@@ -169,7 +171,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     $controller_name = 'RolesController';
     Route::resource("{$module_name}", "{$controller_name}");
 
-    
+
     $module_name = 'users';
     $controller_name = 'UserController';
     Route::get("{$module_name}/emailConfirmationResend/{id}", ['as' => "{$module_name}.emailConfirmationResend", 'uses' => "{$controller_name}@emailConfirmationResend"]);
@@ -185,7 +187,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     Route::patch("{$module_name}/{id}/unblock", ['as' => "{$module_name}.unblock", 'uses' => "{$controller_name}@unblock", 'middleware' => ['can:block_users']]);
 
 });
-    
+
 
 
 

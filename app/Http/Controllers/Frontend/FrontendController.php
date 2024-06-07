@@ -20,7 +20,7 @@ class FrontendController extends Controller
     {
         return view('frontend.about');
     }
-   
+
     public function service()
     {
         return view('frontend.service');
@@ -31,7 +31,7 @@ class FrontendController extends Controller
     } public function pages()
     {
         return view('frontend.pages');
-    } 
+    }
     public function news()
     {
         return view('frontend.news');
@@ -39,6 +39,14 @@ class FrontendController extends Controller
     public function contactus()
     {
         return view('frontend.contactus');
+    }
+    public function form1()
+    {
+        return view('frontend.form1');
+    }
+    public function form2()
+    {
+        return view('frontend.form2');
     }
     public function lang()
     {
@@ -63,5 +71,5 @@ class FrontendController extends Controller
     {
         return view('frontend.terms');
     }
-    
+
 }

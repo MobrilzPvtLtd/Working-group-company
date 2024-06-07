@@ -17,6 +17,7 @@
                     </div>
                 </div>
 
+
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
 
@@ -26,6 +27,7 @@
         <div class="container-fluid" style="padding: 0px;">
             <div class="mega-menu-wrapper">
                 <div class="header-main">
+                <div class="header-main">
                     <div class="header-left">
                         <div class="mean__menu-wrapper">
                             <div class="main-menu">
@@ -34,7 +36,9 @@
                                         <li class="has-dropdown active menu-thumb">
                                             <a href="home">
                                             Home
+                                            Home
                                             </a>
+                                          </li>
                                           </li>
                                         <li>
                                             <a href="about">About</a>
@@ -51,13 +55,16 @@
                                             <a href="pages">
                                                 Pages
 
+
                                             </a>
                                         </li>
                                         <li>
                                             <a href="portfolio">
                                                 Blog
 
+
                                             </a>
+
 
                                         </li>
                                         <li>
@@ -67,15 +74,18 @@
                                         <li>
                                             <a href="{{route('login') }}">
                                                 <i class=""></i>Login
+                                                <i class=""></i>Login
                                             </a>
                                         </li>
                                         @endguest
+
 
                                         @auth
                                         <div style="display: flex; align-items: center;">
                                             <a class="user_icon" href="{{ route('frontend.users.profile') }}" style="margin-right: 10px;">
                                                 <i class="fa-solid fa-user"></i> Hello {{ Auth::user()->name }}
                                             </a>
+
 
                                             <form id="logout-form" style="margin-left: 10px;" action="{{ route('logout') }}" method="POST">
                                                 {{ csrf_field() }}
@@ -88,6 +98,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>

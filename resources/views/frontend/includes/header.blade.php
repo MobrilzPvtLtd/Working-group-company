@@ -16,7 +16,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
 
@@ -25,7 +25,7 @@
     <div id="header-sticky2" class="header-3">
         <div class="container-fluid" style="padding: 0px;">
             <div class="mega-menu-wrapper">
-                <div class="header-main">                    
+                <div class="header-main">
                     <div class="header-left">
                         <div class="mean__menu-wrapper">
                             <div class="main-menu">
@@ -33,9 +33,9 @@
                                     <ul>
                                         <li class="has-dropdown active menu-thumb">
                                             <a href="home">
-                                            Home                                            
+                                            Home
                                             </a>
-                                          </li>                                       
+                                          </li>
                                         <li>
                                             <a href="about">About</a>
                                         </li>
@@ -50,15 +50,15 @@
                                         <li class="has-dropdown">
                                             <a href="pages">
                                                 Pages
-                                               
+
                                             </a>
                                         </li>
                                         <li>
                                             <a href="portfolio">
                                                 Blog
-                                               
+
                                             </a>
-                                            
+
                                         </li>
                                         <li>
                                             <a href="contactus">Contact</a>
@@ -66,17 +66,17 @@
                                         @guest
                                         <li>
                                             <a href="{{route('login') }}">
-                                                <i class=""></i>Login 
+                                                <i class=""></i>Login
                                             </a>
                                         </li>
                                         @endguest
-                                        
+
                                         @auth
                                         <div style="display: flex; align-items: center;">
                                             <a class="user_icon" href="{{ route('frontend.users.profile') }}" style="margin-right: 10px;">
                                                 <i class="fa-solid fa-user"></i> Hello {{ Auth::user()->name }}
                                             </a>
-                                    
+
                                             <form id="logout-form" style="margin-left: 10px;" action="{{ route('logout') }}" method="POST">
                                                 {{ csrf_field() }}
                                                 <button class="btn btn-info" type="submit">Logout</button>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
                         <div class="header-button">
                             <a href="#" class="theme-btn theme-btn-2">
                                 <span>
-                                    contact us
+                                    {{__('contact us')}}
                                     <i class="fas fa-chevron-right"></i>
                                 </span>
                              </a>

@@ -30,22 +30,24 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main1.css">
+
+        @yield('style')
         <!--<< Style.css >>-->
         {{-- <link rel="stylesheet" href="style.css"> --}}
-    
+
         <!--==============================
           Google Fonts
         ============================== -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
         <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&ampfamily=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&ampdisplay=swap" rel="stylesheet"> -->
-    
+
         <!--==============================
             All CSS File
         ============================== -->
         <!-- Bootstrap -->
-       
+
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -55,7 +57,7 @@
  @include('frontend.includes.header')
  @yield('content')
  @include('frontend.includes.footer')
- 
+
 <!--<< All JS Plugins >>-->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <!--<< Viewport Js >>-->

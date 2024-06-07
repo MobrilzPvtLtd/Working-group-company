@@ -12,7 +12,7 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                                {{__('We believe')}}
+                                {{__('We believe it has the power to do <br> amazing things.')}}
                             </p>
                             <span>{{__('Interested in working with us?')}}</span> <br>
                         </div>
@@ -21,32 +21,32 @@
                 <div class="col-xl-2 ps-lg-5 col-sm-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <h5>Quick Links</h5>
+                            <h5>{{__('Quick Links')}}</h5>
                         </div>
                         <ul class="list-items">
                             <li>
                                 <a href="#">
-                                    Services
+                                    {{__('Services')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    About company
+                                {{__('About Company')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    latest news
+                                {{__('Latest News')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    team member
+                                {{__('Team Member')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    testimonials
+                                {{__('Testimonials')}}
                                 </a>
                             </li>
                         </ul>
@@ -55,32 +55,32 @@
                 <div class="col-xl-2 ps-lg-4 col-sm-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <h5>My account</h5>
+                            <h5> {{__('My Account')}}</h5>
                         </div>
                         <ul class="list-items">
                             <li>
                                 <a href="#">
-                                    Forum Support
+                                {{__('Forum Support')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Help & FAQ
+                                {{__('Help & FAQ')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="3">
-                                    Contact Us
+                                {{__('Contact Us')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Pricing and plans
+                                {{__('Pricing And Plans')}}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Cookies Policy
+                                {{__('Cookies Policy')}}
                                 </a>
                             </li>
                         </ul>
@@ -89,17 +89,13 @@
                 <div class="col-xl-2 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <h5>Address:</h5>
+                            <h5>{{__('Address')}}</h5>
                         </div>
                         <div class="footer-address-text">
+                            <p>{{__('570 8th Ave, New York,NY 10018 United States')}}</p>
+                            <h5>{{__('Hours:')}}</h5>
                             <p>
-                                570 8th Ave, New York,NY 10018
-                                United States
-                            </p>
-                            <h5>Hours:</h5>
-                            <p>
-                                9.30am – 6.30pm <br>
-                                Monday to Friday
+                            {{__('9.30am – 6.30pm <br> Monday to Friday')}}
                             </p>
                         </div>
                     </div>
@@ -107,15 +103,15 @@
                 <div class="col-xl-3 ps-xl-5 col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <h5>24/7 Support center</h5>
+                            <h5>{{__('24/7 Support Center')}}</h5>
                         </div>
                         <div class="footer-apps-items">
                             <div class="support-text">
-                                <h3><a href="tel:+1718-904-4450">+1718-904-4450</a></h3>
+                                <h3><a href="tel:+1718-904-4450">{{__('+1718-904-4450')}}</a></h3>
                             </div>
                             <div class="footer-content">
 
-                                <a href="mailto:info@example.com" class="link">info@example.com</a>
+                                <a href="mailto:info@example.com" class="link">{{__('info@example.com')}}</a>
                                 <div class="social-icon d-flex align-items-center">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -133,27 +129,27 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    Copyright © 2024 <a href="#">Mobrilz</a>. All Rights Reserved.
+                {{__('Copyright © 2024')}} <a href="#">{{__('Mobrilz')}}</a>. {{__('All Rights Reserved.')}}
                 </p>
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                     <li>
                         <a href="#">
-                            Company
+                        {{__('Company')}}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            Support
+                            {{__('Support')}}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            Privacy
+                            {{__('Privacy')}}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            Faqs
+                            {{__('Faqs')}}
                         </a>
                     </li>
                 </ul>

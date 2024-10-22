@@ -27,9 +27,9 @@ Route::get('service', [FrontendController::class, 'service'])->name('service');
 Route::get('portfolio', [FrontendController::class, 'portfolio'])->name('portfolio');
 Route::get('pages', [FrontendController::class, 'pages'])->name('pages');
 Route::get('news', [FrontendController::class, 'news'])->name('news');
-Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
-Route::get('form1', [FrontendController::class, 'form1'])->name('form1');
-Route::get('form2', [FrontendController::class, 'form2'])->name('form2');
+Route::get('contact', [FrontendController::class, 'contactus'])->name('contactus');
+Route::get('service_form', [FrontendController::class, 'form1'])->name('form1');
+Route::get('login_form', [FrontendController::class, 'form2'])->name('form2');
 Route::get('lang', [FrontendController::class, 'lang']);
 
 Route::prefix('admin')->group(function () {

@@ -297,9 +297,9 @@
             <div class="row">
 
                 <div class="col-md-4 my-auto">
-                      <h4 class="text-white">Presentation de</h4>
-                    <h2 class="text-white">No Presentation  </h2><button
-                        class="bg-white my-4 px-3 rounded-pill h-50 w-75 text-primary">Service</button>
+                      <h4 class="text-white">Présentation de</h4>
+                    <h2 class="text-white"> Nos prestations </h2><button
+                        class="bg-white my-4 p-3 rounded-pill fs-3 w-75 " style="color: #0D75BC">Tous les services</button>
                 </div>
                 <div class="col-md-8 text-start text-white">
                     <div class="row py-3 ">
@@ -351,38 +351,15 @@
                 <div class="" style="left: 14rem;position: relative;"> <img
                         src="./resources\views\assets\img\bg\girl.png" alt="111" class="w-25">
                 </div>
-                <div class="col-md-8 text-start text-white rounded"
-                    style="margin-left:-5%;margin-top:5%;background-color: #0d75bc;right: 0;position: absolute;">Workin
-                    Group Company (WGC)
-                    a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de permettre aux gens de gérer
-                    leur emploi du temps de manière autonome. Notre mission est d’accompagner les individus dans leur
-                    cheminement vers un travail indépendant, en leur offrant une flexibilité et une liberté sans précédent.
-                    Nous accordons une attention particulière aux mères célibataires, en leur offrant des opportunités de
-                    travail adaptées à leur vie de famille.L’idée de WGC est née d’une volonté de transformation sociale,
-                    permettant aux individus de prendre en main leur avenir professionnel. Nous croyons à l’importance de
-                    l’autonomie et à la capacité de chacun à réussir seul avec le bon accompagnement. WGC aspire à être un
-                    partenaire de confiance pour tous ceux qui cherchent à démarrer leur propre entreprise, en leur
-                    fournissant les outils nécessaires pour prospérer dans un monde de plus en plus connecté et dynamique.
-                    Workin Group Company (WGC)
-                    a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de permettre aux gens de gérer
-                    leur emploi du temps de manière autonome. Notre mission est d’accompagner les individus dans leur
-                    cheminement vers un travail indépendant, en leur offrant une flexibilité et une liberté sans précédent.
-                    Nous accordons une attention particulière aux mères célibataires, en leur offrant des opportunités de
-                    travail adaptées à leur vie de famille.L’idée de WGC est née d’une volonté de transformation sociale,
-                    permettant aux individus de prendre en main leur avenir professionnel. Nous croyons à l’importance de
-                    l’autonomie et à la capacité de chacun à réussir seul avec le bon accompagnement. WGC aspire à être un
-                    partenaire de confiance pour tous ceux qui cherchent à démarrer leur propre entreprise, en leur
-                    fournissant les outils nécessaires pour prospérer dans un monde de plus en plus connecté et dynamique.
-                    Workin Group Company (WGC)
-                    a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de permettre aux gens de gérer
-                    leur emploi du temps de manière autonome. Notre mission est d’accompagner les individus dans leur
-                    cheminement vers un travail indépendant, en leur offrant une flexibilité et une liberté sans précédent.
-                    Nous accordons une attention particulière aux mères célibataires, en leur offrant des opportunités de
-                    travail adaptées à leur vie de famille.L’idée de WGC est née d’une volonté de transformation sociale,
-                    permettant aux individus de prendre en main leur avenir professionnel. Nous croyons à l’importance de
-                    l’autonomie et à la capacité de chacun à réussir seul avec le bon accompagnement. WGC aspire à être un
-                    partenaire de confiance pour tous ceux qui cherchent à démarrer leur propre entreprise, en leur
-                    fournissant les outils nécessaires pour prospérer dans un monde de plus en plus connecté et dynamique.
+                <div class="col-md-8 text-start text-white rounded p-5
+                "
+                    style="margin-left:-5%;margin-top:3%;background-color: #0d75bc;right: 0;position: absolute;">
+                    <h4 class="text-white pb-3">L'histoire du WGC</h4>
+                    Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur offrant des opportunités de travail adaptées à leur vie de famille.
+
+                   <br/><br/><br/>
+
+                    L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer dans un monde de plus en plus connecté et dynamique.
                 </div>
             </div>
 
@@ -397,8 +374,8 @@
 
         <div class="container">
             <div class="text-center">
-                <h3 style="color: #0d75bc;">Gallery</h3>
-                <h1>Photo And Video </h1>
+                <h3 style="color: #0d75bc;">GALERIE</h3>
+                <h2>Photo et vidéo</h2>
             </div>
 
             <div class="row py-3">
@@ -433,16 +410,15 @@
         <div class="container" style="position: relative;">
             <div class="text-center py-3"> <img src="assets/img/logo/logo1111 (1) (3).png" alt=""
                     style="width: 12%">
-                <h2 class="text-white text-lg py-4">Advantage of WGC Noida</h2>
+                <h2 class="text-white text-lg py-4">Avantages de l'utilisation de WGC</h2>
             </div>
-            <div class="row" style=" position: absolute; top: 261px; left: 185px;">
+            <div class="row" style="">
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body p-5">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+                            <h5 class="card-title">Mobile Services</h5>
+
+                            <p class="card-text">Devenez un déménageur indépendant avec WGC, aidant les clients à transporter leurs biens en toute sécurité et efficacement.</p>
 
                         </div>
                     </div>
@@ -450,10 +426,9 @@
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body p-5">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+                            <h5 class="card-title">Nettoyage de fin de bail</h5>
+
+                            <p class="card-text">En tant que nettoyeur indépendant chez WGC, aidez les locataires à récupérer leurs dépôts de garantie avec un ménage impeccable.</p>
 
                         </div>
                     </div>
@@ -462,10 +437,9 @@
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body p-5">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+                            <h5 class="card-title">Services de soins à domicile</h5>
+
+                            <p class="card-text">Travaillez en tant que fournisseur de soins à domicile indépendant avec WGC, offrant soutien et compagnie aux personnes seules.</p>
 
                         </div>
                     </div>
@@ -488,64 +462,63 @@
         <div class="container-fluid">
             <div class="row" style=" position: relative">
 
-                <div class="" style="left: 14rem;position: relative;"> <img
-                        src="./resources\views\assets\img\hero\people.png" alt="111" class="w-25">
+                <div class="col-md-4" style=""> <img
+                        src="./resources\views\assets\img\hero\people.png" alt="111" class="w-100">
                 </div>
-                <div class="col-md-8 text-start text-white rounded"
-                    style="margin-left:-5%;margin-top:5%;background-color: #50aeece6;;  right: 0;position: absolute;">
-                    <h3 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h3>
+                <div class="col-md-8 p-5 text-start text-white rounded"
+                    style="background-color: #79bfedfc  ">
+                    <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
                     <ul class="p-5">
 
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        <li class="fs-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                                 <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg>
-                            Des hommes et des femmes de ménage qualifiés et expérimentés  Un support client personnalisé et
-                            dédié  Contrats sans engagement  Des prix attractifs</li>
-                        <li> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg> Des hommes et des femmes de ménage qualifiés et expérimentés  Un support client
-                            personnalisé et dédié  Contrats sans engagement  Des prix </li>
+                            </svg>  Des hommes et des femmes de ménage qualifiés et expérimentés
 
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+
+                           </li>
+
+
+
+                        <li class="fs-4 py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                                 <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg>  Application mobile dédiée à la gestion de vos ménages  Des solutions flexibles et sur
-                            mesure</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            </svg>  Un support client personnalisé et dédié </li>
+
+                        <li class="fs-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                                 <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg> Des hommes et des femmes de ménage qualifiés et expérimentés  Un support client
-                            personnalisé et dédié  Contrats sans engagement  Des prix attractifs </li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            </svg>Contrats sans engagement </li>
+                        <li class="fs-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                                 <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg> Des hommes et des femmes de ménage qualifiés et expérimentés  Un support client
-                            personnalisé et dédié  Contrats sans engagement  Des prix attractifs</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            </svg> Des prix attractifs </li>
+                        <li class="fs-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                                 <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                            </svg> Des Contrats sans engagement  Des prix attractifs  Application mobile dédiée à la gestion
-                            de vos ménages  Des solutions flexibles et sur mesure</li>
+                            </svg> Application mobile dédiée à la gestion de vos ménages  </li>
+                        <li class="fs-4 py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                            </svg> Des solutions flexibles et sur mesure</li>
                     </ul>
 
                     <div class="d-flex justify-content-center py-2">
-                        <div class="col-md-3 me-3"><input placeholder="Enter name " type="text"
+                        <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville " type="text"
                                 class="form-control border-0" /></div>
-                        <div class="col-md-3"> <button class="btn btn-primary px-3">Enter</button></div>
+                        <div class="col-md-3"> <button class="btn btn-primary px-3">Allons-y!</button></div>
                     </div>
                 </div>
             </div>
@@ -560,29 +533,82 @@
 
 {{-- contact form --}}
 
-<div class="container p-5">
-    <div class="row ">
-    <div class="col-8 mx-auto " style="background-color: #0d75bc;">
-
-      <h3 class="text-white text-center">Connectez-vous à votre compte</h3>
-      <p class="text-white text-center">Créez un compte pour profiter de tous nos services.</p>
-      <div class="text-center">
-      <form>
 
 
-      <input type="text" class="form-control mb-2 border-0" placeholder="Nom d'utilisateur ou e-mail" style="background-color: #0D75BC" />
-      <input type="text" class="form-control border-0" placeholder="Mot de passe" style="background-color: #0D75BC"  />
 
 
-      </form>  </div>
+ {{-- User Details --}}
+
+
+
+ {{-- contact us form last page --}}
+
+ 
+
+
+  {{-- service & Develop keypoints --}}
+  <section class="service-section fix section-padding my-5">
+
+    <div class="container-fluid">
+        <div class="row" style=" position: relative">
+
+
+            <div class="col-md-6 text-start  rounded py-4"
+                style="background-color: #88c8f294;  ">
+                <h3 class="text-center pt-4" style="color: #0d75bc;">Garantissez des emplois et <br/> Développez votre entreprise</h3>
+
+                  <h6 class="text-muted py-3 ps-5">Services populaires</h6>
+                <div class="d-flex justify-content-center my-3">
+
+                     <div class="col-md-4">
+                      <ul class="text-black font-semibold">
+                        <li> Services de déménagement     </li>
+                        <li>Peinture</li>
+                        <li>Ménage de fin de location </li>
+                        <li>Services de livraison</li>
+                        <li>Services de soins à domicile</li>
+                        <li>Services de dédouanement</li>
+                        <li>Assemblage de meubles</li>
+                        <li> Réparation de téléviseurs et d'électroménagers</li>
+                        <li>Réparation de téléphone</li>
+
+
+                    </ul>
+
+                     </div>
+                     <div class="col-md-4">
+
+                        <ul class="text-black">
+                            <li>Acheteur personnel        </li>
+                            <li> Services de blanchisserie</li>
+                            <li>Repassage des vêtements</li>
+                            <li>Nettoyage des chaussures</li>
+                            <li>Prestations de coiffure</li>
+                            <li>Services de traduction</li>
+                            <li>Livraison de courrier express</li>
+                            <li>Conseil</li>
+                        </ul>
+
+                    </div> </div>
+
+
+                <div class="d-flex justify-content-center pt-5">
+                    <div class="col-md-3 "><input placeholder="Quel service fournissez-vous ?" type="text"
+                            class="form-control border-0 py-2" /></div>
+                    <div class="col-md-3 "> <button class="btn btn-primary px-3 py-2" >Pour Commencer</button></div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="margin-left: -165px;"> <img
+                src="./resources\views\assets\img\hero\people.png" alt="111" class="w-100">
+        </div>
+
+        </div>
 
 
     </div>
+</section>
 
-
-
-    </div>
-</div>
 
 
 

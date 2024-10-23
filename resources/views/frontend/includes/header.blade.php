@@ -1,4 +1,4 @@
-<div class="fix-area">
+{{-- <div class="fix-area">
     <div class="offcanvas__info">
         <div class="offcanvas__wrapper">
             <div class="offcanvas__content">
@@ -117,8 +117,127 @@
     </div>
     <header class="header-section-3">
         <div id="header-sticky" class="header-3">
-            <div class="container-fluid">
-                {{-- <div class="bg-white topnav ">
+
+             <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo" style="z-index: 999;">
+                        <a href="{{ route('frontend.index') }}" class="header-logo">
+                            <img src="assets/img/logo/logo1111 (1) (3).png" alt="logo-img">
+                        </a>
+                    </div>
+                    <div class="header-left">
+
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <div class="header-button">
+                            <a href="#" class="theme-btn theme-btn-2">
+                                <span>
+                                    {{ __('Login') }}
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header-button">
+                            <a href="{{ route('form1') }}" class="theme-btn theme-btn-2">
+                                <span>
+                                    {{ __('Join as a Professional') }}
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   </header>
+
+ <div class="header__hamburger d-xl-block my-auto">
+    <div class="sidebar__toggle">
+        <div class="header-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+ </div>
+
+
+</div> --}}
+
+
+<div class="contianer-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <img src=".\public\assets\img\WGC-logo 1.png" alt="logo1" class="px-5 py-4">
+        </div>
+        <div class="col-md-10">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-around py-5">
+
+                    <div class="me-2 " style="color: #0d75bc;">
+                        <i class="far fa-envelope me-2"></i>
+                        info@ilende.com
+                    </div>
+                    <div class="me-2" style="color: #0d75bc;" >
+                        <i class="fas fa-phone me-2"></i>
+                        +240222867206
+                    </div>
+                    <div class="me-2" style="color: #0d75bc;">
+
+                       <a href="/login_form"><i class="fas fa-user me-2"></i></a>
+                        Se connecter
+                    </div>
+                    <div class="social-icons d-inline-block me-4" >
+                        <a href="#"><i class="fab fa-facebook mx-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+                        <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp mx-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                 <nav class="navbar navbar-expand-lg " style="background-color: #0d75bc;">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse py-4 " id="navbarNav">
+                        <ul class="navbar-nav fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3 " href="/">Maison</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="/about">À propos de nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="#">Aide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="/service">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="/contact">Contactez-nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="/popular_service">Rejoignez-Nous En Tant Que Professionnel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+ {{-- <div class="container-fluid"> --}}
+               {{-- <div class="bg-white topnav ">
                     <div class="d-flex justify-content-end">
                         <ul class="d-flex mx-2">
                             <li class="mx-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -146,51 +265,4 @@
                         </ul>
                     </div>
                 </div> --}}
-
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="logo" style="z-index: 999;">
-                            <a href="{{ route('frontend.index') }}" class="header-logo">
-                                <img src="assets/img/logo/logo1111 (1) (3).png" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="header-left">
-
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="header-button">
-                                <a href="#" class="theme-btn theme-btn-2">
-                                    <span>
-                                        {{ __('Login') }}
-                                        <i class="fas fa-chevron-right"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="header-button">
-                                <a href="{{ route('form1') }}" class="theme-btn theme-btn-2">
-                                    <span>
-                                        {{ __('Join as a Professional') }}
-                                        <i class="fas fa-chevron-right"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            {{-- <div class="header__hamburger d-xl-block my-auto">
-                            <div class="sidebar__toggle">
-                                <div class="header-bar">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div> --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-</div>
-
-
+           {{-- </div> --}}

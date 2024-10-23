@@ -5,138 +5,300 @@
 @endsection
 
 @section('content')
-  
-
-   
-        <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div> 
-
-      
- <!-- Offcanvas Area Start -->
- 
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
 
- 
+    <!-- Offcanvas Area Start -->
 
 
 
-<!-- Header Area Start -->
-
-        <!--<< Hero Section Start >>--> 
-        <section class="hero-section hero-3">
-            <div class="slider-button">
-                <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
-                <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
-            </div>
-            <div class="hero-slider-active-2">
-                <div class="single-slide">
-                    <div class="slide-bg bg-cover" style="background-image: url('./assets/img/hero/three-people-doing-house-cleaning-rm5bzw5kkayn968b.jpg');">
-                        <div class="container">
-                            <div class="hero-content">
-                            
-                                <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                    The best requests for <br>Cleaning
-                                </h1>
-<p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas praesentium magnam itaque voluptatem aliquam? </p>
 
 
-                                <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                    <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                        <span>
-                                            Get in touch
-                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </div>
+
+
+    <!-- Header Area Start -->
+
+    <!--<< Hero Section Start >>-->
+    {{-- <section class="hero-section hero-3">
+
+        <div class="slider-button">
+            <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
+            <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
+        </div>
+        <div class="hero-slider-active-2">
+            <div class="single-slide">
+                <div class="slide-bg bg-cover"
+                    style="background-image: url('./assets/img/hero/three-people-doing-house-cleaning-rm5bzw5kkayn968b.jpg');">
+                    <div class="container">
+                        <div class="hero-content">
+
+                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                The best requests for <br>Cleaning
+                            </h1>
+                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
+                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
+                                praesentium magnam itaque voluptatem aliquam? </p>
+
+
+                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                <a href="#" class="theme-btn theme-btn-2 hover-white">
+                                    <span>
+                                        Get in touch
+                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="single-slide">
-                    <div class="slide-bg bg-cover" style="background-image: url('./assets/img/hero/a-dog-walk-walking-the-dogs-in-the-city-2022-11-08-10-52-58-utc.jpg');">
-                        <div class="container">
-                            <div class="hero-content">
-                               
-                                <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                    The best requests for <br>Dog walking
-                                </h1>
-                                <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas praesentium magnam itaque voluptatem aliquam? </p>
-                                <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                    <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                        <span>
-                                            Get in touch 
-                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </div>
+            <div class="single-slide">
+                <div class="slide-bg bg-cover"
+                    style="background-image: url('./assets/img/hero/a-dog-walk-walking-the-dogs-in-the-city-2022-11-08-10-52-58-utc.jpg');">
+                    <div class="container">
+                        <div class="hero-content">
+
+                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                The best requests for <br>Dog walking
+                            </h1>
+                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
+                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
+                                praesentium magnam itaque voluptatem aliquam? </p>
+                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                <a href="#" class="theme-btn theme-btn-2 hover-white">
+                                    <span>
+                                        Get in touch
+                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section> --}}
 
 
-                <!-- <div class="single-slide">
-                    <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
-                        <div class="container">
-                            <div class="hero-content">
-                                <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                    Empower Your <br>
-                                    business Journey <br>
-                                    with it Expertise
-                                </h1>
-                                <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                    <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                        <span>
-                                            Explore Our Service
-                                            <i class="fas fa-chevron-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 p-3">
+                <div class="card shadow-lg  border-0">
+                    <h3 class="px-5 py-4">Filters</h3>
+                    <hr class="border border-2">
+                    <h6 class="px-5 py-3">CATÉGORIES</h6>
+                    <ul class="px-5">
+                        <li class="py-1"> <a href="/categories">Services de déménagement</a></li>
+                        <li class="py-1">Peinture</li>
+                        <li class="py-1">Ménage de fin de location</li>
+                        <li class="py-1">Services de livraison</li>
+                        <li class="py-1"> Services de soins à domicile</li>
+                        <li class="py-1">Services de dédouanement</li>
+                        <li class="py-1"> Assemblage de meubles</li>
+                        <li class="py-1">Réparation de téléviseurs et d'électroménagers</li>
+                        <li class="py-1">Réparation de téléphone</li>
+                        <li class="py-1">Acheteur personnel</li>
+
+                    </ul>
+                    <h6 class="px-5 py-3">FOURNISSEUSE </h6>
+
+                    <ul class="px-5">
+                        <li class="py-1">indépendant </li>
+                        <li class="py-1">agence</li>
+                    </ul>
+
+                    <h6 class="px-5 py-3">EMPLACEMENT</h6>
+                    <select name="" id="" class="py-2 mx-5 my-3 border border-1">
+                        <option value="">sélectionner la ville</option>
+                        <option value="">--1--</option>
+                        <option value="">--2--</option>
+                        <option value="">--3--</option>
+                        <option value="">--4--</option>
+                        <option value="">--5--</option>
+                    </select>
+                    <hr class="border border-2">
+                    <h6 class="py-4 px-5">LISTE DE PRIX </h6>
+                    <div>
+                        {{-- <label for="vol">Volume (between 0 and 50):</label> --}}
+                        <input type="range" id="vol" class="w-75 mx-5 " name="vol" min="0"
+                            max="100"><br />
+                        <div class="row py-3 pb-5 mx-5"> <select name="" id="" class="py-2 px-5 w-50 border border-1">
+                                <option value="">Min</option>
+                                <option value="">--1--</option>
+                                <option value="">--2--</option>
+                                <option value="">--3--</option>
+                                <option value="">--4--</option>
+                                <option value="">--5--</option>
+                            </select>
+                            <select name="" id="" class="py-2 w-50 border border-1">
+                                <option value="">$1000</option>
+                                <option value="">--1--</option>
+                                <option value="">--2--</option>
+                                <option value="">--3--</option>
+                                <option value="">--4--</option>
+                                <option value="">--5--</option>
+                            </select>
                         </div>
-                    </div>
-                </div> -->
 
-<!-- 
-                <div class="single-slide">
-                    <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
-                        <div class="container">
-                            <div class="hero-content">
-                                <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                    Empower Your <br>
-                                    business Journey <br>
-                                    with it Expertise
-                                </h1>
-                                <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                    <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                        <span>
-                                            Explore Our Service
-                                            <i class="fas fa-chevron-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                </div> -->
+
+                </div>
+
 
             </div>
-        </section>
 
-        <!--<< Service Section Start >>--> 
-        <section class="service-section section-bg-4 fix section-padding">
+            <div class="col-md-8 p-3">
+                <div class="card shadow-lg p-3 border-0 ">
+                    <h3 class="p-3">Tous les services</h3>
+                    <div class="row pt-3 ">
+                        <div class="col-md-4  text-center"> <img src="./resources\views\assets\img\hero\paint.png"
+                                alt="1" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Peinture</h6>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                                class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Maison services de soins</h6>
+
+                        </div>
+                        <div class="col-md-4 text-center "> <img src="./resources\views\assets\img\hero\delivery.png"
+                                alt="2" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Autorisation services</h6>
+
+                        </div>
+                    </div>
+                    <div class="row  ">
+                        <div class="col-md-4 text-center "> <img src="./resources\views\assets\img\hero\wood.png"
+                                alt="1" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Assemblage de meubles</h6>
+                        </div>
+                        <div class="col-md-4 text-center"> <img src="./resources\views\assets\img\hero\mobile.png"
+                                alt="2" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Réparation de téléviseurs et d'appareils électroménagers</h6>
+                        </div>
+                        <div class="col-md-4 text-center "> <img
+                                src="./resources\views\assets\img\hero\phone_internal.png" alt="2"
+                                class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Téléphone Réparation</h6>
+                        </div>
+                    </div>
+                    <div class="row pt-3 ">
+                        <div class="col-md-4  text-center"> <img src="./resources\views\assets\img\hero\paint.png"
+                                alt="1" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Peinture</h6>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                                class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Maison services de soins</h6>
+
+                        </div>
+                        <div class="col-md-4 text-center "> <img src="./resources\views\assets\img\hero\delivery.png"
+                                alt="2" class="w-75 h-75 pt-3 rounded ">
+                            <h6 class="">Autorisation services</h6>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pb-4"> <button class="btn btn-outline-primary ">Afficher
+                            plus</button> </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {{-- 0ld code --}}
+        <!-- <div class="single-slide">
+                            <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                        <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                            Empower Your <br>
+                                            business Journey <br>
+                                            with it Expertise
+                                        </h1>
+                                        <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                            <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                <span>
+                                                    Explore Our Service
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+        <!--
+                        <div class="single-slide">
+                            <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                        <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                            Empower Your <br>
+                                            business Journey <br>
+                                            with it Expertise
+                                        </h1>
+                                        <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                            <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                <span>
+                                                    Explore Our Service
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+        <!--<< Service Section Start >>-->
+        {{-- <section class="service-section section-bg-4 fix section-padding">
             <div class="container">
                 <!-- <div class="title-section-area">
                     <div class="section-title style-2">
-                        <span class="wow fadeInUp">Our Services Area</span>  
+                        <span class="wow fadeInUp">Our Services Area</span>
                         <h2 class="wow fadeInUp" data-wow-delay=".3s">
                             WHAT WE’RE OFFERING TO <br>
                             OUR CUSTOMERS
-                        </h2>  
+                        </h2>
                     </div>
                     <p class="wow fadeInUp" data-wow-delay=".5s">
                         Transmds is the world’s driving worldwide coordinations supplier <br> uphold industry and exchange the worldwide trade of merchandi <br>
@@ -172,13 +334,13 @@
                         </div>
                     </div> -->
                     <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="icon">                              
+                        <div class="icon">
                             <i class="fas fa-badge-check"></i>
                         </div>
                         <div class="content">
                             <h6>
                                 <a href="#">
-                                    High Quality 
+                                    High Quality
                                 </a>
                             </h6>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa ipsam  </p>
@@ -186,7 +348,7 @@
                         </div>
                     </div>
                     <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="icon">                              
+                        <div class="icon">
                             <i class="fa fa-file-certificate"></i>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
                         <div class="content">
@@ -201,7 +363,7 @@
                         </div>
                     </div>
                     <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".9s">
-                        <div class="icon">                              
+                        <div class="icon">
                             <i class="fa fa-money-bill"></i>
 
                         </div>
@@ -210,7 +372,7 @@
                                 <a href="#">
                                     Low Cost
                                 </a>
-                                
+
                             </h6>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa ipsam</p>
                         </div>
@@ -226,41 +388,41 @@
                     </h5>
                 </div> -->
             </div>
-        </section>
+        </section> --}}
 
         <!--<< Brand Section Start >>-->
         <!-- <div class="brand-section fix">
-            <div class="container">
-                <div class="brand-wrapper-3">
-                    <div class="brand-carousel-active">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
-                        </div>
-                        <div class="brand-image">
-                            <img src="assets/img/brand/02.png" alt="brand-img">
+                    <div class="container">
+                        <div class="brand-wrapper-3">
+                            <div class="brand-carousel-active">
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div> -->
+                </div> -->
 
-       <!--<< About Section Start >>--> 
-       <section class="about-section fix section-padding " id="about">
+        <!--<< About Section Start >>-->
+        {{-- <section class="about-section fix section-padding " id="about">
         <div class="container">
             <div class="about-wrapper">
                 <div class="row">
@@ -276,24 +438,24 @@
                                 <img src="assets/img/about/border-shape.png" alt="shape-img">
                             </div>
                             <div class="about-image bg-cover wow fadeInLeft" data-wow-delay=".3s" style="background-image: url('assets/img/about/engineering-maintenance-500x500.webp');">
-                                
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-5 mt-lg-0">
                         <div class="about-content">
                             <div class="section-title">
-                                
+
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
                                     This is how it works
                                 </h2>
                             </div>
-                           
+
 
                             <div class="service-box-items-2">
-                                
+
                                 <div class="content">
-                                    
+
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia a illum in necessitatibus consectetur,
                                     </p>
@@ -301,9 +463,9 @@
                             </div>
                             <br>
                             <div class="service-box-items-2">
-                                
+
                                 <div class="content">
-                                    
+
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia a illum in necessitatibus consectetur,
                                     </p>
@@ -312,7 +474,7 @@
                             <br>
                             <div class="service-box-items-2">
                                <div class="content">
-                                    
+
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia a illum in necessitatibus consectetur,
                                     </p>
@@ -320,8 +482,8 @@
                             </div>
 
 
-                           
-                           
+
+
                             <div class="about-author">
                                 <div class="about-button wow fadeInUp" data-wow-delay=".8s">
                                     <a href="#" class="theme-btn">
@@ -331,31 +493,31 @@
                                        </span>
                                     </a>
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 
 
 
- <!--<< Service Section Start >>--> 
- <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
+        <!--<< Service Section Start >>-->
+        {{-- <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
     <div class="line-shape">
         <img src="assets/img/line.png" alt="shape-img">
     </div>
 
     <div class="container">
         <div class="section-title text-center">
-            
+
             <h2 class="wow fadeInUp" data-wow-delay=".3s">
                 Services we can offer you
-            </h2>  
+            </h2>
         </div>
         <div class="row">
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
@@ -528,12 +690,12 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 
-<!--<< Case Studies Start >>-->
-<div class="marque-section section-padding">
+        <!--<< Case Studies Start >>-->
+        {{-- <div class="marque-section section-padding">
     <div class="marquee-wrapper text-slider style-height">
         <div class="marquee-inner to-left">
             <ul class="marqee-list d-flex">
@@ -550,12 +712,12 @@
             </ul>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 
- <!--<< Testimonial Section Start >>-->
- <section class="testimonial-section-2 section-bg-2 fix section-padding">
+        <!--<< Testimonial Section Start >>-->
+        {{-- <section class="testimonial-section-2 section-bg-2 fix section-padding">
     <div class="container">
         <div class="section-title text-center">
             <span class="wow fadeInUp">Support Help</span>
@@ -678,16 +840,16 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
-   
+
 
         <!--<< Cta Chat Section Start >>-->
-        <section class="cta-chat-section-2" style="margin-top: -40px;">
+        {{-- <section class="cta-chat-section-2" style="margin-top: -40px;">
             <div class="container">
 
 
-                
+
                 <div class="cta-chat-wrapper style-2">
                     <div class="chat-items wow fadeInUp" data-wow-delay=".3s">
                         <div class="icon">
@@ -695,22 +857,22 @@
                         </div>
                         <div class="content">
                             <h3>Do you also want to get in touch with us?</h3>
-                            
+
                         </div>
                     </div>
                     <a href="#" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
                        <span>
                         Contact us
-                           
+
                        </span>
                     </a>
                 </div>
             </div>
-        </section>
-        
+        </section> --}}
+
 
         <!--<< Case Studies Section Start >>-->
-        <section class="case-study section-padding pt-0">
+        {{-- <section class="case-study section-padding pt-0">
             <div class="container">
                 <div class="about-wrapper section-padding pb-0">
                     <div class="row">
@@ -828,7 +990,7 @@
                                             </h4>
                                             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
                                                 <div class="accordion-body">
-                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.                                                   
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
                                                 </div>
                                             </div>
                                         </div>
@@ -839,11 +1001,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
-              <!--<< Footer Section Start >>-->
-  
-    </body>
-</html>
-@endsection
+        <!--<< Footer Section Start >>-->
+
+        </body>
+
+        </html>
+    @endsection

@@ -88,7 +88,7 @@
           <input type="text" class="form-control  mb-2 py-3 border-0" placeholder="Mot de passe" style="background-color: #4697ce"  />
           <a href="#" class="text-end text-white">vous avez oublié votre mot de passe ?</a>
 
-          <button class="btn btn-light mt-3 text-black w-75 py-2 ">Se connecter</button>
+          <button class="btn btn-light mt-3 fs-3 w-100 py-2 " style="color: #0d75bc">Se connecter</button>
 
 
           </form>  </div>

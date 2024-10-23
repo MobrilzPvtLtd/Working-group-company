@@ -32,25 +32,25 @@ class FrontendController extends Controller
     {
         return view('frontend.pages');
     }
-    public function news()
+    public function categories()
     {
-        return view('frontend.news');
+        return view('frontend.categories');
     }
     public function contactus()
     {
         return view('frontend.contactus');
     }
-    public function form1()
+    public function service_form()
     {
-        return view('frontend.form1');
+        return view('frontend.home_service_form');
     }
-    public function form2()
+    public function popular_service()
     {
-        return view('frontend.form2');
+        return view('frontend.popular_servicepages');
     }
-    public function lang()
+    public function login_form()
     {
-        return view('frontend.lang');
+        return view('frontend.login_form');
     }
     /**
      * Privacy Policy Page.

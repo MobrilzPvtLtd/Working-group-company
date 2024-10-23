@@ -16,7 +16,7 @@
     <div class="mouse-cursor cursor-inner"></div>
 
 
-    <section class="hero-section hero-3">
+    {{-- <section class="hero-section hero-3">
         <div class="slider-button">
             <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
             <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
@@ -127,7 +127,7 @@
                             </div> -->
 
         </div>
-    </section>
+    </section> --}}
     <!-- Hero Section -->
     {{-- <section class=" py-5"  style="background-image: url('./public/assets/img/hero/bg_hero1.png');background-repeat:no-repeat ; background-size:cover ">
         <div class="">
@@ -177,6 +177,15 @@
         </div>
     </section> --}}
 
+
+   <div class="container-fluid" style="
+              background-image: url('.\public\assets\img\hero\bg_hero1.png')
+
+         background-repeat:no-repeat; background-size:cover ">
+      <div  >
+       hwoolll
+      </div>
+   </div>
 
 
 
@@ -403,14 +412,17 @@
 
 
     <section class="service-section fix section-padding "
-        style="background-image: url('./public/assets/img/bg/bg_advantage.png'); background-repeat:no-repeat ; background-size:cover">
+        style=" background: linear-gradient(rgba(0, 119, 200, 0.8), rgba(0, 119, 200, 0.8)),
+                    url('./public/assets/img/bg/bg_advantage.png') center/cover;
+        padding: 100px 0;
+        position: relative; background-repeat:no-repeat ; background-size:cover ">
         {{-- <div class="overlay"></div> --}}
 
 
         <div class="container" style="position: relative;">
             <div class="text-center py-3"> <img src="assets/img/logo/logo1111 (1) (3).png" alt=""
                     style="width: 12%">
-                <h2 class="text-white text-lg py-4">Avantages de l'utilisation de WGC</h2>
+                <h2 class="text-white text-xl my-5 py-5">Avantages de l'utilisation de WGC</h2>
             </div>
             <div class="row" style="">
                 <div class="col-md-4">
@@ -457,16 +469,24 @@
 
 
     {{-- keypoints --}}
-    <section class="service-section fix section-padding my-5">
+    <section class="service-section fix section-padding my-5" style="
+    height: 80vh;
+                   ">
 
         <div class="container-fluid">
             <div class="row" style=" position: relative">
 
-                <div class="col-md-4" style=""> <img
-                        src="./resources\views\assets\img\hero\people.png" alt="111" class="w-100">
+                <div class="" style="
+
+                     position: absolute;
+                     z-index: 10;
+                     left: 195px;
+
+                    "> <img
+                        src="./resources\views\assets\img\hero\people.png" alt="111" class="">
                 </div>
-                <div class="col-md-8 p-5 text-start text-white rounded"
-                    style="background-color: #79bfedfc  ">
+                <div class=" p-5 text-start text-white rounded"
+                    style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;  background-color: #79bfedfc  ">
                     <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
                     <ul class="p-5">
 
@@ -543,11 +563,11 @@
 
  {{-- contact us form last page --}}
 
- 
+
 
 
   {{-- service & Develop keypoints --}}
-  <section class="service-section fix section-padding my-5">
+  {{-- <section class="service-section fix section-padding my-5">
 
     <div class="container-fluid">
         <div class="row" style=" position: relative">
@@ -607,7 +627,7 @@
 
 
     </div>
-</section>
+</section> --}}
 
 
 
@@ -1151,7 +1171,7 @@
 
 
     <!--<< Case Studies Section Start >>-->
-    <section class="case-study section-padding pt-0">
+    {{-- <section class="case-study section-padding pt-0">
         <div class="container">
             <div class="about-wrapper section-padding pb-0">
                 <div class="row">
@@ -1299,7 +1319,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <!--<< Footer Section Start >>-->

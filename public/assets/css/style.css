@@ -45,7 +45,7 @@ Version: 1.0.0
     4.6. Blog
     4.7. Comments
     4.8. Hero Area
-    4.9. Error    
+    4.9. Error
     4.00. Popup Search
     4.00. Popup Side Menu
     4.00. Wocommerce
@@ -22792,3 +22792,25 @@ hr.style1 {
     padding-bottom: 70px;
   }
 }
+
+ /* make responsive by media query */
+ /* .girl_img{
+    left: 14rem;
+ }
+ .girl_text{
+    background-color: #0d75bc;
+ }
+ @media screen and (max-width:424px) {
+    .girl_text{
+        overflow-y: scroll;
+         height: 28vh;
+      }
+      .girl_img{
+        left:-2rem;
+      }
+      .girl_img img{
+        width: 50%;
+      }
+    } */
+
+

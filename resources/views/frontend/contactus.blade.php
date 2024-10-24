@@ -26,7 +26,7 @@
 
         .hero-section {
             background: linear-gradient(rgba(0, 119, 200, 0.8), rgba(0, 119, 200, 0.8)),
-                url('./public/assets/img/bg/bg_advantage.png') center/cover;
+                url('.///asset//img/b//bg/ad/antage.png') center/cover;
             padding: 100px 0;
             position: relative;
         }
@@ -57,6 +57,14 @@
             color: #0077c8;
             margin-left: 15px;
             text-decoration: none;
+        }
+        .bg24{
+            background-image: linear-gradient(rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.849)),
+                               url('./public/assets/img/bg/contactbg24.png ');
+            height:38rem;
+            background-repeat:no-repeat;
+            background-size:cover;
+
         }
     </style>
     {{-- </head> --}}
@@ -90,12 +98,16 @@
         </div>
     </div>
 </div> --}}
+<div class="container-fluid bg24 position-relative w-100"  >
+
+    <div class="row position-absolute top-50"> <h2 class="text-start ps-5">Contactez-nous </h2></div>
+</div>
 
 <div class="container my-5">
     <div class="row ">
-        <div class="col-md-8 py-5 shadow-lg mx-auto">
+        <div class="col-md-8 col-11 py-5 shadow-lg mx-auto">
             <div class="row">
-                <div class="col-md-6 p-4" style="background-color: #0d75bc;     margin-left: -70px;">
+                <div class="col-md-6 col-6 py-4" style="background-color: #0d75bc;     margin-left: -4%;">
                     <h3 class="text-center text-white pb-4">Contactez-nous</h3>
                     <ul class="text-white my-2">
                         <li class="py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -146,17 +158,17 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 p-4">
+                <div class="col-md-6  col-6 p-4">
                     <h3 style="color: #0D75BC">Entrer en contact</h3>
                     <p>N'hésitez pas à nous écrire ci-dessous !</p>
                     <form class="py-4">
                         <input type="text" placeholder="Nom d'utilisateur" class="form-control mb-3">
                         <input type="text" placeholder="Votre e-mail" class="form-control mb-3">
                         <textarea class="form-control mb-2" placeholder="Tapez votre message ici"></textarea><br />
-                        <button class="btn btn-primary">ENVOYER</button>
+                        <button class="text-white p-2" style="background-color: #0d75bc;">ENVOYER</button>
 
                     </form>
-                </div> </div> 
+                </div> </div>
             </div>
         </div>
     </section>

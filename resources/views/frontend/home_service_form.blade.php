@@ -295,7 +295,7 @@
     </section> --}}
 
 
-  
+
 
 
 
@@ -326,7 +326,7 @@
                 <button type="button" class="btn btn-light btn-sm">2-10</button>
                  <button type="button" class="btn btn-light btn-sm">11-50</button><br/>
 
-                 <button class="btn btn-primary my-2"> SOUMET</button>
+                 <button class="my-2 p-2 text-white" style="background-color: #0d75bc;"> SOUMET</button>
              </form>
 
           </div>

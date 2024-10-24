@@ -165,69 +165,85 @@
 
 
 </div> --}}
+<style>
+    .nav-item a{
 
+    color: #fff;
+}
+.nav-item a:hover{
+    background-color: #fff;
+    color: #0d75bc
+}
+
+</style>
 
 <div class="contianer-fluid">
-    <div class="row">
-        <div class="col-md-2">
+    <div class=" d-md-flex">
+        <div class="col-md-2  d-none d-sm-none d-md-block">
             <img src=".\public\assets\img\WGC-logo 1.png" alt="logo1" class="px-5 py-4">
         </div>
         <div class="col-md-10">
-            <div class="col-md-12">
-                <div class="d-flex justify-content-around py-5">
+            <div class="col-md-12  d-none d-sm-none d-md-block">
+                <div class="d-flex justify-content-end py-5">
 
-                    <div class="me-2 " style="color: #0d75bc;">
-                        <i class="far fa-envelope me-2"></i>
-                        info@ilende.com
-                    </div>
-                    <div class="me-2" style="color: #0d75bc;" >
-                        <i class="fas fa-phone me-2"></i>
-                        +240222867206
-                    </div>
-                    <div class="me-2" style="color: #0d75bc;">
+                    <div class="me-2  py-2" style="color: #0d75bc;">
+                        <span class="px-5"> <i class="far fa-envelope me-2"></i>
+                            info@ilende.com</span>
 
-                       <a href="/login_form"><i class="fas fa-user me-2"></i></a>
-                        Se connecter
+
+                        <span class="px-5"> <i class="fas fa-phone me-2"></i>
+                            +240222867206
+                        </span>
+
+
+                        <span class="px-5" > <a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i>
+                                Se connecter </a> </span>
                     </div>
-                    <div class="social-icons d-inline-block me-4" >
-                        <a href="#"><i class="fab fa-facebook mx-2"></i></a>
-                        <a href="#"><i class="fab fa-twitter mx-2"></i></a>
-                        <a href="#"><i class="fab fa-instagram mx-2"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp mx-2"></i></a>
+                    <div class="social-icons d-inline-block me-4 py-2 " >
+                        <a href="#"><i class="fab fa-facebook mx-2" style="color: #0d75bc;"></i></a>
+                        <a href="#"><i class="fab fa-twitter mx-2" style="color: #0d75bc;"></i></a>
+                        <a href="#"><i class="fab fa-instagram mx-2" style="color: #0d75bc;"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp mx-2" style="color: #0d75bc;"></i></a>
                     </div>
                 </div>
 
             </div>
             <div class="col-md-12">
-                 <nav class="navbar navbar-expand-lg " style="background-color: #0d75bc;">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse py-4 " id="navbarNav">
-                        <ul class="navbar-nav fs-5">
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3 " href="/">Maison</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="/about">À propos de nous</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="#">Aide</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="/service">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="/contact">Contactez-nous</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="/popular_service">Rejoignez-Nous En Tant Que Professionnel</a>
-                            </li>
-                        </ul>
+                <nav class="navbar navbar-expand-lg " style="background-color: #0d75bc;">
+                    <div class="container">
+                        <a class="navbar-brand rounded d-block d-sm-none" href="/">
+                            <img src=".\public\assets\img\WGC-logo 1.png" alt="99" width="35" height="35">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav fs-6">
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4 " href="/">Maison</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4" href="/about">À propos de nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4" href="#">Aide</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4" href="/service">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4" href="/contact">Contactez-nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-3 py-4" href="/popular_service">Rejoignez-Nous En Tant
+                                        Que Professionnel</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav></div>
+                </nav>
+            </div>
         </div>
 
     </div>
@@ -236,8 +252,8 @@
 
 
 
- {{-- <div class="container-fluid"> --}}
-               {{-- <div class="bg-white topnav ">
+{{-- <div class="container-fluid"> --}}
+{{-- <div class="bg-white topnav ">
                     <div class="d-flex justify-content-end">
                         <ul class="d-flex mx-2">
                             <li class="mx-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -265,4 +281,4 @@
                         </ul>
                     </div>
                 </div> --}}
-           {{-- </div> --}}
+{{-- </div> --}}

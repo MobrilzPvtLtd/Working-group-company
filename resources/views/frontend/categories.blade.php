@@ -50,8 +50,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10  mx-auto my-2 ">
-            <div class="card shadow-lg p-5 border-0 ">
+            <div class="card shadow-lg p-5 border-0 " >
                 <h3 class="p-3">Autres services</h3>
+                <div style="
+                overflow-y: scroll;
+                height: 87vh;
+                overflow-x: hidden; ">
                 <div class="row pt-3 ">
                     <div class="col-md-3  text-center"> <img src="./resources\views\assets\img\hero\paint.png"
                             alt="1" class="w-75 h-75 pt-3 rounded ">
@@ -117,7 +121,7 @@
 
                     </div>
                 </div>
-
+            </div>
             </div>
         </div>
 

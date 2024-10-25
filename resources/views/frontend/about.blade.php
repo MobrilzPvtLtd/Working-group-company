@@ -10,12 +10,34 @@
     <div class="mouse-cursor cursor-inner"></div>
     <style>
         .bg24 {
-            background-image: linear-gradient(rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.849)),
-                url('./public/assets/img/bg/aboutbg24.png ');
+            background-image: linear-gradient(to right, rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.47)),
+                url('./public/assets/img/bg/aboutbg24.png');
             background-repeat: no-repeat;
             background-size: cover;
+            /* Change to cover for full coverage */
+            background-position: center;
+            /* Center the background image */
             height: 45rem;
+            /* Set height */
+        }
 
+        @media (max-width: 768px) {
+            .bg24 {
+                height: 30rem;
+                /* Adjust height for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .bg24 {
+                height: 25rem;
+                /* Further adjust height for extra small screens */
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                /* Adjust font size for smaller screens */
+            }
         }
     </style>
     {{-- <section class="hero-section hero-3">
@@ -87,13 +109,14 @@
 
     </div> --}}
 
-    <div class="container-fluid  bg24 position-relative w-100">
-        <div class="row position-absolute top-50 ">
+    <div class="container-fluid bg24 position-relative w-100">
+        <div class="row justify-content-start align-items-center h-100">
             <h2 class="text-start ps-5">À propos <br />de nous</h2>
         </div>
     </div>
 
-    <section class="service-section fix section-padding my-5">
+
+    <section class="service-section fix section-padding my-5 d-none d-md-block">
 
         <div class="container-fluid">
             <div class="row position-relative" style=" ">
@@ -124,9 +147,36 @@
 
         </div>
     </section>
+    {{-- mobile view start --}}
+    <div class="container-fluid d-block d-sm-block d-md-none">
+        <div class="row">
+            <div class="col-md-4"> <img src="./resources\views\assets\img\bg\girl.png" alt="111" class="w-100">
+            </div>
+
+            <div class="col-md-8 mb-3 text-start text-white rounded-top py-5" style="background-color: #0d75bc;">
+                <h4 class="text-white pb-3">L'histoire du WGC</h4>
+                Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
+                permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
+                les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une
+                liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
+                offrant des opportunités de travail adaptées à leur vie de famille.
+
+                <br /><br /><br />
+
+                L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en
+                main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à
+                réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui
+                cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer
+                dans un monde de plus en plus connecté et dynamique.
+            </div>
+
+        </div>
+    </div>
+    {{-- mobile view end --}}
 
 
-    <section class="testimonial-section-2 section-bg-2 fix section-padding">
+
+    <section class="testimonial-section-2 section-bg-2 fix section-padding ">
         <div class="container">
             <div class="section-title text-center">
                 <span class="wow fadeInUp"> {{ __('Support Help') }}</span>
@@ -257,7 +307,10 @@
     </section>
 
 
-    <section class="service-section fix section-padding my-5" style="
+
+
+    <section class="service-section fix section-padding my-5 d-none d-md-block"
+        style="
            height: 80vh;
                    ">
 
@@ -338,59 +391,125 @@
     </section>
 
 
+    {{-- mobile view start --}}
+    <div class="container-fluid d-block d-sm-block d-md-none">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./resources\views\assets\img\hero\people.png" alt="111" class="w-100">
+            </div>
+            <div class="col-md-8 p-3 text-start text-white rounded-top" style="  background-color: #79bfedfc  ">
+                <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
+                <ul class="py-3 fs-6">
+
+                    <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg> Des hommes et des femmes de ménage qualifiés et expérimentés
+
+
+                    </li>
+
+
+
+                    <li class=" py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg> Un support client personnalisé et dédié </li>
+
+                    <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg>Contrats sans engagement </li>
+                    <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg> Des prix attractifs </li>
+                    <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg> Application mobile dédiée à la gestion de vos ménages  </li>
+                    <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                        </svg> Des solutions flexibles et sur mesure</li>
+                </ul>
+
+                <div class="d-flex justify-content-start py-2 mx-2">
+                    <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville " type="text"
+                            class="form-control border-0" /></div>
+                    <div class="col-md-3"> <button class="px-2 py-1 text-white rounded"
+                            style="background-color: #0d75bc;">Allons-y!</button></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{-- mobile view end --}}
 
 
 
 
     <!-- <div class="single-slide">
-                            <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
-                                <div class="container">
-                                    <div class="hero-content">
-                                        <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                        <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                            Empower Your <br>
-                                            business Journey <br>
-                                            with it Expertise
-                                        </h1>
-                                        <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                            <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                                <span>
-                                                    Explore Our Service
-                                                    <i class="fas fa-chevron-right"></i>
-                                                </span>
-                                            </a>
+                                <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
+                                    <div class="container">
+                                        <div class="hero-content">
+                                            <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                                Empower Your <br>
+                                                business Journey <br>
+                                                with it Expertise
+                                            </h1>
+                                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                                <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                    <span>
+                                                        Explore Our Service
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> -->
+                            </div> -->
 
 
 
 
     <!--
-                        <div class="single-slide">
-                            <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
-                                <div class="container">
-                                    <div class="hero-content">
-                                        <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                        <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                            Empower Your <br>
-                                            business Journey <br>
-                                            with it Expertise
-                                        </h1>
-                                        <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                            <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                                <span>
-                                                    Explore Our Service
-                                                    <i class="fas fa-chevron-right"></i>
-                                                </span>
-                                            </a>
+                            <div class="single-slide">
+                                <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
+                                    <div class="container">
+                                        <div class="hero-content">
+                                            <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                                Empower Your <br>
+                                                business Journey <br>
+                                                with it Expertise
+                                            </h1>
+                                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                                <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                    <span>
+                                                        Explore Our Service
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> -->
+                            </div> -->
 
 
 
@@ -450,89 +569,89 @@
             </div>
         </section> --}}
     <!-- <div class="title-section-area">
-                            <div class="section-title style-2">
-                                <span class="wow fadeInUp">Our Services Area</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    WHAT WE’RE OFFERING TO <br>
-                                    OUR CUSTOMERS
-                                </h2>
-                            </div>
-                            <p class="wow fadeInUp" data-wow-delay=".5s">
-                                Transmds is the world’s driving worldwide coordinations supplier <br> uphold industry and exchange the worldwide trade of merchandi <br>
-                                do eiusmod tempor incididunt ut labore et simply free text dolore
-                            </p>
-                        </div> -->
+                                <div class="section-title style-2">
+                                    <span class="wow fadeInUp">Our Services Area</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        WHAT WE’RE OFFERING TO <br>
+                                        OUR CUSTOMERS
+                                    </h2>
+                                </div>
+                                <p class="wow fadeInUp" data-wow-delay=".5s">
+                                    Transmds is the world’s driving worldwide coordinations supplier <br> uphold industry and exchange the worldwide trade of merchandi <br>
+                                    do eiusmod tempor incididunt ut labore et simply free text dolore
+                                </p>
+                            </div> -->
 
 
     <!-- <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".3s">
-                                <div class="icon">
-                                    <i class="flaticon-coding"></i>
-                                </div>
-                                <div class="content">
-                                    <h6>
-                                        <a href="#">
-                                            UI / UX <br>
-                                            CREATIVE DESIGN
-                                        </a>
-                                    </h6>
-                                </div>
-                            </div> -->
+                                    <div class="icon">
+                                        <i class="flaticon-coding"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h6>
+                                            <a href="#">
+                                                UI / UX <br>
+                                                CREATIVE DESIGN
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div> -->
     <!-- <div class="service-box-items style-2 active wow fadeInUp" data-wow-delay=".5s">
-                                <div class="icon">
-                                    <i class="flaticon-server"></i>
-                                </div>
-                                <div class="content">
-                                    <h6>
-                                        <a href="service-details.html">
-                                            Desktop <br>
-                                            Computing Services
-                                        </a>
-                                    </h6>
-                                </div>
-                            </div> -->
+                                    <div class="icon">
+                                        <i class="flaticon-server"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h6>
+                                            <a href="service-details.html">
+                                                Desktop <br>
+                                                Computing Services
+                                            </a>
+                                        </h6>
+                                    </div>
+                                </div> -->
 
 
     <!-- <div class="service-text-area text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
-                            <h5>
-                                Bring them together and you overcome the ordinary.
-                                <a href="service.html" class="link-btn link-btn-2">
-                                    <span>View More Service</span>
-                                    <i class="fal fa-plus"></i>
-                                </a>
-                            </h5>
-                        </div> -->
+                                <h5>
+                                    Bring them together and you overcome the ordinary.
+                                    <a href="service.html" class="link-btn link-btn-2">
+                                        <span>View More Service</span>
+                                        <i class="fal fa-plus"></i>
+                                    </a>
+                                </h5>
+                            </div> -->
 
 
     <!--<< Brand Section Start >>-->
     <!-- <div class="brand-section fix">
-                    <div class="container">
-                        <div class="brand-wrapper-3">
-                            <div class="brand-carousel-active">
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                </div>
-                                <div class="brand-image">
-                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                        <div class="container">
+                            <div class="brand-wrapper-3">
+                                <div class="brand-carousel-active">
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
+                                    <div class="brand-image">
+                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
 
     <!--<< About Section Start >>-->
     {{-- <section class="about-section fix section-padding " id="about">

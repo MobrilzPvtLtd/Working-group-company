@@ -18,7 +18,7 @@
 
 
 
- <div class="container-fluid my-4">
+  <div class="container-fluid my-4">
     <div class="row">
         <div class="col-md-6">
             <img src=".\public\assets\img\bg\womencare.png" alt="11" class="w-100">
@@ -44,6 +44,8 @@
     </div>
 
 </div>
+
+
 
 
 

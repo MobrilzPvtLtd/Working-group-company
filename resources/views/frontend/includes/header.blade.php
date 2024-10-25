@@ -174,17 +174,24 @@
     background-color: #fff;
     color: #0d75bc
 }
+@media (max-width:1024px){
+    .logo-24{
+        padding: 0 -1px;
+        width: 10rem;
+       padding: 20px;
+    }
+}
 
 </style>
 
 <div class="contianer-fluid">
-    <div class=" d-md-flex">
+    <div class="d-md-flex">
         <div class="col-md-2  d-none d-sm-none d-md-block">
-            <img src=".\public\assets\img\WGC-logo 1.png" alt="logo1" class="px-5 py-4">
+            <img src=".\public\assets\img\WGC-logo 1.png" alt="logo1" class=" logo_24 px-5 py-2 ">
         </div>
         <div class="col-md-10">
-            <div class="col-md-12  d-none d-sm-none d-md-block">
-                <div class="d-flex justify-content-end py-5">
+            <div class="col-md-12 pt-5 pb-3 d-none d-sm-none d-md-block">
+                <div class="d-flex justify-content-end ">
 
                     <div class="me-2  py-2" style="color: #0d75bc;">
                         <span class="px-5"> <i class="far fa-envelope me-2"></i>
@@ -224,7 +231,7 @@
                                     <a class="nav-link  mx-3 py-4 " href="/">Maison</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4" href="/about">À propos de nous</a>
+                                    <a class="nav-link  mx-3 py-4  " href="/about">À propos de nous</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link  mx-3 py-4" href="#">Aide</a>

@@ -628,7 +628,7 @@
 
 
     {{-- keypoints --}}
-    <section class="service-section fix section-padding my-5 d-none d-md-block" style="height: 80vh; ">
+    <section class="service-section fix  my-5 d-none d-md-block" style="height: 80vh; ">
 
         <div class="container-fluid">
             <div class="row position-relative">
@@ -637,8 +637,8 @@
                     style="
 
                      position: absolute;
-                     z-index: 10;
-                     left: 12%;
+                     z-index: 1;
+                     left: 14rem;
 
                     ">
                     <img src="./resources\views\assets\img\hero\people.png" alt="111" class="">

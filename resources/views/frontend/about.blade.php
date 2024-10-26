@@ -116,7 +116,7 @@
     </div>
 
 
-    <section class="service-section fix section-padding my-5 d-none d-md-block">
+    <section class="service-section fix  my-5 d-none d-md-block">
 
         <div class="container-fluid">
             <div class="row position-relative" style=" ">
@@ -124,7 +124,7 @@
                 <div class="position-relative  " style="left: 14rem"> <img src="./resources\views\assets\img\bg\girl.png"
                         alt="111" class="w-25">
                 </div>
-                <div class=" col-md-8  col-8 position-absolute top-50 end-0 translate-middle-y text-start text-white rounded p-5
+                <div class=" col-md-8   position-absolute top-50 end-0 translate-middle-y text-start text-white rounded p-5
                 "
                     style="background-color: #0d75bc;">
                     <h4 class="text-white pb-3">L'histoire du WGC</h4>
@@ -176,7 +176,7 @@
 
 
 
-    <section class="testimonial-section-2 section-bg-2 fix section-padding ">
+    <section class="testimonial-section-2 section-bg-2 fix  ">
         <div class="container">
             <div class="section-title text-center">
                 <span class="wow fadeInUp"> {{ __('Support Help') }}</span>
@@ -309,7 +309,7 @@
 
 
 
-    <section class="service-section fix section-padding my-5 d-none d-md-block"
+    <section class="service-section fix  my-5 d-none d-md-block"
         style="
            height: 80vh;
                    ">
@@ -321,16 +321,16 @@
                     style="
 
                      position: absolute;
-                     z-index: 10;
-                     left: 195px;
+                     z-index: 1;
+                     left: 14rem;
 
                     ">
                     <img src="./resources\views\assets\img\hero\people.png" alt="111" class="">
                 </div>
-                <div class=" p-5 text-start text-white rounded"
-                    style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;  background-color: #79bfedfc  ">
-                    <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
-                    <ul class="p-5 fs-6">
+                <div class=" p-5 text-start  position-absolute rounded"
+                    style="right: 0; background-color: #fff; width: 60%; ;  ">
+                    <h2 class="text-center pt-4" style="color: #0b1217;">Réservez votre prestation</h2>
+                    <ul class="p-5 fs-6 text-black">
 
                         <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
@@ -379,7 +379,7 @@
 
                     <div class="d-flex justify-content-start py-2 mx-5">
                         <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville " type="text"
-                                class="form-control border-0" /></div>
+                                class="form-control border-1" /></div>
                         <div class="col-md-3"> <button class="px-4 py-1 text-white rounded"
                                 style="background-color: #0d75bc;">Allons-y!</button></div>
                     </div>

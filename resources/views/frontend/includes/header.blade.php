@@ -174,13 +174,7 @@
     background-color: #fff;
     color: #0d75bc
 }
-@media (max-width:1024px){
-    .logo-24{
-        padding: 0 -1px;
-        width: 10rem;
-       padding: 20px;
-    }
-}
+
 
 </style>
 
@@ -191,22 +185,22 @@
         </div>
         <div class="col-md-10">
             <div class="col-md-12 pt-5 pb-3 d-none d-sm-none d-md-block">
-                <div class="d-flex justify-content-end ">
+                <div class="d-flex justify-content-center ">
 
                     <div class="me-2  py-2" style="color: #0d75bc;">
-                        <span class="px-5"> <i class="far fa-envelope me-2"></i>
+                        <span class="px-5 fw-semibold fs-5"> <i class="far fa-envelope me-2"></i>
                             info@ilende.com</span>
 
 
-                        <span class="px-5"> <i class="fas fa-phone me-2"></i>
+                        <span class="px-5 fw-semibold fs-5"> <i class="fas fa-phone me-2"></i>
                             +240222867206
                         </span>
 
 
-                        <span class="px-5" > <a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i>
+                        <span class="px-5 fw-semibold fs-5"> <a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i>
                                 Se connecter </a> </span>
                     </div>
-                    <div class="social-icons d-inline-block me-4 py-2 " >
+                    <div class="social-icons d-inline-block me-4 py-2 fs-5" >
                         <a href="#"><i class="fab fa-facebook mx-2" style="color: #0d75bc;"></i></a>
                         <a href="#"><i class="fab fa-twitter mx-2" style="color: #0d75bc;"></i></a>
                         <a href="#"><i class="fab fa-instagram mx-2" style="color: #0d75bc;"></i></a>
@@ -218,17 +212,17 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg " style="background-color: #0d75bc;">
                     <div class="container">
-                        <a class="navbar-brand rounded d-block d-sm-none" href="/">
+                        <a class="navbar-brand rounded d-block d-sm-block d-md-none" href="/">
                             <img src=".\public\assets\img\WGC-logo 1.png" alt="99" width="35" height="35">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse " id="navbarNav">
-                            <ul class="navbar-nav fs-6">
+                        <div class="collapse navbar-collapse  " id="navbarNav">
+                            <ul class="navbar-nav fs-5 fw-semibold">
                                 <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4 " href="/">Maison</a>
+                                    <a class="nav-link  me-1 py-4 " href="/">Maison</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link  mx-3 py-4  " href="/about">À propos de nous</a>
@@ -248,6 +242,29 @@
                                 </li>
                             </ul>
                         </div>
+                        {{-- <div class="collapse navbar-collapse d-block d-sm-block d-md-none" id="navbarNav">
+                            <ul class="navbar-nav fs-5 fw-semibold">
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2 " href="/">Maison</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2  " href="/about">À propos de nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2" href="#">Aide</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2" href="/service">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2" href="/contact">Contactez-nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  mx-2" href="/popular_service">Rejoignez-Nous En Tant
+                                        Que Professionnel</a>
+                                </li>
+                            </ul>
+                        </div> --}}
                     </div>
                 </nav>
             </div>
@@ -256,6 +273,72 @@
     </div>
 </div>
 
+
+ {{-- <style>
+    .nav-item a {
+        color: #fff;
+    }
+    .nav-item a:hover {
+        background-color: #fff;
+        color: #0d75bc;
+    }
+    .logo-24 {
+        width: 10rem;
+        padding: 20px;
+    }
+    @media (max-width: 768px) {
+        .logo-24 {
+            width: 8rem; /* Adjust logo size for smaller screens */
+        }
+    }
+    .contact-info span,
+    .social-icons a {
+        color: #0d75bc;
+    }
+</style> --}}
+
+{{-- <div class="container-fluid">
+    <div class="row d-flex">
+        <div class="col-md-2 d-none d-md-block">
+            <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="logo-24 px-5 py-2">
+        </div>
+        <div class="col-md-10">
+            <div class="d-flex justify-content-end align-items-center py-3 d-none d-md-flex">
+                <div class="contact-info me-4">
+                    <span class="px-3"><i class="far fa-envelope me-2"></i> info@ilende.com</span>
+                    <span class="px-3"><i class="fas fa-phone me-2"></i> +240222867206</span>
+                    <span class="px-3"><a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i> Se connecter</a></span>
+                </div>
+                <div class="social-icons d-inline-block">
+                    <a href="#"><i class="fab fa-facebook mx-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp mx-2"></i></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg" style="background-color: #0d75bc;">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-block d-md-none" href="/">
+                        <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" width="35" height="35">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav fs-6">
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/">Maison</a></li>
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/about">À propos de nous</a></li>
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="#">Aide</a></li>
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/service">Services</a></li>
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/contact">Contactez-nous</a></li>
+                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/popular_service">Rejoignez-Nous En Tant Que Professionnel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div> --}}
 
 
 

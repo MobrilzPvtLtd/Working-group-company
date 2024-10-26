@@ -21,6 +21,11 @@
 
         }
 
+
+        .mob_img {
+            height: 28vh;
+            }
+
         @media (max-width: 768px) {
             .bg24 {
                 height: 30rem;
@@ -38,12 +43,11 @@
                 font-size: 1.5rem;
 
             }
+
             .mob_img {
                 width: 100%
             }
         }
-
-
     </style>
 
     <!-- Offcanvas Area Start -->
@@ -126,140 +130,182 @@
         <div class="row justify-content-start align-items-center h-100">
             <h2 class="text-start ps-5">Nos <br /> prestations</h2>
         </div>
-       
+
     </div>
 
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 p-3">
-                    <div class="card shadow-lg  border-0">
-                        <h3 class="px-5 py-4">Filters</h3>
-                        <hr class="border border-2">
-                        <h6 class="px-5 py-3">CATÉGORIES</h6>
-                        <ul class="px-5">
-                            <li class="py-1"> <a href="/categories">Services de déménagement</a></li>
-                            <li class="py-1">Peinture</li>
-                            <li class="py-1">Ménage de fin de location</li>
-                            <li class="py-1">Services de livraison</li>
-                            <li class="py-1"> Services de soins à domicile</li>
-                            <li class="py-1">Services de dédouanement</li>
-                            <li class="py-1"> Assemblage de meubles</li>
-                            <li class="py-1">Réparation de téléviseurs et d'électroménagers</li>
-                            <li class="py-1">Réparation de téléphone</li>
-                            <li class="py-1">Acheteur personnel</li>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 p-3">
+                <div class="card shadow-lg  border-0">
+                    <h3 class="px-5 py-4">Filters</h3>
+                    <hr class="border border-2">
+                    <h6 class="px-5 py-3">CATÉGORIES</h6>
+                    <ul class="px-5">
+                        <li class="py-1"> <a href="/categories">Services de déménagement</a></li>
+                        <li class="py-1">Peinture</li>
+                        <li class="py-1">Ménage de fin de location</li>
+                        <li class="py-1">Services de livraison</li>
+                        <li class="py-1"> Services de soins à domicile</li>
+                        <li class="py-1">Services de dédouanement</li>
+                        <li class="py-1"> Assemblage de meubles</li>
+                        <li class="py-1">Réparation de téléviseurs et d'électroménagers</li>
+                        <li class="py-1">Réparation de téléphone</li>
+                        <li class="py-1">Acheteur personnel</li>
 
-                        </ul>
-                        <h6 class="px-5 py-3">FOURNISSEUSE </h6>
+                    </ul>
+                    <h6 class="px-5 py-3">FOURNISSEUSE </h6>
 
-                        <ul class="px-5">
-                            <li class="py-1">indépendant </li>
-                            <li class="py-1">agence</li>
-                        </ul>
+                    <ul class="px-5">
+                        <li class="py-1">indépendant </li>
+                        <li class="py-1">agence</li>
+                    </ul>
 
-                        <h6 class="px-5 py-3">EMPLACEMENT</h6>
-                        <select name="" id="" class="py-2 mx-5 my-3 border border-1">
-                            <option value="">sélectionner la ville</option>
-                            <option value="">--1--</option>
-                            <option value="">--2--</option>
-                            <option value="">--3--</option>
-                            <option value="">--4--</option>
-                            <option value="">--5--</option>
-                        </select>
-                        <hr class="border border-2">
-                        <h6 class="py-4 px-5">LISTE DE PRIX </h6>
-                        <div>
-                            {{-- <label for="vol">Volume (between 0 and 50):</label> --}}
-                            <input type="range" id="vol" class="w-75 mx-5 " name="vol" min="0"
-                                max="100"><br />
-                            <div class="row py-3 pb-5 mx-5"> <select name="" id=""
-                                    class="py-2 px-5 w-50 border border-1">
-                                    <option value="">Min</option>
-                                    <option value="">--1--</option>
-                                    <option value="">--2--</option>
-                                    <option value="">--3--</option>
-                                    <option value="">--4--</option>
-                                    <option value="">--5--</option>
-                                </select>
-                                <select name="" id="" class="py-2 w-50 border border-1">
-                                    <option value="">$1000</option>
-                                    <option value="">--1--</option>
-                                    <option value="">--2--</option>
-                                    <option value="">--3--</option>
-                                    <option value="">--4--</option>
-                                    <option value="">--5--</option>
-                                </select>
-                            </div>
-
-
+                    <h6 class="px-5 py-3">EMPLACEMENT</h6>
+                    <select name="" id="" class="py-2 mx-5 my-3 border border-1">
+                        <option value="">sélectionner la ville</option>
+                        <option value="">--1--</option>
+                        <option value="">--2--</option>
+                        <option value="">--3--</option>
+                        <option value="">--4--</option>
+                        <option value="">--5--</option>
+                    </select>
+                    <hr class="border border-2">
+                    <h6 class="py-4 px-5">LISTE DE PRIX </h6>
+                    <div>
+                        {{-- <label for="vol">Volume (between 0 and 50):</label> --}}
+                        <input type="range" id="vol" class="w-75 mx-5 " name="vol" min="0"
+                            max="100"><br />
+                        <div class="row py-3 pb-5 mx-5"> <select name="" id=""
+                                class="py-2 px-5 w-50 border border-1">
+                                <option value="">Min</option>
+                                <option value="">--1--</option>
+                                <option value="">--2--</option>
+                                <option value="">--3--</option>
+                                <option value="">--4--</option>
+                                <option value="">--5--</option>
+                            </select>
+                            <select name="" id="" class="py-2 w-50 border border-1">
+                                <option value="">$1000</option>
+                                <option value="">--1--</option>
+                                <option value="">--2--</option>
+                                <option value="">--3--</option>
+                                <option value="">--4--</option>
+                                <option value="">--5--</option>
+                            </select>
                         </div>
+
 
                     </div>
 
-
-                </div>
-
-                 <div class="col-md-9 p-3">
-                    <div class="card shadow-lg p-3 border-0 ">
-                        <h3 class="p-3">Tous les services</h3>
-                        <div class="d-flex justify-content-evenly">
-                            <div class="  text-center mx-2">
-                                <a href="/categories">  <img src="./resources\views\assets\img\hero\paint.png"
-                                    alt="1" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Peinture</h6> </a>
-                            </div>
-                            <div class=" text-center mx-2">
-                                <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
-                                    class=" pt-3 rounded mob_img ">
-                                <h6 class="">Maison services de soins</h6>
-
-                            </div>
-                            <div class=" text-center mx-2 "> <img src="./resources\views\assets\img\hero\delivery.png"
-                                    alt="2" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Autorisation services</h6>
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-evenly  ">
-                            <div class=" text-center mx-2 "> <img src="./resources\views\assets\img\hero\wood.png"
-                                    alt="1" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Assemblage de meubles</h6>
-                            </div>
-                            <div class=" text-center mx-2"> <img src="./resources\views\assets\img\hero\mobile.png"
-                                    alt="2" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Réparation de téléviseurs</h6>
-                            </div>
-                            <div class=" text-center mx-2 "> <img src="./resources\views\assets\img\hero\phone_internal.png"
-                                    alt="2" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Téléphone Réparation</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-evenly ">
-                            <div class="  text-center mx-2"> <img src="./resources\views\assets\img\hero\paint.png"
-                                    alt="1" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Peinture</h6>
-                            </div>
-                            <div class=" text-center mx-2">
-                                <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
-                                    class=" pt-3 rounded mob_img ">
-                                <h6 class="">Maison services de soins</h6>
-
-                            </div>
-                            <div class=" text-center mx-2 "> <img src="./resources\views\assets\img\hero\delivery.png"
-                                    alt="2" class=" pt-3 rounded mob_img ">
-                                <h6 class="">Autorisation services</h6>
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center py-4"> <button class="btn btn-outline-primary ">Afficher
-                                plus</button> </div>
-
-                    </div>
                 </div>
 
 
             </div>
+
+            <div class="col-md-9 p-3">
+                <div class="card shadow-lg p-3 border-0 ">
+                    <h3 class="p-3">Tous les prestataires de services</h3>
+
+
+                    <div class="row ">
+
+                         <div class=" col-md-4 text-center ">
+                            <div class="  ">
+
+                                <img src="./resources\views\assets\img\hero\paint.png" alt="1"
+                                    class="w-100 pt-3  mob_img ">
+                                <h6 class="">Peinture</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center ">
+                            <div class="  ">
+                                <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                                    class="w-100 pt-3  mob_img ">
+                                <h6 class="">Maison services de soins</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center  ">
+                            <div class="  ">
+                                <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
+                                    class="w-100 pt-3  mob_img ">
+                                <h6 class="">Autorisation services</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 text-center  ">
+                            <div class="card border-0 text-center">
+                                <img src="./resources\views\assets\img\hero\wood.png" alt="1"
+                                    class=" w-100 pt-3 rounded mob_img ">
+                                <h6 class="">Assemblage de meubles</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center ">
+                            <div class="card border-0 text-center">
+                                <img src="./resources\views\assets\img\hero\mobile.png" alt="2"
+                                    class=" w-100  pt-3 rounded mob_img ">
+                                <h6 class="">Réparation de téléviseurs</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center  ">
+                            <div class="card border-0 text-center">
+                                <img src="./resources\views\assets\img\hero\phone_internal.png" alt="2"
+                                    class=" w-100 pt-3 rounded mob_img ">
+                                <h6 class="">Téléphone Réparation</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <div class="card border-0 text-center">
+                                <a href="/categories">
+
+                                    <img src="./resources\views\assets\img\hero\paint.png" alt="1"
+                                        class=" w-100  pt-3 rounded mob_img ">
+                                    <h6 class="">Peinture</h6>
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card border-0 text-center">
+
+                                <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                                    class="w-100  pt-3 rounded mob_img ">
+                                <h6 class="">Maison services de soins</h6>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card border-0 text-center">
+                                <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
+                                    class="w-100  pt-3 rounded mob_img ">
+                                <h6 class="">Autorisation services</h6>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="d-flex justify-content-center py-4"> <button class="btn btn-outline-primary ">Afficher
+                            plus</button> </div>
+
+                </div>
+            </div>
+
+
         </div>
+    </div>
 
 
 
@@ -286,57 +332,57 @@
 
 
 
-        {{-- 0ld code --}}
-        <!-- <div class="single-slide">
-                                        <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
-                                            <div class="container">
-                                                <div class="hero-content">
-                                                    <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                                    <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                                        Empower Your <br>
-                                                        business Journey <br>
-                                                        with it Expertise
-                                                    </h1>
-                                                    <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                                        <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                                            <span>
-                                                                Explore Our Service
-                                                                <i class="fas fa-chevron-right"></i>
-                                                            </span>
-                                                        </a>
+    {{-- 0ld code --}}
+    <!-- <div class="single-slide">
+                                                <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
+                                                    <div class="container">
+                                                        <div class="hero-content">
+                                                            <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                                                Empower Your <br>
+                                                                business Journey <br>
+                                                                with it Expertise
+                                                            </h1>
+                                                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                                                <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                                    <span>
+                                                                        Explore Our Service
+                                                                        <i class="fas fa-chevron-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                            </div> -->
 
-        <!--
-                                    <div class="single-slide">
-                                        <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
-                                            <div class="container">
-                                                <div class="hero-content">
-                                                    <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
-                                                    <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                                        Empower Your <br>
-                                                        business Journey <br>
-                                                        with it Expertise
-                                                    </h1>
-                                                    <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                                        <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
-                                                            <span>
-                                                                Explore Our Service
-                                                                <i class="fas fa-chevron-right"></i>
-                                                            </span>
-                                                        </a>
+    <!--
+                                            <div class="single-slide">
+                                                <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-8.jpg');">
+                                                    <div class="container">
+                                                        <div class="hero-content">
+                                                            <h4 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.3">5m+ Trusted Our Clients</h4>
+                                                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
+                                                                Empower Your <br>
+                                                                business Journey <br>
+                                                                with it Expertise
+                                                            </h1>
+                                                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
+                                                                <a href="service-details.html" class="theme-btn theme-btn-2 hover-white">
+                                                                    <span>
+                                                                        Explore Our Service
+                                                                        <i class="fas fa-chevron-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                            </div> -->
 
 
-        <!--<< Service Section Start >>-->
-        {{-- <section class="service-section section-bg-4 fix section-padding">
+    <!--<< Service Section Start >>-->
+    {{-- <section class="service-section section-bg-4 fix section-padding">
             <div class="container">
                 <!-- <div class="title-section-area">
                     <div class="section-title style-2">
@@ -424,7 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="service-text-area text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
+                <!-- <div class="service-text-areacol-md-4 text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
                     <h5>
                         Bring them together and you overcome the ordinary.
                         <a href="service.html" class="link-btn link-btn-2">
@@ -436,39 +482,39 @@
             </div>
         </section> --}}
 
-        <!--<< Brand Section Start >>-->
-        <!-- <div class="brand-section fix">
-                                <div class="container">
-                                    <div class="brand-wrapper-3">
-                                        <div class="brand-carousel-active">
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                            </div>
-                                            <div class="brand-image">
-                                                <img src="assets/img/brand/02.png" alt="brand-img">
+    <!--<< Brand Section Start >>-->
+    <!-- <div class="brand-section fix">
+                                        <div class="container">
+                                            <div class="brand-wrapper-3">
+                                                <div class="brand-carousel-active">
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                    <div class="brand-image">
+                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                                    </div> -->
 
-        <!--<< About Section Start >>-->
-        {{-- <section class="about-section fix section-padding " id="about">
+    <!--<< About Section Start >>-->
+    {{-- <section class="about-section fix section-padding " id="about">
         <div class="container">
             <div class="about-wrapper">
                 <div class="row">
@@ -552,8 +598,8 @@
 
 
 
-        <!--<< Service Section Start >>-->
-        {{-- <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
+    <!--<< Service Section Start >>-->
+    {{-- <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
     <div class="line-shape">
         <img src="assets/img/line.png" alt="shape-img">
     </div>
@@ -740,8 +786,8 @@
 
 
 
-        <!--<< Case Studies Start >>-->
-        {{-- <div class="marque-section section-padding">
+    <!--<< Case Studies Start >>-->
+    {{-- <div class="marque-section section-padding">
     <div class="marquee-wrapper text-slider style-height">
         <div class="marquee-inner to-left">
             <ul class="marqee-list d-flex">
@@ -762,8 +808,8 @@
 
 
 
-        <!--<< Testimonial Section Start >>-->
-        {{-- <section class="testimonial-section-2 section-bg-2 fix section-padding">
+    <!--<< Testimonial Section Start >>-->
+    {{-- <section class="testimonial-section-2 section-bg-2 fix section-padding">
     <div class="container">
         <div class="section-title text-center">
             <span class="wow fadeInUp">Support Help</span>
@@ -890,8 +936,8 @@
 
 
 
-        <!--<< Cta Chat Section Start >>-->
-        {{-- <section class="cta-chat-section-2" style="margin-top: -40px;">
+    <!--<< Cta Chat Section Start >>-->
+    {{-- <section class="cta-chat-section-2" style="margin-top: -40px;">
             <div class="container">
 
 
@@ -917,8 +963,8 @@
         </section> --}}
 
 
-        <!--<< Case Studies Section Start >>-->
-        {{-- <section class="case-study section-padding pt-0">
+    <!--<< Case Studies Section Start >>-->
+    {{-- <section class="case-study section-padding pt-0">
             <div class="container">
                 <div class="about-wrapper section-padding pb-0">
                     <div class="row">
@@ -1050,9 +1096,9 @@
         </section> --}}
 
 
-        <!--<< Footer Section Start >>-->
+    <!--<< Footer Section Start >>-->
 
-        </body>
+    </body>
 
-        </html>
-    @endsection
+    </html>
+@endsection

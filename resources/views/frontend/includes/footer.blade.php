@@ -307,7 +307,7 @@
         <div class="d-flex justify-content-between mb-3 align-items-center">
 
             <div> <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="rounded w-75"> </div>
-            <div class="text-end"><img src=".\public\img\chat_logo.png" alt="chat" width="10%" ></div>
+            <div class="text-end"><a href=""> <img src=".\public\img\chat_logo.png" alt="chat" width="10%">  </a> </div>
         </div>
 
     </div>

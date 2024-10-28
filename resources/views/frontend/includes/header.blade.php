@@ -165,210 +165,252 @@
 
 
 </div> --}}
+
+
 <style>
-    .nav-item a{
-
-    color: #fff;
-}
-.nav-item a:hover{
-    background-color: #fff;
-    color: #0d75bc
-}
-
-
-</style>
-
-<div class="contianer-fluid">
-    <div class="d-md-flex">
-        <div class="col-md-2  d-none d-sm-none d-md-block">
-            <img src=".\public\assets\img\WGC-logo 1.png" alt="logo1" class=" logo_24 px-5 py-2 ">
-        </div>
-        <div class="col-md-10">
-            <div class="col-md-12 pt-5 pb-3 d-none d-sm-none d-md-block">
-                <div class="d-flex justify-content-center ">
-
-                    <div class="me-2  py-2" style="color: #0d75bc;">
-                        <span class="px-5 fw-semibold fs-5"> <i class="far fa-envelope me-2"></i>
-                            info@ilende.com</span>
-
-
-                        <span class="px-5 fw-semibold fs-5"> <i class="fas fa-phone me-2"></i>
-                            +240222867206
-                        </span>
-
-
-                        <span class="px-5 fw-semibold fs-5"> <a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i>
-                                Se connecter </a> </span>
-                    </div>
-                    <div class="social-icons d-inline-block me-4 py-2 fs-5" >
-                        <a href="#"><i class="fab fa-facebook mx-2" style="color: #0d75bc;"></i></a>
-                        <a href="#"><i class="fab fa-twitter mx-2" style="color: #0d75bc;"></i></a>
-                        <a href="#"><i class="fab fa-instagram mx-2" style="color: #0d75bc;"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp mx-2" style="color: #0d75bc;"></i></a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg " style="background-color: #0d75bc;">
-                    <div class="container">
-                        <a class="navbar-brand rounded d-block d-sm-block d-md-none" href="/">
-                            <img src=".\public\assets\img\WGC-logo 1.png" alt="99" width="35" height="35">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse  " id="navbarNav">
-                            <ul class="navbar-nav fs-5 fw-semibold">
-                                <li class="nav-item">
-                                    <a class="nav-link  me-1 py-4 " href="/">Maison</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4  " href="/about">À propos de nous</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4" href="#">Aide</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4" href="/service">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4" href="/contact">Contactez-nous</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-3 py-4" href="/popular_service">Rejoignez-Nous En Tant
-                                        Que Professionnel</a>
-                                </li>
-                            </ul>
-                        </div>
-                        {{-- <div class="collapse navbar-collapse d-block d-sm-block d-md-none" id="navbarNav">
-                            <ul class="navbar-nav fs-5 fw-semibold">
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2 " href="/">Maison</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2  " href="/about">À propos de nous</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2" href="#">Aide</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2" href="/service">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2" href="/contact">Contactez-nous</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  mx-2" href="/popular_service">Rejoignez-Nous En Tant
-                                        Que Professionnel</a>
-                                </li>
-                            </ul>
-                        </div> --}}
-                    </div>
-                </nav>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
- {{-- <style>
-    .nav-item a {
-        color: #fff;
+    :root {
+        --primary-blue: #0d75bc;
     }
-    .nav-item a:hover {
-        background-color: #fff;
-        color: #0d75bc;
+
+    /* Essential custom styles */
+    .top-bar-text {
+        color: var(--primary-blue);
+        font-size: 1rem;
+        font-weight: 600;
     }
-    .logo-24 {
-        width: 10rem;
-        padding: 20px;
+
+    .top-bar-icon {
+        color: var(--primary-blue);
+        font-size: 1rem;
     }
-    @media (max-width: 768px) {
-        .logo-24 {
-            width: 8rem; /* Adjust logo size for smaller screens */
+
+    .navbar {
+        padding: 0 !important;
+        background-color: var(--primary-blue) !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff !important;
+        padding: 1.75rem 1rem !important;
+        font-weight: 600 !important;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-item.active .nav-link {
+        background-color: #fff !important;
+        color: var(--primary-blue) !important;
+    }
+
+    .logo-container img {
+        max-width: 180px;
+        padding: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+        transition: opacity 0.3s ease;
+    }
+
+    .social-icon:hover {
+        opacity: 0.8;
+    }
+
+    @media (min-width:769px) {
+        .mar_navbar{
+            padding: 0 20px;
+        }
+
+
+    }
+
+    @media (max-width:425px) {
+        .mobile-logo {
+            max-width: 65px;
+            padding: 0.5rem 0;
+        }
+
+    }
+    /* Specific styles for 1024px screens */
+    @media (min-width: 992px) and (max-width: 1279px) {
+        .logo-container img {
+            max-width: 150px;
+            padding: 0.75rem;
+        }
+
+        .top-bar-text {
+            font-size: 0.9rem;
+        }
+
+        .top-bar-icon {
+            font-size: 0.9rem;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 1.4rem 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .social-icon {
+            font-size: 1.2rem;
+        }
+
+        .top-contact-info {
+            gap: 0.75rem !important;
+        }
+
+        .social-icons-container {
+            gap: 0.5rem !important;
         }
     }
-    .contact-info span,
-    .social-icons a {
-        color: #0d75bc;
-    }
-</style> --}}
 
-{{-- <div class="container-fluid">
-    <div class="row d-flex">
-        <div class="col-md-2 d-none d-md-block">
-            <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="logo-24 px-5 py-2">
+    /* Large screens (1440px and above) */
+    @media (min-width: 1280px) {
+        .navbar-nav .nav-link {
+            padding: 1.75rem 1.5rem !important;
+            font-size: 1.3rem;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+            padding: 1rem 2rem;
+        }
+
+        .top-bar-text {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* Mobile styles */
+    @media (max-width: 991.98px) {
+
+
+
+        .navbar-toggler {
+            /* border-color: #fff !important; */
+            margin: 0.5rem 0;
+        }
+
+
+    }
+    @media (min-width: 426px) and (max-width:991.98px){
+        .mobile-logo {
+            max-width: 120px;
+            padding: 0.5rem 0;
+        }
+        .navbar-nav .nav-link {
+            padding: 1rem 1.5rem !important;
+        }
+
+    }
+
+    @media (max-width: 425px){
+        .mobile-logo {
+            max-width: 65px;
+            padding: 0.5rem 0.5rem;
+        }
+        .navbar-nav .nav-link {
+            padding: 0.1rem 0.5rem !important;
+        }
+
+    }
+
+    </style>
+
+<div class="container-fluid p-0">
+    <div class="row g-0">
+        <!-- Logo Section -->
+        <div class="col-auto d-none d-lg-block bg-white">
+            <div class="logo-container">
+                <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="img-fluid">
+            </div>
         </div>
-        <div class="col-md-10">
-            <div class="d-flex justify-content-end align-items-center py-3 d-none d-md-flex">
-                <div class="contact-info me-4">
-                    <span class="px-3"><i class="far fa-envelope me-2"></i> info@ilende.com</span>
-                    <span class="px-3"><i class="fas fa-phone me-2"></i> +240222867206</span>
-                    <span class="px-3"><a href="/login_form" style="color: #0d75bc;"><i class="fas fa-user me-2"></i> Se connecter</a></span>
-                </div>
-                <div class="social-icons d-inline-block">
-                    <a href="#"><i class="fab fa-facebook mx-2"></i></a>
-                    <a href="#"><i class="fab fa-twitter mx-2"></i></a>
-                    <a href="#"><i class="fab fa-instagram mx-2"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp mx-2"></i></a>
+
+        <!-- Main Content Section -->
+        <div class="col">
+            <!-- Top Bar -->
+            <div class="d-none d-lg-block bg-white">
+                <div class="container-fluid py-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <!-- Contact Info -->
+                        <div class="d-flex align-items-center me-3 top-contact-info gap-5">
+                            <span class="top-bar-text">
+                                <i class="far fa-envelope me-2 top-bar-icon"></i>
+                                info@ilende.com
+                            </span>
+                            <span class="top-bar-text">
+                                <i class="fas fa-phone me-2 top-bar-icon"></i>
+                                +240222867206
+                            </span>
+                            <a href="/login_form" class="top-bar-text text-decoration-none">
+                                <i class="fas fa-user me-2 top-bar-icon"></i>
+                                Se connecter
+                            </a>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="d-flex align-items-center social-icons-container gap-2 ms-5">
+                            <a href="#" class="social-icon" style="color: var(--primary-blue);">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon" style="color: var(--primary-blue);">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" style="color: var(--primary-blue);">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" style="color: var(--primary-blue);">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg" style="background-color: #0d75bc;">
-                <div class="container-fluid">
-                    <a class="navbar-brand d-block d-md-none" href="/">
-                        <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" width="35" height="35">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid px-0">
+                    <!-- Mobile Logo -->
+                    <a class="navbar-brand d-lg-none" href="/">
+                        <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="mobile-logo rounded-circle">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav fs-6">
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/">Maison</a></li>
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/about">À propos de nous</a></li>
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="#">Aide</a></li>
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/service">Services</a></li>
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/contact">Contactez-nous</a></li>
-                            <li class="nav-item"><a class="nav-link mx-3 py-4" href="/popular_service">Rejoignez-Nous En Tant Que Professionnel</a></li>
+                        <ul class="navbar-nav mar_navbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Maison</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">À propos de nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Aide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/service">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contactez-nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/popular_service">Rejoignez-Nous En Tant Que Professionnel</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-</div> --}}
+</div>
 
 
 
-{{-- <div class="container-fluid"> --}}
-{{-- <div class="bg-white topnav ">
-                    <div class="d-flex justify-content-end">
-                        <ul class="d-flex mx-2">
-                            <li class="mx-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                                    </svg></span> mobrilz@gmail.com</li>
-                            <li class="mx-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-telephone-fill"
-                                        viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                    </svg></span>8976321230</li>
-                            <li class="mx-2"> <span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-person-fill"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                    </svg></span> person</li>
-                            <li class="mx-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                                    </svg></span> </li>
-                        </ul>
-                    </div>
-                </div> --}}
-{{-- </div> --}}

@@ -65,6 +65,25 @@
 
         }
 
+        .img_size{
+
+         position: absolute;
+         z-index: 1;
+         left: -3%;
+
+
+        }
+
+        /* @media (min-width: 1096px)  {
+            .img_size{
+
+                position: absolute;
+                z-index: 1;
+                left: 2rem;
+            }
+
+        } */
+
         @media (max-width: 768px) {
             .bg_mobimg {
                 height: 30rem;
@@ -80,6 +99,25 @@
 
 
         }
+
+        .girl_txt{
+            margin-left:-5%;
+             margin-top:2% ;
+             background-color: #0d75bc;
+             right: 0;
+             position: absolute;
+        }
+
+        /* @media screen and (min-width:769px) and (max-width:1310px) {
+
+            .girl_txt_para{
+                overflow-y:scroll;
+                height: 80vh;
+
+            }
+
+        } */
+
     </style>
 @endsection
 @section('content')
@@ -121,7 +159,7 @@
                 <div class="d-flex justify-content-start py-2 mx-5">
                     <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville" type="text"
                             class="form-control border-0 px-2 py-3" /></div>
-                    <div class="col-md-3"> <button class="px-4 py-3 text-white rounded"
+                    <div class="col-md-3"> <button class="px-2 py-3 text-white rounded"
                             style="background-color: #0d75bc;">Allons-y!</button></div>
                 </div>
             </div>
@@ -329,23 +367,23 @@
                 <div class="" style="left: 11%; position: relative;"> <img
                         src="./resources\views\assets\img\bg\girl.png" alt="111" class="w-25">
                 </div>
-                <div class="col-md-8 col-8 text-start text-white rounded p-5
-                "
-                    style="margin-left:-5%; margin-top:2% ;background-color: #0d75bc;right: 0;position: absolute;">
+                <div class="col-md-8 col-8 text-start girl_txt text-white rounded p-5 ">
                     <h4 class="text-white pb-3">L'histoire du WGC</h4>
-                    Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
-                    permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
-                    les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une
-                    liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
-                    offrant des opportunités de travail adaptées à leur vie de famille.
+                     <p>  Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
+                        permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
+                        les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une
+                        liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
+                        offrant des opportunités de travail adaptées à leur vie de famille. </p>
+
 
                     <br /><br /><br />
+                    <p>   L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en
+                        main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à
+                        réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui
+                        cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer
+                        dans un monde de plus en plus connecté et dynamique. </p>
 
-                    L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en
-                    main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à
-                    réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui
-                    cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer
-                    dans un monde de plus en plus connecté et dynamique.
+
                 </div>
             </div>
 
@@ -633,15 +671,9 @@
         <div class="container-fluid">
             <div class="row position-relative">
 
-                <div class=""
-                    style="
-
-                     position: absolute;
-                     z-index: 1;
-                     left: 14rem;
-
-                    ">
-                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class="">
+                <div class=" img_size" >
+                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class="w-50" style="
+                    height: 63vh; ">
                 </div>
                 <div class=" p-5 text-start text-white rounded"
                     style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;  background-color: #79bfedfc  ">
@@ -696,7 +728,7 @@
                     <div class="d-flex justify-content-start py-2 mx-5">
                         <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville " type="text"
                                 class="form-control border-0" /></div>
-                        <div class="col-md-3"> <button class="px-4 py-1 text-white rounded"
+                        <div class="col-md-3"> <button class="px-2 py-1 text-white rounded"
                                 style="background-color: #0d75bc;">Allons-y!</button></div>
                     </div>
                 </div>

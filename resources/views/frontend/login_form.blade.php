@@ -75,9 +75,9 @@
 
     <div class="container my-5 ">
         <div class="row ">
-        <div class="col-8 mx-auto  p-4" style="background-color: #0d75bc;">
+        <div class="col-8 mx-auto rounded shadow-lg p-4" style="background-color: #0d75bc;">
 
-          <h2 class="text-white text-center">Connectez-vous à votre compte</h2>
+          <h2 class="text-white text-center py-3">Connectez-vous à votre compte</h2>
           <p class="text-white text-center">Créez un compte pour profiter de tous nos services.</p>
           <div class="text-center mx-4 py-3">
 
@@ -93,7 +93,7 @@
 
           </form>  </div>
           <div class="text-center text-white py-4">
-            <p>Vous n'avez pas de compte ? S'inscrire</p>
+            <p>Vous n'avez pas de compte ? <a href="#" class="text-white">S'inscrire </a>  </p>
 
 
             <p>Vous pouvez également vous connecter avec</p>

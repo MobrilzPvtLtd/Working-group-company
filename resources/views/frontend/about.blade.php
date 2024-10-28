@@ -39,6 +39,15 @@
                 /* Adjust font size for smaller screens */
             }
         }
+        .img_size{
+
+position: absolute;
+z-index: 1;
+left: -3%;
+
+
+}
+
     </style>
     {{-- <section class="hero-section hero-3">
         <div class="slider-button">
@@ -317,15 +326,10 @@
         <div class="container-fluid">
             <div class="row" style=" position: relative">
 
-                <div class=""
-                    style="
-
-                     position: absolute;
-                     z-index: 1;
-                     left: 14rem;
-
-                    ">
-                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class="">
+                <div class="img_size"
+                   >
+                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class="w-50" style="
+                    height: 63vh; ">
                 </div>
                 <div class=" p-5 text-start  position-absolute rounded"
                     style="right: 0; background-color: #fff; width: 60%; ;  ">
@@ -380,7 +384,7 @@
                     <div class="d-flex justify-content-start py-2 mx-5">
                         <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville " type="text"
                                 class="form-control border-1" /></div>
-                        <div class="col-md-3"> <button class="px-4 py-1 text-white rounded"
+                        <div class="col-md-3"> <button class="px-2 py-1 text-white rounded"
                                 style="background-color: #0d75bc;">Allons-y!</button></div>
                     </div>
                 </div>

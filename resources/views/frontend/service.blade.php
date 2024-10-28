@@ -10,8 +10,8 @@
     <div class="mouse-cursor cursor-inner"></div>
     <style>
         .bg24 {
-            background-image: linear-gradient(to right, rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.47)),
-                url('./public/assets/img/bg/servicebg24.png');
+            background-image:
+                url('./public/assets/img/bg/service247_bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -128,7 +128,7 @@
 
     <div class="container-fluid bg24 position-relative w-100">
         <div class="row justify-content-start align-items-center h-100">
-            <h2 class="text-start ps-5">Nos <br /> prestations</h2>
+            <h2 class="text-start text-white ps-5">Nos <br /> prestations</h2>
         </div>
 
     </div>
@@ -212,23 +212,25 @@
 
                          <div class=" col-md-4 text-center ">
                             <div class="  ">
+                                 <a href="/categories">  <img src="./resources\views\assets\img\hero\paint.png" alt="1"
+                                    class="w-100 pt-3  mob_img ">  </a>
 
-                                <img src="./resources\views\assets\img\hero\paint.png" alt="1"
-                                    class="w-100 pt-3  mob_img ">
                                 <h6 class="">Peinture</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center ">
                             <div class="  ">
-                                <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
-                                    class="w-100 pt-3  mob_img ">
+                                <a href="/categories">   <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                                    class="w-100 pt-3  mob_img "> </a>
+
                                 <h6 class="">Maison services de soins</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center  ">
                             <div class="  ">
-                                <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
-                                    class="w-100 pt-3  mob_img ">
+                                <a href="/categories">  <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
+                                    class="w-100 pt-3  mob_img "> </a>
+
                                 <h6 class="">Autorisation services</h6>
                             </div>
                         </div>

@@ -385,16 +385,16 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mar_navbar">
+                        <ul class="navbar-nav mar_navbar m-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Maison</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">À propos de nous</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="#">Aide</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="/service">Services</a>
                             </li>

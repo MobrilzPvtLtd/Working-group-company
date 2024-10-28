@@ -12,8 +12,8 @@
 
         .heading_txt {
 
-            margin: 0 7%;
-            padding-top: 3%;
+            margin: 1% 7%;
+            padding: 3% 0%;
 
         }
 
@@ -55,7 +55,7 @@
 
         .bg_mobimg {
             background-image: linear-gradient(to right, rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.47)),
-                url('./public/assets/img/bg/servicebg24.png');
+                url('./public/assets/img/bg/About_bgimg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -69,20 +69,12 @@
 
          position: absolute;
          z-index: 1;
-         left: -3%;
+         left: 6%;
 
 
         }
 
-        /* @media (min-width: 1096px)  {
-            .img_size{
 
-                position: absolute;
-                z-index: 1;
-                left: 2rem;
-            }
-
-        } */
 
         @media (max-width: 768px) {
             .bg_mobimg {
@@ -137,19 +129,19 @@
             <div class="col-md-6 col-6 heading_txt">
                 <h2 class="px-3">Service <br />Formulaire de réservation</h2>
                 <ul class="text-black fs-5 py-4 px-2">
-                    <li class="py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <li class="py-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                             <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
                         </svg> Lorem Ipsumest simplement un texte factice de l'impression </li>
-                    <li class="py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <li class="py-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                             <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
                         </svg> Ipsumest simplement un texte factice de l'impression</li>
-                    <li class="py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <li class="py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
@@ -672,13 +664,13 @@
             <div class="row position-relative">
 
                 <div class=" img_size" >
-                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class="w-50" style="
-                    height: 63vh; ">
+                    <img src="./resources\views\assets\img\hero\people.png" alt="111"  style="
+                    height: 64vh; width:38% ">
                 </div>
                 <div class=" p-5 text-start text-white rounded"
-                    style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;  background-color: #79bfedfc  ">
+                    style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;   ">
                     <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
-                    <ul class="p-5 fs-6">
+                    <ul class="p-5 fs-5">
 
                         <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
@@ -689,8 +681,6 @@
 
 
                         </li>
-
-
 
                         <li class=" py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">

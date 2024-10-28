@@ -10,8 +10,8 @@
     <div class="mouse-cursor cursor-inner"></div>
     <style>
         .bg24 {
-            background-image: linear-gradient(to right, rgba(235, 240, 245, 0.998), rgba(0, 113, 200, 0.47)),
-                url('./public/assets/img/bg/aboutbg24.png');
+            background-image:
+                url('./public/assets/img/bg/About_bgimg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             /* Change to cover for full coverage */
@@ -120,7 +120,7 @@ left: -3%;
 
     <div class="container-fluid bg24 position-relative w-100">
         <div class="row justify-content-start align-items-center h-100">
-            <h2 class="text-start ps-5">À propos <br />de nous</h2>
+            <h2 class="text-start text-white ps-5">À propos <br />de nous</h2>
         </div>
     </div>
 

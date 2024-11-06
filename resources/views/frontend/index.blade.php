@@ -12,13 +12,13 @@
 
         .heading_txt {
 
-            margin: 1% 7%;
+            margin: 0% 7%;
             padding: 3% 0%;
-
+            background-color: #f4f4f4b0
         }
 
         .bg24 {
-            background-image: url('./public/assets/img/bg/bg_index.png');
+            background-image: url('./public/assets/img/bg/bg_women24.png');
             height: 50rem;
 
             background-repeat: no-repeat;
@@ -126,32 +126,32 @@
     <div class="container-fluid bg24 d-none d-lg-block">
 
         <div class="row ">
-            <div class="col-md-6 col-6 heading_txt">
+            <div class="col-md-5 col-6 heading_txt rounded">
                 <h2 class="px-3">Service <br />Formulaire de réservation</h2>
-                <ul class="text-black fs-5 py-4 px-2">
-                    <li class="py-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <ul class="text-black fs-5  py-4 px-2">
+                    <li class="py-3 fs-md-6 py-md-1"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                             <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                        </svg> Lorem Ipsumest simplement un texte factice de l'impression </li>
-                    <li class="py-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        </svg> Lorem Ipsumest simplement un texte factice  </li>
+                    <li class="py-3 py-md-1"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                             <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
                         </svg> Ipsumest simplement un texte factice de l'impression</li>
-                    <li class="py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <li class="py-3 py-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                             <path
                                 d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
                             <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
                         </svg> Texte simplement factice de l'impression</li>
                 </ul>
-                <div class="d-flex justify-content-start py-2 mx-5">
-                    <div class="col-md-3 me-3"><input placeholder="Votre code postal ou ville" type="text"
-                            class="form-control border-0 px-2 py-3" /></div>
-                    <div class="col-md-3"> <button class="px-2 py-3 text-white rounded"
+                <div class="row py-2 mx-3">
+                    <div class="col-md-6 "><input placeholder="Votre code postal ou ville" type="text"
+                            class="form-control border-0 border-primary px-2 py-2" /></div>
+                    <div class="col-md-5"> <button class="px-3 py-2  px-md-3 text-white rounded"
                             style="background-color: #0d75bc;">Allons-y!</button></div>
                 </div>
             </div>
@@ -354,7 +354,7 @@
         </div>
     </section> --}}
 
-    <div class="container-fluid">
+    <div class="container-fluid d-none  d-sm-none d-md-block">
         <div class="row">
             <div class="col-md-4">
                 <div class=""> <img src="./resources\views\assets\img\bg\girl.png" alt="111"
@@ -678,19 +678,21 @@
 
 
     {{-- keypoints --}}
-    <section class="service-section fix  my-5 d-none d-md-block" style="height: 80vh; ">
+    <section class="service-section fix  my-5 d-none d-md-block" style="
+           height: 80vh;
+                   ">
 
         <div class="container-fluid">
-            <div class="row position-relative">
+            <div class="row">
 
-                <div class=" img_size" >
-                    <img src="./resources\views\assets\img\hero\people.png" alt="111"  style="
-                    height: 64vh; width:38% ">
+                <div class="col-md-4 position-relative" style="left:5%">
+                    <img src="./resources\views\assets\img\hero\people.png"  alt="111" class="w-100" style="min-height: -webkit-fill-available;">
+
                 </div>
-                <div class=" p-5 text-start text-white rounded"
-                    style="right: 0;background-color: #79bfedfc; width: 60%; position: absolute;   ">
+                <div class="col-md-8  text-start text-white rounded"
+                    style="background-color: #79bfedfc;    ">
                     <h2 class="text-center pt-4" style="color: #0d75bc;">Réservez votre prestation</h2>
-                    <ul class="p-5 fs-5">
+                    <ul class="p-5 fs-5 fs-xl-6">
 
                         <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
@@ -737,7 +739,8 @@
 
                     <div class="d-flex justify-content-start py-2 mx-5">
                         <div class="col-md-6 col-12 me-3">
-                            <input placeholder="Votre code postal ou ville" type="text" class="form-control border-0" />
+                            <input placeholder="Votre code postal ou ville" type="text"
+                                class="form-control border-0" />
                         </div>
                         <div class="col-md-3 col-12">
                             <button class="btn btn-primary w-100" style="background-color: #0d75bc;">Allons-y!</button>

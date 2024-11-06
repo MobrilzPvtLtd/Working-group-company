@@ -452,7 +452,7 @@
             <div class="row">
 
                 <div class="col-md-4 position-relative" style="left:5%">
-                    <img src="./resources\views\assets\img\hero\people.png"  alt="111" class="w-100">
+                    <img src="./resources\views\assets\img\hero\people.png"  alt="111" class="w-100" style="min-height: -webkit-fill-available;">
 
                 </div>
                 <div class="col-md-8  text-start text-white rounded"

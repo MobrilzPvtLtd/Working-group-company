@@ -11,7 +11,11 @@
 
 
     <!-- Offcanvas Area Start -->
-
+<style>
+    li {
+    padding: 12px 0px;
+}
+</style>
 
     {{-- service & Develop keypoints --}}
 
@@ -24,7 +28,7 @@
                     <h3 class="text-center py-4" style="color: #0d75bc;">Garantissez des emplois et <br /> Développez votre
                         entreprise</h3>
 
-                    <h6 class="text-muted pt-4" style="padding: 0 115px;">Services populaires</h6>
+                    <h4 class="text-muted pt-4" style="padding: 0 115px;">Services populaires</h4>
                     <div class="d-flex justify-content-center py-3 my-3">
 
                         <div class="col-md-4">
@@ -60,15 +64,15 @@
                     </div>
 
                     <div class="d-flex justify-content-center pt-5">
-                        <div class="col-md-3 "><input placeholder="Quel service fournissez-vous?" type="text"
+                        <div class="col-md-7 "><input placeholder="Quel service fournissez-vous?" type="text"
                                 class="form-control rounded-start py-2" /></div>
-                        <div class="col-md-3 ms-1"> <button class="px-2 py-2 rounded text-white fs-6"
+                        <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded text-white fs-6"
                                 style="background-color: #0d75bc;">POUR COMMENCER </button></div>
                     </div>
                 </div>
 
-                <div class="col-md-6 d-none d-md-block" style="margin-left: -165px;"> <img src="./resources\views\assets\img\hero\people.png"
-                        alt="111" class="w-75">
+                <div class="col-md-6 d-none d-md-block" style="margin-left: -85px; "> <img src="./resources\views\assets\img\hero\people.png"
+                        alt="111" class="w-100" style="min-height: -webkit-fill-available;">
                 </div>
                 {{-- mobile view img   --}}
                 <div class="col-md-6 d-block d-sm-block d-md-none" > <img src="./resources\views\assets\img\hero\people.png"

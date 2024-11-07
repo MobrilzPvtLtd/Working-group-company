@@ -158,6 +158,8 @@
 
 
         </div>
+
+
     </div>
     {{-- mobile view div  --}}
     <div class="col-md-12 pt-5 d-block d-sm-block d-lg-none bg_mobimg">
@@ -200,8 +202,11 @@
     <section class="service-section section-bg-4 fix section-padding ">
         <div class="container">
 
-
-
+            {{-- <div class="txt_banner" style="position: absolute;
+    left: 40%;
+    top: 10%;">
+                <div class="card shadow-lg " style="padding: 48px 70px;"><h2 class="text-center">Guide the Service </h2></div>
+            </div> --}}
             <div class="service-wrapper-3">
 
 

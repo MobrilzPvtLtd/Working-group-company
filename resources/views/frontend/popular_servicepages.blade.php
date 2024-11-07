@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center pt-5">
-                        <div class="col-md-7 "><input placeholder="Quel service fournissez-vous?" type="text"
+                        <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?" type="text"
                                 class="form-control rounded-start py-2" /></div>
                         <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded text-white fs-6"
                                 style="background-color: #0d75bc;">POUR COMMENCER </button></div>

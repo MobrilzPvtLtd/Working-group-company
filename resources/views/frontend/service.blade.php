@@ -142,23 +142,23 @@
                     <hr class="border border-2">
                     <h6 class="px-5 py-3">CATÉGORIES</h6>
                     <ul class="px-5">
-                        <li class="py-1"> <a href="/categories">Services de déménagement</a></li>
-                        <li class="py-1">Peinture</li>
-                        <li class="py-1">Ménage de fin de location</li>
-                        <li class="py-1">Services de livraison</li>
-                        <li class="py-1"> Services de soins à domicile</li>
-                        <li class="py-1">Services de dédouanement</li>
-                        <li class="py-1"> Assemblage de meubles</li>
-                        <li class="py-1">Réparation de téléviseurs et d'électroménagers</li>
-                        <li class="py-1">Réparation de téléphone</li>
-                        <li class="py-1">Acheteur personnel</li>
+                        <li class="py-1"> <a href="/service">Services de déménagement</a></li>
+                        <li class="py-1"><a href="/service"> Peinture </a></li>
+                        <li class="py-1"><a href="/service"> Ménage de fin de location </a></li>
+                        <li class="py-1"><a href="/service"> Services de livraison </a></li>
+                        <li class="py-1"><a href="/service">  Services de soins à domicile </a></li>
+                        <li class="py-1"><a href="/service"> Services de dédouanement </a></li>
+                        <li class="py-1"><a href="/service">  Assemblage de meubles</li>
+                        <li class="py-1"><a href="/service"> Réparation de téléviseurs et d'électroménagers </a></li>
+                        <li class="py-1"><a href="/service"> Réparation de téléphone </a></li>
+                        <li class="py-1"><a href="/service"> Acheteur personnel </a></li>
 
                     </ul>
                     <h6 class="px-5 py-3">FOURNISSEUSE </h6>
 
                     <ul class="px-5">
-                        <li class="py-1">indépendant </li>
-                        <li class="py-1">agence</li>
+                        <li class="py-1"><a href="#">indépendant</a>  </li>
+                        <li class="py-1"><a href="#">agence</a>  </li>
                     </ul>
 
                     <h6 class="px-5 py-3">EMPLACEMENT</h6>
@@ -204,7 +204,7 @@
             </div>
 
             <div class="col-md-9 p-3">
-                <div class="card shadow-lg p-3 border-0 ">
+                <div class="card shadow-lg p-3 border-0 h-100">
                     <h3 class="p-3">Tous les prestataires de services</h3>
 
 
@@ -229,7 +229,7 @@
                         <div class="col-md-4 text-center  ">
                             <div class="  ">
                                 <a href="/categories">  <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
-                                    class="w-100 pt-3  mob_img "> </a>
+                                    class="w-100 pt-3  mob_img ">
 
                                 <h6 class="">Autorisation services</h6>
                             </div>
@@ -238,8 +238,9 @@
                     <div class="row ">
                         <div class="col-md-4 text-center  ">
                             <div class="card border-0 text-center">
+                                <a href="/categories">
                                 <img src="./resources\views\assets\img\hero\wood.png" alt="1"
-                                    class=" w-100 pt-3 rounded mob_img ">
+                                    class=" w-100 pt-3 rounded mob_img "> </a>
                                 <h6 class="">Assemblage de meubles</h6>
                             </div>
                         </div>

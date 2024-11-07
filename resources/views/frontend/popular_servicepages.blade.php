@@ -12,21 +12,21 @@
 
     <!-- Offcanvas Area Start -->
 <style>
-    li {
+    /* li {
     padding: 12px 0px;
-}
+} */
 </style>
 
     {{-- service & Develop keypoints --}}
 
 
-        <div class="container-fluid my-3">
+        <div class="container-fluid my-4 ">
             <div class="row" style=" position: relative">
 
 
-                <div class="col-md-6 text-start  rounded py-4" style="background-color: #88c8f294;  ">
-                    <h3 class="text-center py-4" style="color: #0d75bc;">Garantissez des emplois et <br /> Développez votre
-                        entreprise</h3>
+                <div class="col-md-6 text-start  rounded py-2" style="background-color: #88c8f294;  ">
+                    <h2 class="text-center py-2" style="color: #0d75bc;">Garantissez des emplois et <br /> Développez votre
+                        entreprise</h2>
 
                     <h4 class="text-muted pt-4" style="padding: 0 115px;">Services populaires</h4>
                     <div class="d-flex justify-content-center py-3 my-3">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="col-md-6 d-none d-md-block" style="margin-left: -85px; "> <img src="./resources\views\assets\img\hero\people.png"
-                        alt="111" class="w-100" style="min-height: -webkit-fill-available;">
+                        alt="111" class="w-75" style="min-height: -webkit-fill-available;">
                 </div>
                 {{-- mobile view img   --}}
                 <div class="col-md-6 d-block d-sm-block d-md-none" > <img src="./resources\views\assets\img\hero\people.png"

@@ -322,7 +322,7 @@
             <div class="text-start"> <img src="./public/assets/img/WGC-logo 1.png" alt="WGC Logo" class="rounded px-5"> </div>
             <div class="text-end position-absolute fixed"><a href=""> <img src=".\public\img\chat_logo.png" alt="chat" width="3%">  </a> </div>
         </div>
-        <div class="row">
+        <div class="row mx-auto">
 
                 <div class="col-md-4 pt-5 col-12 ">
                     <h3 class="text-white">Société du groupe Workin (WGC)</h3>
@@ -356,7 +356,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-2 pt-5 col-6" >
+                <div class="col-md-3 pt-5 col-6" >
                     <h3 class="text-white">Navigation</h3>
                     <ul class="text-white pt-2">
                         <li> <a href="/"></a>Maison</li>
@@ -366,7 +366,7 @@
                         <li><a href="/contact"></a>Contactez-nous</li>
                     </ul>
                 </div>
-                <div class="col-md-2 pt-5 col-6" >
+                <div class="col-md-3 pt-5 col-6" >
                     <h3 class="text-white">Notre bureau</h3>
                     <p class="text-white pt-2">
                         Société du groupe Workin (WGC) <br />
@@ -374,7 +374,7 @@
                         22-34-15
                     </p>
                 </div>
-                <div class="col-md-4 pt-5 col-12 ">
+                <div class="col-md-2 pt-5 col-12 ">
                     <h3 class="text-white">Entrer en contact</h3>
                     <ul class="text-white pt-2">
                         <li class="py-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"

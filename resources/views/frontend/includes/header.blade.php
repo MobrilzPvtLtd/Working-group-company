@@ -392,9 +392,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">À propos de nous</a>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a class="nav-link" href="#">Aide</a>
-                            </li> --}}
+
                             <li class="nav-item">
                                 <a class="nav-link" href="/service">Services</a>
                             </li>

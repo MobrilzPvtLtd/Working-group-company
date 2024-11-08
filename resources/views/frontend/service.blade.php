@@ -17,13 +17,13 @@
 
             background-position: center;
 
-            height: 45rem;
+            height: 38rem;
 
         }
 
 
         .mob_img {
-            height: 28vh;
+            height: 30vh;
             }
 
         @media (max-width: 768px) {
@@ -128,7 +128,7 @@
 
     <div class="container-fluid bg24 position-relative w-100">
         <div class="row justify-content-start align-items-center h-100">
-            <h2 class="text-start text-white ps-5">Nos <br /> prestations</h2>
+            <h2 class="text-start text-white ps-5">Nos  prestations</h2>
         </div>
 
     </div>
@@ -299,9 +299,9 @@
 
 
 
-
+{{--
                     <div class="d-flex justify-content-center py-4"> <button class="btn btn-outline-primary ">Afficher
-                            plus</button> </div>
+                            plus</button> </div> --}}
 
                 </div>
             </div>

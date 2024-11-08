@@ -67,7 +67,7 @@
 
             background-position: center;
 
-            height: 45rem;
+            height: 38rem;
 
         }
 
@@ -123,7 +123,7 @@
 </div> --}}
 <div class="container-fluid bg24 position-relative w-100">
     <div class="row justify-content-start align-items-center h-100">
-        <h2 class="text-start text-white ps-5">À propos <br />de nous</h2>
+        <h2 class="text-start text-white ps-5">Contactez-nous</h2>
     </div>
 </div>
 

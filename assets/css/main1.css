@@ -778,12 +778,12 @@ input.main-search-input::placeholder {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 115px 0;
 }
 
 @media (max-width: 1199px) {
   .section-padding {
-    padding: 100px 0;
+    padding: 115px 0;
   }
 }
 
@@ -6489,7 +6489,7 @@ input.main-search-input::placeholder {
           justify-content: space-between;
   width: 100%;
   gap: 25px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 @media (max-width: 1399px) {

@@ -26,7 +26,7 @@
                 <h6 style="color:  #0d75bc" class="py-2">Fournir le nom</h6>
                 <p>Travaillez en tant que prestataire de soins à domicile <br />indépendant avec WGC, offrant soutien et
                     compagnie aux <br /> personnes seules.</p>
-                <button class="py-3 px-5 text-white mt-3" style="background-color: #0d75bc ">Réservez maintenant</button>
+                <button class="py-3 px-5 text-white mt-3" style="background-color: #0d75bc ">Réservez maintenant  </button>
             </div>
 
         </div>
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-md-10  mx-auto my-2 ">
                 <div class="card shadow-lg p-5 border-0 ">
-                    <h3 class="p-3">Autres services</h3>
+                    <h3 class="p-3">Autres services prestataires de</h3>
                     <div
                         style="
                 overflow-y: scroll;

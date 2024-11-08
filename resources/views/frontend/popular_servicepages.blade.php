@@ -11,78 +11,130 @@
 
 
     <!-- Offcanvas Area Start -->
-<style>
-    /* li {
-    padding: 12px 0px;
-} */
-</style>
+    <style>
+        /* li {
+            padding: 12px 0px;
+        } */
+    </style>
 
     {{-- service & Develop keypoints --}}
 
 
-        <div class="container-fluid my-4 ">
-            <div class="row" style=" position: relative">
+    <div class="container-fluid my-4 ">
+        <div class="row  position-relative" >
 
 
-                <div class="col-md-6 text-start  rounded py-2" style="background-color: #88c8f294;  ">
-                    <h2 class="text-center py-2" style="color: #0d75bc;">Garantissez des emplois et <br /> Développez votre
-                        entreprise</h2>
+            <div class="col-md-6 text-start  rounded py-2" style="background-color: #E7F1F8;  width:55%">
+                <h2 class="text-center py-2" style="color: #0d75bc;">Garantissez des emplois et <br /> Développez votre
+                    entreprise</h2>
 
-                    <h4 class="text-muted pt-4" style="padding: 0 115px;">Services populaires</h4>
-                    <div class="d-flex justify-content-center py-3 my-3">
+                <h4 class="text-muted pt-4" style="padding: 0 16%;">Services populaires</h4>
+                <div class="d-flex justify-content-center py-3 my-3">
 
-                        <div class="col-md-4">
-                            <ul class="text-black font-semibold">
-                                <li><a href="/service_form">Services de déménagement </a></li>
-                                <li><a href="/service_form"> Peinture </a></li>
-                                <li><a href="/service_form">Ménage de fin de location </a></li>
-                                <li> <a href="/service_form">Services de livraison </a></li>
-                                <li><a href="/service_form">Services de soins à domicile </a></li>
-                                <li><a href="/service_form">Services de dédouanement</a></li>
-                                <li><a href="/service_form">Assemblage de meubles </a></li>
-                                <li><a href="/service_form"> Réparation de téléviseurs et d'électroménagers </a></li>
-                                <li><a href="/service_form">Réparation de téléphone </a></li>
+                    <div class="col-md-4">
+                        <ul class="text-black font-semibold">
+                            <li><a href="/service_form"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                    </svg> Services de déménagement </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Peinture </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Ménage de fin de location </a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Services de livraison </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Services de soins à domicile </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Services de dédouanement</a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Assemblage de meubles </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Réparation de téléviseurs et d'électroménagers </a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Réparation de téléphone </a></li>
 
 
-                            </ul>
+                        </ul>
 
-                        </div>
-                        <div class="col-md-4">
-
-                            <ul class="text-black">
-                                <li><a href="/service_form">Acheteur personnel</a> </li>
-                                <li><a href="/service_form"> Services de blanchisserie</a></li>
-                                <li><a href="/service_form">Repassage des vêtements</a></li>
-                                <li><a href="/service_form">Nettoyage des chaussures</a></li>
-                                <li><a href="/service_form">Prestations de coiffure</a></li>
-                                <li><a href="/service_form">Services de traduction</a></li>
-                                <li><a href="/service_form">Livraison de courrier express</a></li>
-                                <li><a href="/service_form">Conseil</a></li>
-                            </ul>
-
-                        </div>
                     </div>
+                    <div class="col-md-4">
 
-                    <div class="d-flex justify-content-center pt-5">
-                        <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?" type="text"
-                                class="form-control rounded-start py-2" /></div>
-                        <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded text-white fs-6"
-                                style="background-color: #0d75bc;">POUR COMMENCER </button></div>
+                        <ul class="text-black">
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Acheteur personnel</a> </li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form"> Services de blanchisserie</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Repassage des vêtements</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Nettoyage des chaussures</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Prestations de coiffure</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Services de traduction</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Livraison de courrier express</a></li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                </svg><a href="/service_form">Conseil</a></li>
+                        </ul>
+
                     </div>
                 </div>
 
-                <div class="col-md-6 d-none d-md-block" style="margin-left: -85px; "> <img src="./resources\views\assets\img\hero\people.png"
-                        alt="111" class="w-75" style="min-height: -webkit-fill-available;">
+                <div class="d-flex justify-content-center pt-5">
+                    <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?"
+                            type="text" class="form-control rounded-start py-2" /></div>
+                    <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded  fs-6"
+                            style="background-color: #0d75bc;"><a href="/service_form " class="text-white">POUR COMMENCER</a>  </button></div>
                 </div>
-                {{-- mobile view img   --}}
-                <div class="col-md-6 d-block d-sm-block d-md-none" > <img src="./resources\views\assets\img\hero\people.png"
+            </div>
+
+            <div class="col-md-6 d-none d-md-block" style="margin-left: -7%;  width:38%"> <img
+                    src="./resources\views\assets\img\hero\people.png" alt="111" class="w-75"
+                    style="min-height: -webkit-fill-available;">
+            </div>
+            {{-- mobile view img   --}}
+            <div class="col-md-6 d-block d-sm-block d-md-none"> <img src="./resources\views\assets\img\hero\people.png"
                     alt="111" class="w-100">
             </div>
 
-            </div>
-
-
         </div>
+
+
+    </div>
 
 
     <!-- Header Area Start -->

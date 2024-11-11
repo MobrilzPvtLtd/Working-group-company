@@ -17,7 +17,7 @@
 
             background-position: center;
 
-            height: 38rem;
+            height: 28rem;
 
         }
 
@@ -174,10 +174,10 @@
                     <h6 class="py-4 px-5">LISTE DE PRIX </h6>
                     <div>
                         {{-- <label for="vol">Volume (between 0 and 50):</label> --}}
-                        <input type="range" id="vol" class="w-75 mx-5 " name="vol" min="0"
+                        <input type="range" id="vol" class="w-75 mx-4 " name="vol" min="0"
                             max="100"><br />
-                        <div class="row py-3 pb-5 mx-5"> <select name="" id=""
-                                class="py-2 px-5 w-50 border border-1">
+                        <div class="row py-3 pb-5 mx-3"> <select name="" id=""
+                                class="py-2  w-50 border border-1">
                                 <option value="">Min</option>
                                 <option value="">--1--</option>
                                 <option value="">--2--</option>

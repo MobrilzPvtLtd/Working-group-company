@@ -114,11 +114,17 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center pt-5">
-                    <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?"
+                <div class="d-flex justify-content-center py-2">
+                    {{-- <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?"
                             type="text" class="form-control rounded-start py-2" /></div>
                     <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded  fs-6"
-                            style="background-color: #0d75bc;"><a href="/service_form " class="text-white">POUR COMMENCER</a>  </button></div>
+                            style="background-color: #0d75bc;"><a href="/service_form " class="text-white">POUR COMMENCER</a>  </button></div> --}}
+
+                                <form class="d-flex" role="search">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                                </form>
+
                 </div>
             </div>
 

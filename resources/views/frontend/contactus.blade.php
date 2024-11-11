@@ -67,20 +67,20 @@
 
             background-position: center;
 
-            height: 38rem;
+            height: 28rem;
 
         }
 
         @media (max-width: 768px) {
             .bg24 {
-                height: 30rem;
+                height: 15rem;
 
             }
         }
 
         @media (max-width: 576px) {
             .bg24 {
-                height: 25rem;
+                height: 8rem;
 
             }
 

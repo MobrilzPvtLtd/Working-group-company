@@ -17,7 +17,7 @@
             /* Change to cover for full coverage */
             background-position: center;
             /* Center the background image */
-            height: 38rem;
+            height: 28rem;
             /* Set height */
         }
 
@@ -58,75 +58,34 @@
                     font-size: larger;
                 }
              }
+
+             @media  (min-width:768px) and (max-width:1230px){
+            .para_txt {
+    font-size: 11px;
+}
+        }
+
+
+        @media  (min-width:1240px) and (max-width:1439px){
+            .para_txt {
+    font-size: 18px;
+}
+        }
+        @media  (min-width:1440px) and (max-width:1590px) {
+            .para_txt {
+    font-size: 21px;
+    line-height: normal
+}
+        }
+
+        @media  (min-width:1591px)  {
+            .para_txt {
+    font-size: 27px;
+    line-height: normal;
+    font-weight: 300;
+}
+        }
     </style>
-    {{-- <section class="hero-section hero-3">
-        <div class="slider-button">
-            <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
-            <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
-        </div>
-        <div class="hero-slider-active-2">
-            <div class="single-slide">
-                <div class="slide-bg bg-cover"
-                    style="background-image: url('./assets/img/hero/three-people-doing-house-cleaning-rm5bzw5kkayn968b.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-
-                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                The best requests for <br>Cleaning
-                            </h1>
-                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
-                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
-                                praesentium magnam itaque voluptatem aliquam? </p>
-
-
-                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                    <span>
-                                        Get in touch
-                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-slide">
-                <div class="slide-bg bg-cover"
-                    style="background-image: url('./assets/img/hero/a-dog-walk-walking-the-dogs-in-the-city-2022-11-08-10-52-58-utc.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-
-                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                The best requests for <br>Dog walking
-                            </h1>
-                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
-                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
-                                praesentium magnam itaque voluptatem aliquam? </p>
-                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                    <span>
-                                        Get in touch
-                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    {{-- bg -- img  --}}
-    {{-- <div class="container-fluid">
-        <div class="">
-
-        </div>
-
-    </div> --}}
 
     <div class="container-fluid bg24 position-relative w-100">
         <div class="row justify-content-start align-items-center h-100">
@@ -135,107 +94,32 @@
     </div>
 
 
-    {{-- <section class="service-section fix  my-5 d-none d-md-block"> --}}
-
-        {{-- <div class="container-fluid">
-            <div class="row position-relative" style=" ">
-
-                <div class="position-relative  " style="left:6%;"> <img src="./resources\views\assets\img\bg\girl.png"
-                        alt="111" class="w-25">
-                </div>
-                <div class=" col-md-8   position-absolute top-50 end-0 translate-middle-y text-start text-white rounded p-5
-                "
-                    style="background-color: #0d75bc;">
-                    <h4 class="text-white pb-3">L'histoire du WGC</h4>
-                    Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
-                    permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
-                    les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une
-                    liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
-                    offrant des opportunités de travail adaptées à leur vie de famille.
-
-                    <br /><br /><br />
-
-                    L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en
-                    main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à
-                    réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui
-                    cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer
-                    dans un monde de plus en plus connecté et dynamique.
-                </div>
-            </div>
 
 
-        </div> --}}
-
-        {{-- <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class=""> <img src="./resources\views\assets\img\bg\girl.png" alt="111"
-                            class="w-100
-                        "
-                            style="
-                           position: relative;
-                            left: 11%;
-                           ">
-                    </div>
-
-
-                </div>
-
-
-                <div class="col-md-8 pt-5 px-5 z-1" style="background-color: #0d75bc; margin-top: 5%;">
-                    <div class="text-white " style="font-size: large">
-
-                        <h2 class="text-white pb-3">L'histoire du WGC</h2>
-                        <p class="py-3 text-center"> Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
-                            permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est
-                            d’accompagner
-                            les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et
-                            une
-                            liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
-                            offrant des opportunités de travail adaptées à leur vie de famille.
-
-                        <br /> <br>
-                          L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre
-                            en
-                            main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de
-                            chacun à
-                            réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux
-                            qui
-                            cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour
-                            prospérer
-                            dans un monde de plus en plus connecté et dynamique.</p>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div> --}}
-    {{-- </section> --}}
-
-    <div class="container-fluid d-none  d-sm-none d-md-block">
+    <div class="container-fluid mt-3 d-none  d-sm-none d-md-block">
         <div class="row">
-            <div class="col-md-6">
-                <div class=""> <img src="./resources\views\assets\img\bg\girl.png" alt="111"
-                        class="w-75
-                    "
+            <div class="" style="width:40%">
+                <div class="">
+                    <img src="./resources\views\assets\img\bg\girl.png" alt="111"
+                        class=" "
                         style="
                        position: relative;
-                        left: 34%;
+                        left: 18%;
+                       width: -webkit-fill-available;
                        ">
+
                 </div>
 
 
             </div>
 
 
-            <div class="col-md-6 rounded-start pt-5 px-5  mb-3 z-1" style="background-color: #0d75bc; margin-top: 5%;">
-                <div class="text-white txt-para">
+            <div class=" rounded-start pt-5 px-5 px-sm-3 mb-3 z-1" style="background-color: #0d75bc; margin-top:4%;  width:60%">
+                <div class="text-white ">
 
                     <h2 class="text-white pb-2">L'histoire du WGC</h2>
-                    <p class="px-3 pt-3  mt-2 text-center"> Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
+                    <p class="p-3  px-sm-1 mt-2 text-center para_txt"> Workin Group Company (WGC) a été fondée dans le but de
+                        promouvoir l'entrepreneuriat individuel et de
                         permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est
                         d’accompagner
                         les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et
@@ -244,8 +128,8 @@
                         offrant des opportunités de travail adaptées à leur vie de famille.
 
 
-                    <br /> <br>
-                     L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre
+                        <br /> <br>
+                        L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre
                         en
                         main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de
                         chacun à
@@ -253,7 +137,8 @@
                         qui
                         cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour
                         prospérer
-                        dans un monde de plus en plus connecté et dynamique.</p>
+                        dans un monde de plus en plus connecté et dynamique.
+                    </p>
 
 
                 </div>
@@ -292,7 +177,7 @@
 
 
 
-    <section class="testimonial-section-2 section-bg-2 fix  ">
+    <section class="testimonial-section-2 section-bg-2 fix py-3 ">
         <div class="container">
             <div class="section-title text-center">
                 <span class="wow fadeInUp"> {{ __('Support Help') }}</span>
@@ -503,20 +388,20 @@
 
 
     <section class="service-section fix mt-3  d-none d-md-block" style="
-    height: 80vh;
+    height: 72vh;
             ">
 
  <div class="container-fluid">
      <div class="row">
 
-         <div class="col-md-6 position-relative" style="left:19%">
+         <div class="col-md-4 position-relative" style="left:6%">
              <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
-                 style="min-height: -webkit-fill-available; width:68%">
+                 style="min-height: -webkit-fill-available; width:90%">
 
          </div>
-         <div class="col-md-6  text-start  rounded" style="background-color: #E7F1F8;    ">
+         <div class="col-md-8  text-start  rounded" style="background-color: #E7F1F8;    ">
              <h2 class="text-center pt-5" style="color: #0d75bc;">Réservez votre prestation</h2>
-             <ul class="p-lg-4 p-md-2 fs-5 fs-xl-6">
+             <ul class="p-lg-4 p-md-2 fs-4 ">
 
                  <li class=" p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
@@ -528,7 +413,7 @@
 
                  </li>
 
-                 <li class=" py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                          <path
                              d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />

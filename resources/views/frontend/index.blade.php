@@ -102,23 +102,39 @@
 
         /* @media screen and (min-width:769px) and (max-width:1310px) {
 
-                .girl_txt_para{
-                    overflow-y:scroll;
-                    height: 80vh;
+                    .girl_txt_para{
+                        overflow-y:scroll;
+                        height: 80vh;
 
-                }
+                    }
 
-            } */
-             @media (min-width:979px) and (max-width:1280){
-                .txt-para{
-                    font-size: x-small;
-                }
-             }
-             @media (min-width:1310px){
-                .txt-para{
-                    font-size: larger;
-                }
-             }
+                } */
+
+        @media  (min-width:768px) and (max-width:1230px){
+            .para_txt {
+    font-size: 11px;
+}
+        }
+
+
+        @media  (min-width:1240px) and (max-width:1439px){
+            .para_txt {
+    font-size: 18px;
+}
+        }
+        @media  (min-width:1440px) and (max-width:1590px) {
+            .para_txt {
+    font-size: 21px;
+    line-height: normal
+}
+        }
+
+        @media  (min-width:1591px)  {
+            .para_txt {
+    font-size: 27px;
+    line-height: normal
+}
+        }
     </style>
 @endsection
 @section('content')
@@ -334,59 +350,31 @@
 
     {{-- Girl banner --}}
 
-    {{-- <section class="service-section fix section-padding my-5 d-none d-md-block">
 
-        <div class="container-fluid">
-            <div class="row" style=" position: relative">
-
-                <div class="" style="left: 11%; position: relative;"> <img
-                        src="./resources\views\assets\img\bg\girl.png" alt="111" class="w-25">
-                </div>
-                <div class="col-md-8 col-8 text-start girl_txt text-white rounded p-5 ">
-                    <h4 class="text-white pb-3">L'histoire du WGC</h4>
-                     <p>  Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
-                        permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
-                        les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et une
-                        liberté sans précédent. Nous accordons une attention particulière aux mères célibataires, en leur
-                        offrant des opportunités de travail adaptées à leur vie de famille. </p>
-
-
-                    <br /><br /><br />
-                    <p>   L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre en
-                        main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de chacun à
-                        réussir seul avec le bon accompagnement. WGC aspire à être un partenaire de confiance pour tous ceux qui
-                        cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour prospérer
-                        dans un monde de plus en plus connecté et dynamique. </p>
-
-
-                </div>
-            </div>
-
-
-        </div>
-    </section> --}}
-
-    <div class="container-fluid d-none  d-sm-none d-md-block">
+    <div class="container-fluid mt-3 d-none  d-sm-none d-md-block">
         <div class="row">
-            <div class="col-md-6">
-                <div class=""> <img src="./resources\views\assets\img\bg\girl.png" alt="111"
-                        class="w-75
-                    "
+            <div class="" style="width:40%">
+                <div class="">
+                    <img src="./resources\views\assets\img\bg\girl.png" alt="111"
+                        class=" "
                         style="
                        position: relative;
-                        left: 34%;
+                        left: 18%;
+                       width: -webkit-fill-available;
                        ">
+
                 </div>
 
 
             </div>
 
 
-            <div class="col-md-6 rounded-start pt-5 px-5  mb-3 z-1" style="background-color: #0d75bc; margin-top: 5%;">
-                <div class="text-white txt-para">
+            <div class=" rounded-start pt-5 px-5 px-sm-3 mb-3 z-1" style="background-color: #0d75bc; margin-top:4%;  width:60%">
+                <div class="text-white ">
 
                     <h2 class="text-white pb-2">L'histoire du WGC</h2>
-                    <p class="px-3 pt-3  mt-2 text-center"> Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
+                    <p class="px-3 pt-3 px-sm-1 mt-2 text-center para_txt"> Workin Group Company (WGC) a été fondée dans le but de
+                        promouvoir l'entrepreneuriat individuel et de
                         permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est
                         d’accompagner
                         les individus dans leur cheminement vers un travail indépendant, en leur offrant une flexibilité et
@@ -395,8 +383,8 @@
                         offrant des opportunités de travail adaptées à leur vie de famille.
 
 
-                    <br /> <br>
-                     L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre
+                        <br /> <br>
+                        L’idée de WGC est née d’une volonté de transformation sociale, permettant aux individus de prendre
                         en
                         main leur avenir professionnel. Nous croyons à l’importance de l’autonomie et à la capacité de
                         chacun à
@@ -404,7 +392,8 @@
                         qui
                         cherchent à démarrer leur propre entreprise, en leur fournissant les outils nécessaires pour
                         prospérer
-                        dans un monde de plus en plus connecté et dynamique.</p>
+                        dans un monde de plus en plus connecté et dynamique.
+                    </p>
 
 
                 </div>
@@ -414,14 +403,14 @@
 
 
     </div>
-
+   
     {{-- mobile view start --}}
     <div class="container-fluid d-block d-sm-block d-md-none">
         <div class="row">
             <div class="col-md-4"> <img src="./resources\views\assets\img\bg\girl.png" alt="111" class="w-100">
             </div>
 
-            <div class="col-md-8 mb-3 text-start text-white rounded-top py-5" style="background-color: #0d75bc;">
+            <div class="text-xl col-md-8 mb-3 text-start text-white rounded-top py-5" style="background-color: #0d75bc;">
                 <h4 class="text-white pb-3">L'histoire du WGC</h4>
                 Workin Group Company (WGC) a été fondée dans le but de promouvoir l'entrepreneuriat individuel et de
                 permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est d’accompagner
@@ -478,13 +467,13 @@
 
 
 
-    {{-- advantage  --}}
+    {{-- advantage points --}}
 
 
     <section class="service-section fix"
         style=" background: linear-gradient(rgba(0, 119, 200, 0.8), rgba(0, 119, 200, 0.8)),
                     url('./public/assets/img/bg/bg_advantage.png') center/cover;
-        height: 35rem;
+        height: 30rem;
         position: relative; background-repeat:no-repeat ; background-size:cover ">
 
 
@@ -588,86 +577,92 @@
 
                             </div>
                         </div>
-             <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Mobile Services</h5>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Mobile Services</h5>
 
-                                    <p class="text-center">Devenez un déménageur indépendant avec WGC, aidant les clients à
-                                        transporter leurs biens en toute sécurité et efficacement.</p>
+                                            <p class="text-center">Devenez un déménageur indépendant avec WGC, aidant les
+                                                clients à
+                                                transporter leurs biens en toute sécurité et efficacement.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Nettoyage de fin de bail</h5>
+
+                                            <p class="text-center">En tant que nettoyeur indépendant chez WGC, aidez les
+                                                locataires à
+                                                récupérer leurs dépôts de garantie avec un ménage impeccable.</p>
+
+                                        </div>
+                                    </div>
 
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Nettoyage de fin de bail</h5>
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Services de soins à domicile</h5>
 
-                                    <p class="text-center">En tant que nettoyeur indépendant chez WGC, aidez les locataires à
-                                        récupérer leurs dépôts de garantie avec un ménage impeccable.</p>
+                                            <p class="text-center">Travaillez en tant que fournisseur de soins à domicile
+                                                indépendant avec
+                                                WGC, offrant soutien et compagnie aux personnes seules.</p>
 
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Services de soins à domicile</h5>
-
-                                    <p class="text-center">Travaillez en tant que fournisseur de soins à domicile indépendant avec
-                                        WGC, offrant soutien et compagnie aux personnes seules.</p>
+                                        </div>
+                                    </div>
 
                                 </div>
+
                             </div>
-
                         </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Mobile Services</h5>
 
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Mobile Services</h5>
+                                            <p class="text-center">Devenez un déménageur indépendant avec WGC, aidant les
+                                                clients à
+                                                transporter leurs biens en toute sécurité et efficacement.</p>
 
-                                    <p class="text-center">Devenez un déménageur indépendant avec WGC, aidant les clients à
-                                        transporter leurs biens en toute sécurité et efficacement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Nettoyage de fin de bail</h5>
+
+                                            <p class="text-center">En tant que nettoyeur indépendant chez WGC, aidez les
+                                                locataires à
+                                                récupérer leurs dépôts de garantie avec un ménage impeccable.</p>
+
+                                        </div>
+                                    </div>
 
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Nettoyage de fin de bail</h5>
+                                <div class="col-md-4 my-2">
+                                    <div class="card shadow border-0">
+                                        <div class="card-body p-5">
+                                            <h5 class="card-title text-center">Services de soins à domicile</h5>
 
-                                    <p class="text-center">En tant que nettoyeur indépendant chez WGC, aidez les locataires à
-                                        récupérer leurs dépôts de garantie avec un ménage impeccable.</p>
+                                            <p class="text-center">Travaillez en tant que fournisseur de soins à domicile
+                                                indépendant avec
+                                                WGC, offrant soutien et compagnie aux personnes seules.</p>
 
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 my-2">
-                            <div class="card shadow border-0" >
-                                <div class="card-body p-5">
-                                    <h5 class="card-title text-center">Services de soins à domicile</h5>
-
-                                    <p class="text-center">Travaillez en tant que fournisseur de soins à domicile indépendant avec
-                                        WGC, offrant soutien et compagnie aux personnes seules.</p>
+                                        </div>
+                                    </div>
 
                                 </div>
+
                             </div>
-
                         </div>
-
-                    </div>
-                  </div>
                     </div>
 
                 </div>
@@ -686,7 +681,83 @@
     </div>
 
     {{-- keypoints --}}
-    <section class="service-section fix   d-none d-md-block" style="
+
+
+
+    <section class="service-section fix mt-3  d-none d-md-block" style="
+    height: 72vh;
+            ">
+
+ <div class="container-fluid">
+     <div class="row">
+
+         <div class="col-md-4 position-relative" style="left:6%">
+             <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
+                 style="min-height: -webkit-fill-available; width:90%">
+
+         </div>
+         <div class="col-md-8  text-start  rounded" style="background-color: #E7F1F8;    ">
+             <h2 class="text-center pt-5" style="color: #0d75bc;">Réservez votre prestation</h2>
+             <ul class="p-lg-4 p-md-2 fs-4 ">
+
+                 <li class=" p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Des hommes et des femmes de ménage qualifiés et expérimentés
+
+
+                 </li>
+
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Un support client personnalisé et dédié </li>
+
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Contrats sans engagement </li>
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Des prix attractifs </li>
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Application mobile dédiée à la gestion de vos ménages  </li>
+                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
+                         <path
+                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
+                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
+                     </svg> Des solutions flexibles et sur mesure</li>
+             </ul>
+
+             <div class="d-flex justify-content-start py-2 mx-5">
+                 <div class="col-md-6 col-12 me-3">
+                     <input placeholder="Votre code postal ou ville" type="text"
+                         class="form-control  border-0" />
+                 </div>
+                 <div class="col-md-3 col-12">
+                     <button class="btn btn-primary w-100" style="background-color: #0d75bc;">Allons-y!</button>
+                 </div >               </div>
+         </div>
+     </div>
+
+
+ </div>
+</section>
+    {{-- <section class="service-section fix   d-none d-md-block" style="
            height: 80vh;
                    ">
 
@@ -694,7 +765,7 @@
             <div class="row">
 
                 <div class="col-md-6 position-relative" style="left:19%">
-                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
+                    <img src=".\resources\views\assets\img\hero\people_group.jpg" alt="111" class="rounded"
                         style="min-height: -webkit-fill-available; width:68%">
 
                 </div>
@@ -752,13 +823,14 @@
                         </div>
                         <div class="col-md-3 col-12">
                             <button class="btn btn-primary w-100" style="background-color: #0d75bc;">Allons-y!</button>
-                        </div >               </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
         </div>
-    </section>
+    </section> --}}
 
 
     {{-- mobile view start --}}
@@ -861,34 +933,34 @@
 
     <!--<< Brand Section Start >>-->
     <!-- <div class="brand-section fix">
-                                                                <div class="container">
-                                                                    <div class="brand-wrapper-3">
-                                                                        <div class="brand-carousel-active">
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                            </div>
-                                                                            <div class="brand-image">
-                                                                                <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                    <div class="container">
+                                                                        <div class="brand-wrapper-3">
+                                                                            <div class="brand-carousel-active">
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
+                                                                                <div class="brand-image">
+                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </div> -->
+                                                                </div> -->
 
     <!--<< About Section Start >>-->
     {{-- <section class="about-section fix section-padding " id="about">

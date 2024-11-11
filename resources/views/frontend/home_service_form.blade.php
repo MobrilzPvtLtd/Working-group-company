@@ -302,7 +302,7 @@
     <div class="container my-4">
         <div class="row">
           <div class="col-md-8 mx-auto">
-             <h2>Détails du service à domicile</h2>
+             <h2>Détails du service  </h2>
              <form>
               <label>Votre nom</label>
               <input type="type" class="form-control mb-3"/>

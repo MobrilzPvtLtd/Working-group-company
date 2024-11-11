@@ -26,7 +26,7 @@
                 <h6 style="color:  #0d75bc" class="py-2">Fournir le nom</h6>
                 <p>Travaillez en tant que prestataire de soins à domicile <br />indépendant avec WGC, offrant soutien et
                     compagnie aux <br /> personnes seules.</p>
-                <button class="py-3 px-5 text-white mt-3" style="background-color: #0d75bc ">Réservez maintenant  </button>
+                <button class="py-3 px-5 text-white mt-3" style="background-color: #0d75bc"  data-bs-toggle="modal" data-bs-target="#exampleModal">Réservez maintenant  </button>
             </div>
 
         </div>
@@ -140,6 +140,37 @@
 
         </div>
     </div>
+
+
+    {{-- Modal  --}}
+    <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel24" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #0d75bc">
+          <h1 class="modal-title fs-5 text-white " id="ModalLabel24">Book Now</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <input type="text" class="form-control mb-3" placeholder="Name">
+                <input type="email" class="form-control mb-3" placeholder="Email">
+                <input type="number" class="form-control mb-3" placeholder="Mobile">
+                <input type="text" class="form-control mb-3" placeholder="Address">
+                <button class="btn btn-outline-primary">Submit</button>
+            </form>
+
+        </div>
+        {{-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"></button>
+        </div> --}}
+      </div>
+    </div>
+  </div>
 
 
     <!--<< Footer Section Start >>-->

@@ -131,7 +131,7 @@
 
         @media  (min-width:1591px)  {
             .para_txt {
-    font-size: 27px;
+    font-size: 25px;
     line-height: normal
 }
         }
@@ -184,15 +184,13 @@
 
         </div>
 
-
-        <div class="txt_banner" style="position: absolute;
-    left: 35%;
-    top: 90%;
-    z-index:1">
-            <div class="card shadow-lg rounded" style="padding: 48px 70px;">
+       <div class="row ">
+        <div class="col-md-5 position-absolute" style="left: 30%;  top: 90%; z-index:1">
+            <div class="card shadow-lg rounded" style="padding: 30px;">
                 <h2 class="text-center">Guide de réservation </h2>
             </div>
         </div>
+    </div>
     </div>
     {{-- mobile view div  --}}
     <div class="col-md-12 pt-5 d-block d-sm-block d-lg-none bg_mobimg">
@@ -353,8 +351,8 @@
 
     <div class="container-fluid mt-3 d-none  d-sm-none d-md-block">
         <div class="row">
-            <div class="" style="width:40%">
-                <div class="">
+
+                <div class="col-md-4">
                     <img src="./resources\views\assets\img\bg\girl.png" alt="111"
                         class=" "
                         style="
@@ -366,10 +364,10 @@
                 </div>
 
 
-            </div>
 
 
-            <div class=" rounded-start pt-5 px-5 px-sm-3 mb-3 z-1" style="background-color: #0d75bc; margin-top:4%;  width:60%">
+
+            <div class="col-md-7 rounded pt-5 px-5 py-3 px-sm-3 mb-3 z-1" style="background-color: #0d75bc;   ">
                 <div class="text-white ">
 
                     <h2 class="text-white pb-2">L'histoire du WGC</h2>
@@ -403,7 +401,7 @@
 
 
     </div>
-   
+
     {{-- mobile view start --}}
     <div class="container-fluid d-block d-sm-block d-md-none">
         <div class="row">
@@ -684,19 +682,17 @@
 
 
 
-    <section class="service-section fix mt-3  d-none d-md-block" style="
-    height: 72vh;
-            ">
+    <section class="service-section fix mt-3  d-none d-md-block" style="">
 
  <div class="container-fluid">
-     <div class="row">
+     <div class="row mx-auto">
 
          <div class="col-md-4 position-relative" style="left:6%">
              <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
                  style="min-height: -webkit-fill-available; width:90%">
 
          </div>
-         <div class="col-md-8  text-start  rounded" style="background-color: #E7F1F8;    ">
+         <div class="col-md-7 text-start  rounded" style="background-color: #E7F1F8;    ">
              <h2 class="text-center pt-5" style="color: #0d75bc;">Réservez votre prestation</h2>
              <ul class="p-lg-4 p-md-2 fs-4 ">
 

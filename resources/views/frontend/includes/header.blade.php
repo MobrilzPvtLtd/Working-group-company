@@ -345,7 +345,7 @@
                                 <i class="fas fa-phone me-2 top-bar-icon"></i>
                                 +240222867206
                             </span>
-                            <a href="/login_form" class="top-bar-text text-decoration-none">
+                            <a href="/login" class="top-bar-text text-decoration-none">
                                 <i class="fas fa-user me-2 top-bar-icon"></i>
                                 Se connecter
                             </a>

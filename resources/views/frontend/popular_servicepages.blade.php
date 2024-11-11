@@ -122,13 +122,13 @@
 
                                 <form class="d-flex" role="search">
                                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                                  <button class="btn btn-outline-primary" type="submit"><a href="/service_form">Search  </a></button>
                                 </form>
 
                 </div>
             </div>
 
-            <div class="col-md-6 d-none d-md-block" style="margin-left: -7%;  width:38%"> <img
+            <div class="col-md-6 d-none d-md-block" style="margin-left: -5%;  width:38%"> <img
                     src="./resources\views\assets\img\hero\people.png" alt="111" class="w-75"
                     style="min-height: -webkit-fill-available;">
             </div>

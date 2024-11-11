@@ -5,11 +5,11 @@
 @endsection
 
 @section('content')
-  
-<div class="mouse-cursor cursor-outer"></div>
-<div class="mouse-cursor cursor-inner"></div> 
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
-<section class="hero-section hero-3">
+
+    {{-- <section class="hero-section hero-3">
     <div class="slider-button">
         <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
         <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
@@ -47,7 +47,7 @@
                         <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
                             <a href="#" class="theme-btn theme-btn-2 hover-white">
                                 <span>
-                                    Entrer en contact 
+                                    Entrer en contact
                                     <i class="fa fa-hand-o-right" aria-hidden="true"></i>
                                 </span>
                             </a>
@@ -63,7 +63,7 @@
     <div class="container">
         <div class="service-wrapper-3">
             <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".7s">
-                <div class="icon">                              
+                <div class="icon">
                     <i class="fas fa-badge-check"></i>
                 </div>
                 <div class="content">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".8s">
-                <div class="icon">                              
+                <div class="icon">
                     <i class="fa fa-file-certificate"></i>
                 </div>
                 <div class="content">
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="service-box-items style-2 wow fadeInUp" data-wow-delay=".9s">
-                <div class="icon">                              
+                <div class="icon">
                     <i class="fa fa-money-bill"></i>
                 </div>
                 <div class="content">
@@ -103,53 +103,53 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
-              <!-- <div class="service-text-area text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
-    <h5>
-        Rassemblez-les et vous surmontez l'ordinaire.
-        <a href="service.html" class="link-btn link-btn-2">
-            <span>Voir plus de services</span>
-            <i class="fal fa-plus"></i>
-        </a>
-    </h5>
-</div> -->
-</div>
-</section>
+    <!-- <div class="service-text-area text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
+        <h5>
+            Rassemblez-les et vous surmontez l'ordinaire.
+            <a href="service.html" class="link-btn link-btn-2">
+                <span>Voir plus de services</span>
+                <i class="fal fa-plus"></i>
+            </a>
+        </h5>
+    </div> -->
+    {{-- </div>
+    </section> --}}
 
-<!--<< Brand Section Start >>-->
-<!-- <div class="brand-section fix">
-    <div class="container">
-        <div class="brand-wrapper-3">
-            <div class="brand-carousel-active">
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
-                </div>
-                <div class="brand-image">
-                    <img src="assets/img/brand/02.png" alt="brand-img">
+    <!--<< Brand Section Start >>-->
+    <!-- <div class="brand-section fix">
+        <div class="container">
+            <div class="brand-wrapper-3">
+                <div class="brand-carousel-active">
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
+                    <div class="brand-image">
+                        <img src="assets/img/brand/02.png" alt="brand-img">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div> -->
+    </div> -->
 
-<!--<< About Section Start >>-->
-<section class="about-section fix section-padding " id="about">
+    <!--<< About Section Start >>-->
+    {{-- <section class="about-section fix section-padding " id="about">
     <div class="container">
         <div class="about-wrapper">
             <div class="row">
@@ -227,13 +227,13 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 
 
-<!--<< Service Section Start >>-->
-<section class="service-section fix section-padding" style="background-color: #f6f3ee;">
+    <!--<< Service Section Start >>-->
+    {{-- <section class="service-section fix section-padding" style="background-color: #f6f3ee;">
     <div class="line-shape">
         <img src="assets/img/line.png" alt="shape-img">
     </div>
@@ -416,12 +416,12 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 
-<!--<< Case Studies Start >>-->
-<<div class="marque-section section-padding">
+    <!--<< Case Studies Start >>-->
+    {{-- <<div class="marque-section section-padding">
     <div class="marquee-wrapper text-slider style-height">
         <div class="marquee-inner to-left">
             <ul class="marqee-list d-flex">
@@ -438,181 +438,204 @@
             </ul>
         </div>
     </div>
-</div>
+</div> --}}
 
-<!--<< Testimonial Section Start >>-->
-<section class="testimonial-section-2 section-bg-2 fix section-padding">
-    <div class="container">
-        <div class="section-title text-center">
-            <span class="wow fadeInUp">Aide au support</span>
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                Ce que nos clients disent de nous
-            </h2>
+    <!--<< Testimonial Section Start >>-->
+    {{-- <section class="testimonial-section-2 section-bg-2 fix section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="wow fadeInUp">Aide au support</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Ce que nos clients disent de nous
+                </h2>
+            </div>
         </div>
-    </div>
-    <div class="testimonial-wrapper">
-        <div class="testimonial-carousel-active-2">
-            <div class="testimonial-card-items-2">
-                <div class="testimonial-image bg-cover" style="background-image: url('assets/img/testimonial/02.png');"></div>
-                <div class="testimonial-content">
-                    <div class="star">
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star color-2"></span>
+        <div class="testimonial-wrapper"> --}}
+            <div class="testimonial-carousel-active-2">
+                <div class="testimonial-card-items-2">
+                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/testimonial/02.png');">
                     </div>
-                    <p>
-                        “Good Time est très bon dans ce qu'ils font et
-                        plus qu'heureux de vous pousser et de vous
-                        amener à réfléchir à vos décisions tant du point de vue de l'utilisabilité que du
-                        design.”
-                    </p>
-                    <section class="testimonial-section-2 section-bg-2 fix section-padding">
-                        <div class="container">
-                            <div class="section-title text-center">
-                                <span class="wow fadeInUp">Aide au support</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    Ce que disent nos clients de nous
-                                </h2>
-                            </div>
+                    <div class="testimonial-content">
+                        <div class="star">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star color-2"></span>
                         </div>
-                        <div class="testimonial-wrapper">
-                            <div class="testimonial-carousel-active-2">
-                                <div class="testimonial-card-items-2">
-                                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/testimonial/02.png');"></div>
-                                    <div class="testimonial-content">
-                                        <div class="star">
-                                            <span class="fas fa-star"></span>
-                                            <span class="fas fa-star"></span>
-                                            <span class="fas fa-star"></span>
-                                            <span class="fas fa-star"></span>
-                                            <span class="fas fa-star color-2"></span>
-                                        </div>
-                                        <p>
-                                            "Good Time est très bon dans ce qu'ils font et
-                                            plus que heureux de vous pousser à
-                                            réfléchir à vos décisions à la fois du point de vue de l'utilisabilité et
-                                            du design."
-                                        </p>
-                                        <div class="author-name">
-                                            <h6>Cameron Williamson</h6>
-                                            <p>PDG, Business Co</p>
-                                        </div>
-                                    </div>
+                        <p>
+                            “Good Time est très bon dans ce qu'ils font et
+                            plus qu'heureux de vous pousser et de vous
+                            amener à réfléchir à vos décisions tant du point de vue de l'utilisabilité que du
+                            design.”
+                        </p>
+                        <section class="testimonial-section-2 section-bg-2 fix section-padding">
+                            <div class="container">
+                                <div class="section-title text-center">
+                                    <span class="wow fadeInUp">Aide au support</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Ce que disent nos clients de nous
+                                    </h2>
                                 </div>
-                                <!-- Repeat similar structure for other testimonials -->
                             </div>
-                        </div>
-                    </section>
-                    
-                    <!-- Section de chat CTA -->
-                    <section class="cta-chat-section-2" style="margin-top: -40px;">
-                        <div class="container">
-                            <div class="cta-chat-wrapper style-2">
-                                <div class="chat-items wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="icon">
-                                        <i class="flaticon-chat"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h3>Voulez-vous aussi entrer en contact avec nous?</h3>
-                                    </div>
-                                </div>
-                                <a href="#" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
-                                    <span>Nous contacter</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <!-- Section des études de cas -->
-                    <section class="case-study section-padding pt-0">
-                        <div class="container">
-                            <div class="about-wrapper section-padding pb-0">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="about-content">
-                                            <div class="section-title style-2">
-                                                <span class="wow fadeInUp">Questions fréquemment posées</span>
-                                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                                    Avez-vous une question en <br>
-                                                    tête?
-                                                </h2>
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-carousel-active-2">
+                                    <div class="testimonial-card-items-2">
+                                        <div class="testimonial-image bg-cover"
+                                            style="background-image: url('assets/img/testimonial/02.png');"></div>
+                                        <div class="testimonial-content">
+                                            <div class="star">
+                                                <span class="fas fa-star"></span>
+                                                <span class="fas fa-star"></span>
+                                                <span class="fas fa-star"></span>
+                                                <span class="fas fa-star"></span>
+                                                <span class="fas fa-star color-2"></span>
                                             </div>
-                                            <p class="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate temporibus repellendus alias nisi consectetur earum voluptatum?
+                                            <p>
+                                                "Good Time est très bon dans ce qu'ils font et
+                                                plus que heureux de vous pousser à
+                                                réfléchir à vos décisions à la fois du point de vue de l'utilisabilité et
+                                                du design."
                                             </p>
-                                            <!-- Remaining content -->
+                                            <div class="author-name">
+                                                <h6>Cameron Williamson</h6>
+                                                <p>PDG, Business Co</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat similar structure for other testimonials -->
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section de chat CTA -->
+                        <section class="cta-chat-section-2" style="margin-top: -40px;">
+                            <div class="container">
+                                <div class="cta-chat-wrapper style-2">
+                                    <div class="chat-items wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="icon">
+                                            <i class="flaticon-chat"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h3>Voulez-vous aussi entrer en contact avec nous?</h3>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".5s">
+                                        <span>Nous contacter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section des études de cas -->
+                        <section class="case-study section-padding pt-0">
+                            <div class="container">
+                                <div class="about-wrapper section-padding pb-0">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="about-content">
+                                                <div class="section-title style-2">
+                                                    <span class="wow fadeInUp">Questions fréquemment posées</span>
+                                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                                        Avez-vous une question en <br>
+                                                        tête?
+                                                    </h2>
+                                                </div>
+                                                <p class="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                                                    temporibus repellendus alias nisi consectetur earum voluptatum?
+                                                </p>
+                                                <!-- Remaining content -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    
+                        </section>
 
 
 
 
-                                <div class="col-lg-6 mt-5 mt-lg-0">
-                                    <div class="faq-content style-2">
-                                        <div class="faq-accordion">
-                                            <div class="accordion" id="accordion">
-                                                <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                                                    <h4 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-                                                            Lorem ipsum dolor ?
-                                                        </button>
-                                                    </h4>
-                                                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                        <div class="accordion-body">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
-                                                        </div>
-                                                    </div>
+
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="faq-content style-2">
+                                <div class="faq-accordion">
+                                    <div class="accordion" id="accordion">
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq1"
+                                                    aria-expanded="false" aria-controls="faq1">
+                                                    Lorem ipsum dolor ?
+                                                </button>
+                                            </h4>
+                                            <div id="faq1" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat,
+                                                    veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam
+                                                    nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
                                                 </div>
-                                                <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
-                                                    <h4 class="accordion-header">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true" aria-controls="faq2">
-                                                            Lorem ipsum dolor ?
-                                                        </button>
-                                                    </h4>
-                                                    <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-                                                        <div class="accordion-body">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq2" aria-expanded="true" aria-controls="faq2">
+                                                    Lorem ipsum dolor ?
+                                                </button>
+                                            </h4>
+                                            <div id="faq2" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat,
+                                                    veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam
+                                                    nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
                                                 </div>
-                                                <div class="accordion-item wow fadeInUp" data-wow-delay=".7s">
-                                                    <h4 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                                            Lorem ipsum dolor ?
-                                                        </button>
-                                                    </h4>
-                                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                        <div class="accordion-body">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".7s">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq3"
+                                                    aria-expanded="false" aria-controls="faq3">
+                                                    Lorem ipsum dolor ?
+                                                </button>
+                                            </h4>
+                                            <div id="faq3" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat,
+                                                    veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam
+                                                    nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
                                                 </div>
-                                                <div class="accordion-item wow fadeInUp" data-wow-delay=".9s">
-                                                    <h4 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                                            Lorem ipsum dolor ?
-                                                        </button>
-                                                    </h4>
-                                                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                        <div class="accordion-body">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat, veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".9s">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq4"
+                                                    aria-expanded="false" aria-controls="faq4">
+                                                    Lorem ipsum dolor ?
+                                                </button>
+                                            </h4>
+                                            <div id="faq4" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quaerat,
+                                                    veritatis, vitae accusamus dolorum placeat esse saepe voluptate quam
+                                                    nemo ipsam quod, neque consequatur! Sequi ipsum hic ex amet dolor.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-              <!--<< Footer Section Start >>-->
-  
-    </body>
+                            </div>
+                        </div>
+
+                        <!--<< Footer Section Start >>-->
+ </body>
+
+
 </html>
-@endsection
+                    @endsection

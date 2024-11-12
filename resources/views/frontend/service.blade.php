@@ -53,79 +53,6 @@
     <!-- Offcanvas Area Start -->
 
 
-
-
-
-
-
-    <!-- Header Area Start -->
-
-    <!--<< Hero Section Start >>-->
-    {{-- <section class="hero-section hero-3">
-
-        <div class="slider-button">
-            <div class="hero-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
-            <div class="hero-nav-next"><i class="fal fa-long-arrow-right"></i></div>
-        </div>
-        <div class="hero-slider-active-2">
-            <div class="single-slide">
-                <div class="slide-bg bg-cover"
-                    style="background-image: url('./assets/img/hero/three-people-doing-house-cleaning-rm5bzw5kkayn968b.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-
-                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                The best requests for <br>Cleaning
-                            </h1>
-                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
-                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
-                                praesentium magnam itaque voluptatem aliquam? </p>
-
-
-                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                    <span>
-                                        Get in touch
-                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-slide">
-                <div class="slide-bg bg-cover"
-                    style="background-image: url('./assets/img/hero/a-dog-walk-walking-the-dogs-in-the-city-2022-11-08-10-52-58-utc.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-
-                            <h1 class="fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                The best requests for <br>Dog walking
-                            </h1>
-                            <p style="color: #ffffff; font-size: 20px;" data-animation-in="fadeInUp" data-delay-in="0.5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum esse nemo eligendi
-                                quibusdam nostrum quo rerum ullam. Assumenda unde autem repellendus optio nisi quas
-                                praesentium magnam itaque voluptatem aliquam? </p>
-                            <div class="hero-button fs-lg animated" data-animation-in="fadeInUp" data-delay-in="0.7">
-                                <a href="#" class="theme-btn theme-btn-2 hover-white">
-                                    <span>
-                                        Get in touch
-                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
-
     <div class="container-fluid bg24 position-relative w-100">
         <div class="row justify-content-start align-items-center h-100">
             <h2 class="text-start text-white ps-5">Nos  prestations</h2>
@@ -211,55 +138,55 @@
                     <div class="row ">
 
                          <div class=" col-md-4 text-center ">
-                            <div class="  ">
-                                 <a href="/categories">  <img src="./resources\views\assets\img\hero\paint.png" alt="1"
+                            <div class="  card border-0 text-center rounded">
+                                 <a href="/categories">  <img src="./resources/views/assets/img/hero/movingservice_1.jpg" alt="1"
                                     class="w-100 pt-3  mob_img ">  </a>
 
-                                <h6 class="">Peinture</h6>
+                                <h6 class="">Hive Boxx Service</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center ">
-                            <div class="  ">
-                                <a href="/categories">   <img src="./resources\views\assets\img\hero\doctor.png" alt="2"
+                            <div class="card border-0 text-center rounded  ">
+                                <a href="/categories">   <img src="./resources/views/assets/img/hero/movingservice_2.jpg" alt="2"
                                     class="w-100 pt-3  mob_img "> </a>
 
-                                <h6 class="">Maison services de soins</h6>
+                                <h6 class="">Die Post Plus</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center  ">
-                            <div class="  ">
-                                <a href="/categories">  <img src="./resources\views\assets\img\hero\delivery.png" alt="2"
+                            <div class="card border-0 text-center rounded  ">
+                                <a href="/categories">  <img src="./resources/views/assets/img/hero/movingservice_3.jpg" alt="2"
                                     class="w-100 pt-3  mob_img ">
 
-                                <h6 class="">Autorisation services</h6>
+                                <h6 class="">Marire Service</h6>
                             </div>
                         </div>
                     </div>
                     <div class="row ">
                         <div class="col-md-4 text-center  ">
-                            <div class="card border-0 text-center">
+                            <div class="card border-0 text-center rounded">
                                 <a href="/categories">
-                                <img src="./resources\views\assets\img\hero\wood.png" alt="1"
-                                    class=" w-100 pt-3 rounded mob_img "> </a>
-                                <h6 class="">Assemblage de meubles</h6>
+                                <img src="./resources/views/assets/img/hero/movingservice_4.jpg" alt="1"
+                                    class=" w-100 pt-3  mob_img "> </a>
+                                <h6 class="">Santio Service</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center ">
-                            <div class="card border-0 text-center">
-                                <img src="./resources\views\assets\img\hero\mobile.png" alt="2"
-                                    class=" w-100  pt-3 rounded mob_img ">
-                                <h6 class="">Réparation de téléviseurs</h6>
+                            <div class="card border-0 text-center rounded">
+                                <img src="./resources/views/assets/img/hero/movingservice_5.jpg" alt="2"
+                                    class=" w-100  pt-3  mob_img ">
+                                <h6 class="">SpeedV Service</h6>
                             </div>
                         </div>
                         <div class="col-md-4 text-center  ">
-                            <div class="card border-0 text-center">
-                                <img src="./resources\views\assets\img\hero\phone_internal.png" alt="2"
-                                    class=" w-100 pt-3 rounded mob_img ">
-                                <h6 class="">Téléphone Réparation</h6>
+                            <div class="card border-0 text-center rounded">
+                                <img src="./resources/views/assets/img/hero/movingservice_1.jpg" alt="2"
+                                    class=" w-100 pt-3  mob_img ">
+                                <h6 class="">Hive Boxx</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-md-4 my-2">
                             <div class="card border-0 text-center">
                                 <a href="/categories">
@@ -294,14 +221,7 @@
 
                         </div>
 
-                    </div>
-
-
-
-
-{{--
-                    <div class="d-flex justify-content-center py-4"> <button class="btn btn-outline-primary ">Afficher
-                            plus</button> </div> --}}
+                    </div> --}}
 
                 </div>
             </div>
@@ -315,27 +235,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {{-- 0ld code --}}
+
+
     <!-- <div class="single-slide">
                                                 <div class="slide-bg bg-cover" style="background-image: url('assets/img/hero/hero-7.jpg');">
                                                     <div class="container">

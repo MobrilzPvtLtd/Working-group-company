@@ -10,9 +10,6 @@
     <div class="mouse-cursor cursor-inner"></div>
 
 
-    <!-- Offcanvas Area Start -->
-
-
 
 
     <div class="container-fluid my-4">
@@ -54,10 +51,6 @@
             <div class="col-md-6"></div>
         </div>
     </div>
-
-
-
-
 
     <div class="container-fluid">
         <div class="row">
@@ -142,13 +135,9 @@
     </div>
 
 
-    {{-- Modal  --}}
-    <!-- Button trigger modal -->
-
-
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel24" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel24" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #0d75bc">
           <h1 class="modal-title fs-5 text-white " id="ModalLabel24">Book Now</h1>
@@ -164,14 +153,10 @@
             </form>
 
         </div>
-        {{-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary"></button>
-        </div> --}}
-      </div>
-    </div>
-  </div>
 
+      </div>
+     </div>
+</div>
 
     <!--<< Footer Section Start >>-->
 

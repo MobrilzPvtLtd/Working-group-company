@@ -73,7 +73,7 @@
         </form>
     </div> --}}
 
-    <div class="container my-5 ">
+    {{-- <div class="container my-5 ">
         <div class="row ">
         <div class="col-8 mx-auto rounded shadow-lg p-4" style="background-color: #0d75bc;">
 
@@ -121,7 +121,7 @@
 
         </div>
         </div>
-    </div>
+    </div> --}}
 
 
 

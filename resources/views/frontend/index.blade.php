@@ -100,50 +100,38 @@
             position: absolute;
         }
 
-        /* @media screen and (min-width:769px) and (max-width:1310px) {
 
-                    .girl_txt_para{
-                        overflow-y:scroll;
-                        height: 80vh;
-
-                    }
-
-                } */
-
-        @media  (min-width:768px) and (max-width:1230px){
+        @media (min-width:768px) and (max-width:1230px) {
             .para_txt {
-    font-size: 11px;
-}
+                font-size: 11px;
+            }
         }
 
 
-        @media  (min-width:1240px) and (max-width:1439px){
+        @media (min-width:1240px) and (max-width:1439px) {
             .para_txt {
-    font-size: 18px;
-}
-        }
-        @media  (min-width:1440px) and (max-width:1590px) {
-            .para_txt {
-    font-size: 21px;
-    line-height: normal
-}
+                font-size: 18px;
+            }
         }
 
-        @media  (min-width:1591px)  {
+        @media (min-width:1440px) and (max-width:1590px) {
             .para_txt {
-    font-size: 25px;
-    line-height: normal
-}
+                font-size: 21px;
+                line-height: normal
+            }
+        }
+
+        @media (min-width:1591px) {
+            .para_txt {
+                font-size: 25px;
+                line-height: normal
+            }
         }
     </style>
 @endsection
 @section('content')
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
-
-
-
-
 
 
 
@@ -184,13 +172,13 @@
 
         </div>
 
-       <div class="row ">
-        <div class="col-md-5 position-absolute" style="left: 30%;  top: 90%; z-index:1">
-            <div class="card shadow-lg rounded" style="padding: 30px;">
-                <h2 class="text-center">Guide de réservation </h2>
+        <div class="row ">
+            <div class="col-md-5 position-absolute" style="left: 30%;  top: 90%; z-index:1">
+                <div class="card shadow-lg rounded" style="padding: 30px;">
+                    <h2 class="text-center">Guide de réservation </h2>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     {{-- mobile view div  --}}
     <div class="col-md-12 pt-5 d-block d-sm-block d-lg-none bg_mobimg">
@@ -352,16 +340,15 @@
     <div class="container-fluid mt-3 d-none  d-sm-none d-md-block">
         <div class="row">
 
-                <div class="col-md-4">
-                    <img src="./resources\views\assets\img\bg\girl.png" alt="111"
-                        class=" "
-                        style="
+            <div class="col-md-4">
+                <img src="./resources\views\assets\img\bg\girl.png" alt="111" class=" "
+                    style="
                        position: relative;
                         left: 18%;
                        width: -webkit-fill-available;
                        ">
 
-                </div>
+            </div>
 
 
 
@@ -371,7 +358,8 @@
                 <div class="text-white ">
 
                     <h2 class="text-white pb-2">L'histoire du WGC</h2>
-                    <p class="px-3 pt-3 px-sm-1 mt-2 text-center para_txt"> Workin Group Company (WGC) a été fondée dans le but de
+                    <p class="px-3 pt-3 px-sm-1 mt-2 text-center para_txt"> Workin Group Company (WGC) a été fondée dans le
+                        but de
                         promouvoir l'entrepreneuriat individuel et de
                         permettre aux gens de gérer leur emploi du temps de manière autonome. Notre mission est
                         d’accompagner
@@ -523,6 +511,7 @@
 
         </div>
     </section>
+
     <div class="d-none d-md-block" style="transform: translateY(-45%);">
         <div class="container ">
             <div class="row">
@@ -678,98 +667,27 @@
 
     </div>
 
-    {{-- keypoints --}}
+
+
+{{-- keypoints of service --}}
 
 
 
     <section class="service-section fix mt-3  d-none d-md-block" style="">
 
- <div class="container-fluid">
-     <div class="row mx-auto">
-
-         <div class="col-md-4 position-relative" style="left:6%">
-             <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
-                 style="min-height: -webkit-fill-available; width:90%">
-
-         </div>
-         <div class="col-md-7 text-start  rounded" style="background-color: #E7F1F8;    ">
-             <h2 class="text-center pt-5" style="color: #0d75bc;">Réservez votre prestation</h2>
-             <ul class="p-lg-4 p-md-2 fs-4 ">
-
-                 <li class=" p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Des hommes et des femmes de ménage qualifiés et expérimentés
-
-
-                 </li>
-
-                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Un support client personnalisé et dédié </li>
-
-                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Contrats sans engagement </li>
-                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Des prix attractifs </li>
-                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Application mobile dédiée à la gestion de vos ménages  </li>
-                 <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                         fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
-                         <path
-                             d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
-                         <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708" />
-                     </svg> Des solutions flexibles et sur mesure</li>
-             </ul>
-
-             <div class="d-flex justify-content-start py-2 mx-5">
-                 <div class="col-md-6 col-12 me-3">
-                     <input placeholder="Votre code postal ou ville" type="text"
-                         class="form-control  border-0" />
-                 </div>
-                 <div class="col-md-3 col-12">
-                     <button class="btn btn-primary w-100" style="background-color: #0d75bc;">Allons-y!</button>
-                 </div >               </div>
-         </div>
-     </div>
-
-
- </div>
-</section>
-    {{-- <section class="service-section fix   d-none d-md-block" style="
-           height: 80vh;
-                   ">
-
         <div class="container-fluid">
-            <div class="row">
+            <div class="row mx-auto">
 
-                <div class="col-md-6 position-relative" style="left:19%">
-                    <img src=".\resources\views\assets\img\hero\people_group.jpg" alt="111" class="rounded"
-                        style="min-height: -webkit-fill-available; width:68%">
+                <div class="col-md-4 position-relative" style="left:6%">
+                    <img src="./resources\views\assets\img\hero\people.png" alt="111" class=""
+                        style="min-height: -webkit-fill-available; width:90%">
 
                 </div>
-                <div class="col-md-6  text-start  rounded" style="background-color: #E7F1F8;    ">
+                <div class="col-md-7 text-start  rounded" style="background-color: #E7F1F8;    ">
                     <h2 class="text-center pt-5" style="color: #0d75bc;">Réservez votre prestation</h2>
-                    <ul class="p-lg-5 p-md-2 fs-5 fs-xl-6">
+                    <ul class="p-lg-4 p-md-2 fs-4 ">
 
-                        <li class=" p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
@@ -779,7 +697,7 @@
 
                         </li>
 
-                        <li class=" py-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class=" py-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-check2-all mx-2" viewBox="0 0 16 16">
                                 <path
                                     d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0" />
@@ -812,7 +730,7 @@
                             </svg> Des solutions flexibles et sur mesure</li>
                     </ul>
 
-                    <div class="d-flex justify-content-start py-2 mx-5">
+                    <div class="d-flex justify-content-center py-2 mx-5">
                         <div class="col-md-6 col-12 me-3">
                             <input placeholder="Votre code postal ou ville" type="text"
                                 class="form-control  border-0" />
@@ -826,7 +744,7 @@
 
 
         </div>
-    </section> --}}
+    </section>
 
 
     {{-- mobile view start --}}
@@ -908,6 +826,7 @@
 
 
 
+                                                                            {{-- old code  --}}
 
 
 
@@ -925,38 +844,37 @@
 
 
 
-    {{-- old code  --}}
 
     <!--<< Brand Section Start >>-->
     <!-- <div class="brand-section fix">
-                                                                    <div class="container">
-                                                                        <div class="brand-wrapper-3">
-                                                                            <div class="brand-carousel-active">
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
-                                                                                </div>
-                                                                                <div class="brand-image">
-                                                                                    <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                        <div class="container">
+                                                                            <div class="brand-wrapper-3">
+                                                                                <div class="brand-carousel-active">
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
+                                                                                    <div class="brand-image">
+                                                                                        <img src="assets/img/brand/02.png" alt="brand-img">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                </div> -->
+                                                                    </div> -->
 
     <!--<< About Section Start >>-->
     {{-- <section class="about-section fix section-padding " id="about">

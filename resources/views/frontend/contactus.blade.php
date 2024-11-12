@@ -6,59 +6,6 @@
 
 @section('content')
     <style>
-        /* .top-bar {
-            background-color: #ffffff;
-            padding: 10px 0;
-        }
-
-        .navbar {
-            background-color: #0077c8;
-        }
-
-        .navbar-nav .nav-link {
-            color: white !important;
-            padding: 1rem 1.5rem !important;
-        }
-
-        .contact-info {
-            color: #0077c8;
-        }
-
-        .hero-section {
-            background: linear-gradient(rgba(0, 119, 200, 0.8), rgba(0, 119, 200, 0.8)),
-                url('.///asset//img/b//bg/ad/antage.png') center/cover;
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .service-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            height: 200px;
-        }
-
-        .service-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .login-btn {
-            background-color: transparent;
-            border: 2px solid #0077c8;
-            color: #0077c8;
-            padding: 5px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .social-icons a {
-            color: #0077c8;
-            margin-left: 15px;
-            text-decoration: none;
-        } */
-
         .bg24 {
             background-image:
                 url('./public/assets/img/bg/contactbg24.png');
@@ -90,42 +37,12 @@
             }
         }
     </style>
-    {{-- </head> --}}
-    {{-- <body> --}}
-    <!-- Top Bar -->
-    {{-- <div class="top-bar">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-3">
-                <img src="/api/placeholder/150/50" alt="WGC Logo" class="img-fluid" style="max-height: 60px;">
-            </div>
-            <div class="col-md-6 text-center contact-info">
-                <span class="me-4">
-                    <i class="far fa-envelope me-2"></i>
-                    info@ilende.com
-                </span>
-                <span>
-                    <i class="fas fa-phone me-2"></i>
-                    +240222867206
-                </span>
-            </div>
-            <div class="col-md-3 text-end">
-                <a href="#" class="login-btn">Se connecter</a>
-                <div class="social-icons d-inline-block">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
+
+    <div class="container-fluid bg24 position-relative w-100">
+        <div class="row justify-content-start align-items-center h-100">
+            <h2 class="text-start text-white ps-5">Contactez-nous</h2>
         </div>
     </div>
-</div> --}}
-<div class="container-fluid bg24 position-relative w-100">
-    <div class="row justify-content-start align-items-center h-100">
-        <h2 class="text-start text-white ps-5">Contactez-nous</h2>
-    </div>
-</div>
 
     <div class="container my-5">
         <div class="row ">
@@ -195,81 +112,9 @@
                 </div>
             </div>
         </div>
-        </section>
+
     </div>
-    </div>
-
-
-
-
-
-
-
-
-
-    <!-- Navigation -->
-    {{-- <nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Maison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">À propos de nous</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Aide</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contactez-nous</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rejoignez-Nous En Tant Que Professionnel</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav> --}}
-
-    <!-- Hero Section -->
-    {{-- <section class="hero-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="text-white display-4 mb-5">Nos <br>prestations</h1>
-                <div class="row">
-                    <div class="col-6 mb-4">
-                        <div class="service-card">
-                            <img src="/api/placeholder/400/300" alt="Art Supplies">
-                        </div>
-                    </div>
-                    <div class="col-6 mb-4">
-                        <div class="service-card">
-                            <img src="/api/placeholder/400/300" alt="Carpentry">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="service-card">
-                            <img src="/api/placeholder/400/300" alt="Electronics">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="service-card">
-                            <img src="/api/placeholder/400/300" alt="Repair">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
+    
 
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> --}}
     </body>

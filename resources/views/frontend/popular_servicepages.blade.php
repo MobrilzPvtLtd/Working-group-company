@@ -10,18 +10,14 @@
     <div class="mouse-cursor cursor-inner"></div>
 
 
-    <!-- Offcanvas Area Start -->
-    <style>
-        /* li {
-            padding: 12px 0px;
-        } */
-    </style>
+
+
 
     {{-- service & Develop keypoints --}}
 
 
     <div class="container-fluid my-4 ">
-        <div class="row  position-relative" >
+        <div class="row  position-relative">
 
 
             <div class="col-md-6 text-start  rounded py-2" style="background-color: #E7F1F8;  width:55%">
@@ -115,15 +111,13 @@
                 </div>
 
                 <div class="d-flex justify-content-center py-2">
-                    {{-- <div class="col-md-6 " style="margin-left: 18%;"><input placeholder="Quel service fournissez-vous?"
-                            type="text" class="form-control rounded-start py-2" /></div>
-                    <div class="col-md-5 ms-1"> <button class="px-2 py-2 rounded  fs-6"
-                            style="background-color: #0d75bc;"><a href="/service_form " class="text-white">POUR COMMENCER</a>  </button></div> --}}
 
-                                <form class="d-flex" role="search">
-                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                  <button class="btn btn-outline-primary" type="submit"><a href="/service_form">Search  </a></button>
-                                </form>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search Service"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light " type="submit"><a href="/service_form"
+                                class="">Search </a></button>
+                    </form>
 
                 </div>
             </div>
@@ -141,10 +135,6 @@
 
 
     </div>
-
-
-    <!-- Header Area Start -->
-
 
 
     <!--<< Footer Section Start >>-->

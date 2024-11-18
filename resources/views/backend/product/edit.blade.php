@@ -14,16 +14,42 @@
                             <label for="name">Name</label>
                             <input type="text" class="form-control" name="name" value="{{ $products->name }}">
                         </div>
-                        
+
                         <div class="form-group mb-2">
                             <label for="profession">Name</label>
                             <input type="text" class="form-control" name="profession" value="{{ $products->profession }}">
                         </div>
-                      
+
+                        {{-- <div class="form-group mb-2 col-4">
+                            <label for="image">Image</label>
+                            <input type="file" class="form-control" name="image[]" multiple>
+                        </div> --}}
+
                         <div class="form-group mb-2 col-4">
                             <label for="image">Image</label>
                             <input type="file" class="form-control" name="image[]" multiple>
-                        </div>
+
+                            <!-- Display Existing Images -->
+                            <div class="mt-3">
+                                @if(!empty($products->image))
+                                    @php
+                                        $images = json_decode($products->image, true); // Assuming 'image' is stored as a JSON array
+                                    @endphp
+                                    @if(is_array($images) && count($images) > 0)
+                                        <label>Current Images:</label>
+                                        <div class="d-flex flex-wrap">
+                                            @foreach($images as $image)
+                                                <div class="me-2 mb-2">
+                                                    <img src="{{ asset('images/' . $image) }}" alt="Product Image" style="width: 100px; height: auto;">
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    @endif
+                                @endif
+                            </div>
+
+
+
                         <div class="form-group mb-2">
                             <label for="description"> Description</label>
                             <textarea class="form-control" name="description" rows="3">{{ $products->description }}</textarea>

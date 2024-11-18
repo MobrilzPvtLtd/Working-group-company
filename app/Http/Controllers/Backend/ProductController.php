@@ -17,20 +17,20 @@ class ProductController extends Controller
     {
         return view('backend.product.create');
     }
-    
+
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required',
             // Add more validation rules if needed
         ]);
-    
+
         $productData = [
             'name' => $request->input('name'),
-            'profession' => $request->input('profession'), 
+            'profession' => $request->input('profession'),
             'description' => $request->input('desc'),
         ];
-    
+
         // Handle image upload and save image data to the database
         // if ($request->hasFile('image')) {
         //     $uploadedImagePaths = [];
@@ -43,7 +43,7 @@ class ProductController extends Controller
         //     }
         //     $productData['image'] = json_encode($uploadedImagePaths);
         // }
-    
+
         // Create product with the provided data
         // Product::create($productData);
 
@@ -60,12 +60,12 @@ class ProductController extends Controller
             $products->save();
         }
 
-    
+
         return redirect()->route('admin.product.index')->with('success', 'Product created successfully.');
     }
-    
-    
-    
+
+
+
     public function edit($id)
     {
         $products = Product::find($id);
@@ -74,22 +74,27 @@ class ProductController extends Controller
         }
         return view('backend.product.edit', compact('products'));
     }
-    
+
     public function update(Request $request, $id)
     {
         $request->validate([
             'name' => 'required',
         ]);
-    
+
         $products = Product::find($id);
         if (!$products) {
             return redirect()->route('admin.product.index')->with('error', 'Product not found.');
         }
-    
+
+        // Update product details
         $products->name = $request->input('name');
         $products->profession = $request->input('profession'); // If profession exists
         $products->description = $request->input('description');
-    
+
+        // Retrieve existing images
+        $existingImages = json_decode($products->image, true) ?? [];
+
+        // Handle new image uploads
         if ($request->hasFile('image')) {
             $uploadedImagePaths = [];
             foreach ($request->file('image') as $image) {
@@ -97,14 +102,22 @@ class ProductController extends Controller
                 $image->move(public_path('images'), $filename);
                 $uploadedImagePaths[] = $filename;
             }
-            $products->image = json_encode($uploadedImagePaths);
+
+            // Merge existing images with new ones
+            $allImages = array_merge($existingImages, $uploadedImagePaths);
+            $products->image = json_encode($allImages);
+        } else {
+            // Keep existing images if no new ones are uploaded
+            $products->image = json_encode($existingImages);
         }
-    
+
         $products->save();
-    
+
         return redirect()->route('admin.product.index')->with('success', 'Product updated successfully.');
     }
-    
+
+
+
     public function destroy($id)
     {
         $product = Product::findOrFail($id);

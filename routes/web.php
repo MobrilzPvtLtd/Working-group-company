@@ -32,56 +32,7 @@ Route::get('service_form', [FrontendController::class, 'service_form'])->name('s
 Route::get('login_form', [FrontendController::class, 'login_form'])->name('login_form');
 Route::get('lang', [FrontendController::class, 'lang']);
 
-Route::prefix('admin')->group(function () {
-    Route::get('providers', [ServicesprovidersController::class, 'index'])->name('admin.providers.index');
-    Route::get('providers/create', [ServicesprovidersController::class, 'create'])->name('admin.providers.create');
-    Route::post('providers/store', [ServicesprovidersController::class, 'store'])->name('admin.providers.store');
-    Route::get('providers/edit/{id}', [ServicesprovidersController::class, 'edit'])->name('admin.providers.edit');
-    Route::patch('providers/update/{id}', [ServicesprovidersController::class, 'update'])->name('admin.providers.update');
-    Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('admin.providers.destroy');
-});
-
-
-Route::prefix('admin')->group(function () {
-    Route::get('services', [ServicesController::class, 'index'])->name('admin.services');
-    Route::get('services/create', [ServicesController::class, 'create'])->name('admin.services.create');
-    Route::post('services/store', [ServicesController::class, 'store'])->name('admin.services.store');
-    Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('admin.services.edit');
-    Route::patch('services/update/{id}', [ServicesController::class, 'update'])->name('admin.services.update');
-    Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('admin.services.destroy');
-});
-
-Route::prefix('admin')->group(function () {
-    Route::get('product', [ProductController::class, 'index'])->name('admin.product.index');
-    Route::get('product/create', [ProductController::class, 'create'])->name('admin.product.create');
-    Route::post('product/store', [ProductController::class, 'store'])->name('admin.product.store'); // Changed to POST
-    Route::get('product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
-    Route::patch('product/update/{id}', [ProductController::class, 'update'])->name('admin.product.update');
-    Route::delete('product/destroy/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');
-});
-
-
-
-
-
-Route::get('home', [BackendController::class, 'index'])->name('home');
-Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');
-
-
-Route::get('/{locale}', function ($locale) {
-    if (array_key_exists($locale, config('app.available_locales'))) {
-        App::setLocale($locale);
-        return view('welcome');
-    } else {
-        abort(404);
-    }
-});
-
-
-
-
 Route::get('language/{language}', [LanguageController::class, 'switch'])->name('language.switch');
-
 
 Route::get('terms', Terms::class)->name('terms');
 Route::get('privacy', Privacy::class)->name('privacy');
@@ -106,6 +57,49 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
         Route::get("{$module_name}/emailConfirmationResend", ['as' => "{$module_name}.emailConfirmationResend", 'uses' => "{$controller_name}@emailConfirmationResend"]);
         Route::delete("{$module_name}/userProviderDestroy", ['as' => "{$module_name}.userProviderDestroy", 'uses' => "{$controller_name}@userProviderDestroy"]);
     });
+});
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('home', [BackendController::class, 'index'])->name('home');
+    Route::get('dashboard', [BackendController::class, 'index'])->name('dashboard');
+
+    Route::prefix('admin')->group(function () {
+        Route::get('providers', [ServicesprovidersController::class, 'index'])->name('admin.providers.index');
+        Route::get('providers/create', [ServicesprovidersController::class, 'create'])->name('admin.providers.create');
+        Route::post('providers/store', [ServicesprovidersController::class, 'store'])->name('admin.providers.store');
+        Route::get('providers/edit/{id}', [ServicesprovidersController::class, 'edit'])->name('admin.providers.edit');
+        Route::patch('providers/update/{id}', [ServicesprovidersController::class, 'update'])->name('admin.providers.update');
+        Route::delete('providers/destroy/{id}', [ServicesprovidersController::class, 'destroy'])->name('admin.providers.destroy');
+    });
+
+    Route::prefix('admin')->group(function () {
+        Route::get('services', [ServicesController::class, 'index'])->name('admin.services');
+        Route::get('services/create', [ServicesController::class, 'create'])->name('admin.services.create');
+        Route::post('services/store', [ServicesController::class, 'store'])->name('admin.services.store');
+        Route::get('services/edit/{id}', [ServicesController::class, 'edit'])->name('admin.services.edit');
+        Route::patch('services/update/{id}', [ServicesController::class, 'update'])->name('admin.services.update');
+        Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('admin.services.destroy');
+    });
+
+    Route::prefix('admin')->group(function () {
+        Route::get('product', [ProductController::class, 'index'])->name('admin.product.index');
+        Route::get('product/create', [ProductController::class, 'create'])->name('admin.product.create');
+        Route::post('product/store', [ProductController::class, 'store'])->name('admin.product.store'); // Changed to POST
+        Route::get('product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
+        Route::patch('product/update/{id}', [ProductController::class, 'update'])->name('admin.product.update');
+        Route::delete('product/destroy/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');
+    });
+});
+
+
+Route::get('/{locale}', function ($locale) {
+    if (array_key_exists($locale, config('app.available_locales'))) {
+        App::setLocale($locale);
+        return view('welcome');
+    } else {
+        abort(404);
+    }
 });
 
 /*

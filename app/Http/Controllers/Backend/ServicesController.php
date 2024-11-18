@@ -56,7 +56,7 @@ class ServicesController extends Controller
         }
         return view('backend.services.edit', compact('service'));
     }
-    
+
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -64,15 +64,15 @@ class ServicesController extends Controller
             'img.*' => 'image|mimes:jpeg,png,jpg,gif',
             'desc' => 'required'
         ]);
-    
+
         $service = Services::find($id);
         if (!$service) {
             return redirect()->back()->with('error', 'Service not found.');
         }
-    
+
         $service->name = $request->input('name');
         $service->desc = $request->input('desc');
-    
+
         if ($request->hasFile('img')) {
             $uploadedImagePaths = [];
             foreach ($request->file('img') as $image) {
@@ -82,12 +82,12 @@ class ServicesController extends Controller
             }
             $service->img = json_encode($uploadedImagePaths);
         }
-    
+
         $service->save();
-    
+
         return redirect()->route('admin.services')->with('success', 'Service updated successfully.');
     }
-    
+
     public function destroy($id)
     {
         Services::findOrFail($id)->delete();

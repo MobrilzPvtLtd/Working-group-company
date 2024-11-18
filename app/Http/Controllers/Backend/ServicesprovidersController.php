@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\User; 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -16,10 +16,11 @@ class ServicesprovidersController extends Controller
     public function index(Request $request)
     {
         $users = User::where('name', 'service provider')->get();
-    
+        // $users = User::all();
+
         return view('backend.providers.index', compact('users'));
     }
-    
+
 
     public function create()
     {
@@ -29,7 +30,7 @@ class ServicesprovidersController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            
+
         ]);
 
         $userData = [
@@ -39,7 +40,11 @@ class ServicesprovidersController extends Controller
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password')),
         ];
-
+        $existingUser = User::where('email', $request->input('email'))->first();
+        if ($existingUser) {
+            // Redirect back with an error if email is already in use
+            return redirect()->back()->withErrors(['email' => 'This email is already in use.'])->withInput();
+        }
         User::create($userData);
 
         return redirect()->route('admin.providers.index')->with('success', 'User created successfully.');
